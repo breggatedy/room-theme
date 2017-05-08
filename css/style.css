@@ -819,3 +819,14 @@ a .social{
    top:480px;  /* your iframe height */
    margin-top:-480px;  /* your iframe height */
 }
+
+
+.image{
+    position: relative;
+    float: left;
+    width:  712px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
