@@ -850,6 +850,22 @@ a .social{
 }
 
 
+/* ========================= */
+/* FRAME HEADER */
+/* ========================= */
+
+@media (min-width: 992px){
+.frame-header{
+    padding-top: 100px; 
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 992px){
+  .frame-header{ 
+    padding-bottom: 25px;
+  }
+
 
 /* ========================= */
 /* SEARCH PAGE SLIDER */
@@ -871,7 +887,7 @@ a .social{
   font-size: 14px !important;
  }
 
- .flex-caption h3{
+.flex-caption h3{
   line-height: 1.5;
  }
 
@@ -881,15 +897,9 @@ a .social{
     letter-spacing: 0.5px;
 }
 
-.btn-white {
-    background: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #e74c3c;
-    border-color: #e74c3c;
-    border-width: 1px;
-}
+/* ========================= */
+/* DISCON BANNER SMALL and STAR BANNER SMALL */
+/* ========================= */
 
 .disc-banner-small{
     position: absolute;
@@ -931,20 +941,16 @@ a .social{
 
 /* Mobile Phone Only */
 @media (max-width: 768px) {
-    .disc-banner {
-        font-size: 1.3em;
-        line-height: 26px;
+    .disc-banner-small {
+        font-size: 12px;
     }
-    .star-banner {
-        font-size: 1.3em;
-        line-height: 26px;
+    .star-banner-small {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 
-/* ========================= */
-/* BUTTON */
-/* ========================= */
-
+/* BUTTON TAG*/
 .btn-tagcolor{
     background: #FA968C;
     font-family: 'Lato', sans-serif;
@@ -968,14 +974,25 @@ a .social{
     border-color: black;
     border-width: 1px solid;
 }
-.btn-tagsearch:hover {
+.btn-tagwhite:hover {
     background: #FA968C;
     color: white;
 }
 
-/**
- * Tooltip Styles
- */
+/* BUTTON WHITE*/
+.btn-white {
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 1px;
+}
+
+/* ========================= */
+ /* Tooltip Styles */
+/* ========================= */
 
 /* Base styles for the element that has a tooltip */
 [data-tooltip],
@@ -1147,6 +1164,9 @@ a .social{
   margin-bottom: -16px;
 }
 
+/* ========================= */
+/* FAVORITE-LOVE BUTTON */
+/* ========================= */
 .favorite-banner {
     float: right;
     font-size: 24px;
@@ -1155,14 +1175,15 @@ a .social{
 .favorite-banner i{
     border-color: black;
     border-width: 2px solid;
-
 }
 
 .love{
     color: #EE4238;
 }
 
-
+/* ========================= */
+/* TAG GROUP SLIDER */
+/* ========================= */
 .tag-group > .row {
   overflow-x: auto;
   white-space: nowrap;
@@ -1172,6 +1193,10 @@ a .social{
   float: none;
 }
 
+
+/* ========================= */
+ /* BUTTON LANGUAGE*/
+/* ========================= */
 @media (min-width: 992px){
   .language {
     text-align: right;
@@ -1188,11 +1213,6 @@ a .social{
     height:40px; 
     margin-left:-4px; 
   }
-
-  .frame-header{
-    padding-top: 100px; 
-    padding-bottom: 25px;
-  }
 }
 
 @media (max-width: 992px){
@@ -1207,8 +1227,5 @@ a .social{
     height:35px; 
     margin-left:-4px; 
   }
-
-  .frame-header{ 
-    padding-bottom: 25px;
-  }
 }
+
