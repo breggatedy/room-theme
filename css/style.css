@@ -64,6 +64,8 @@ body{
     font-weight: 300;
     letter-spacing: 1px;
     color: white;
+    border-color: white;
+    border-width: 1px solid;
 }
 .btn-color.btn-custom:hover {
     background: #ec7063;
@@ -123,6 +125,7 @@ p.harga {
 p.tempat {
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
+    line-height: 1.2em;
 }
 p.deskripsi {
     font-family: 'Open Sans', sans-serif;
@@ -824,9 +827,388 @@ a .social{
 .image{
     position: relative;
     float: left;
-    width:  712px;
+    width:  100%;
     height: 300px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+}
+
+/* ========================= */
+/* SEARCH PAGE SIDEBAR */
+/* ========================= */
+
+.search-sidebar {
+    border: 1px solid lightgrey;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
+.search-sidebar .form-group {
+    padding: 0 15px;
+}
+
+
+
+/* ========================= */
+/* SEARCH PAGE SLIDER */
+/* ========================= */
+
+.flex-caption {
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  background: slategray;
+  color: #ffffff !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 20px !important;
+}
+
+.flex-caption p{
+  color: #ffffff !important;
+  font-size: 14px !important;
+ }
+
+ .flex-caption h3{
+  line-height: 1.5;
+ }
+
+.search-description {
+    letter-spacing: 0.5px;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+}
+
+.btn-white {
+    background: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border-width: 1px;
+}
+
+.disc-banner-small{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    padding: 10px 20px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 300;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.star-banner-small {
+    position: absolute;
+    top: 8%;
+    right: 0;
+    padding: 6px 13px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+    }
+    .disc-banner-small {
+        font-size: 14px;
+    }
+    .start-banner-small {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/* Mobile Phone Only */
+@media (max-width: 768px) {
+    .disc-banner {
+        font-size: 1.3em;
+        line-height: 26px;
+    }
+    .star-banner {
+        font-size: 1.3em;
+        line-height: 26px;
+    }
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.btn-tagcolor{
+    background: #FA968C;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+    border-color: white;
+    border-width: 1px solid;
+}
+.btn-tagcolor:hover {
+    background: #FA968C;
+    color: white;
+}
+
+.btn-tagwhite{
+    background: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+    border-color: black;
+    border-width: 1px solid;
+}
+.btn-tagsearch:hover {
+    background: #FA968C;
+    color: white;
+}
+
+/**
+ * Tooltip Styles
+ */
+
+/* Base styles for the element that has a tooltip */
+[data-tooltip],
+.tooltip {
+  cursor: pointer;
+}
+
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+      opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition:    
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition:         
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Base styles for the tooltip's directional arrow */
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 7px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+/* Base styles for the tooltip's content area */
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 4px;
+  width: 80px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Directions */
+
+/* Top (default) */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,
+.tooltip-top:before,
+.tooltip-top:after {
+  bottom: 55%;
+  left: 103%;
+  top: auto;
+}
+
+[data-tooltip]:before,
+.tooltip:before,
+.tooltip-top:before {
+  margin-left: -45px;
+  margin-bottom: -12px;
+  border-top-color: #000;
+  border-top-color: hsla(0, 0%, 20%, 0.9);
+}
+
+/* Horizontally align top/bottom tooltips */
+[data-tooltip]:after,
+.tooltip:after,
+.tooltip-top:after {
+  margin-left: -80px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+.tooltip-top:hover:before,
+.tooltip-top:hover:after,
+.tooltip-top:focus:before,
+.tooltip-top:focus:after {
+  -webkit-transform: translateY(-12px);
+  -moz-transform:    translateY(-12px);
+  transform:         translateY(-12px); 
+}
+
+
+/* Left */
+.tooltip-left:before,
+.tooltip-left:after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+}
+
+.tooltip-left:before {
+  margin-left: 0;
+  margin-right: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-left-color: #000;
+  border-left-color: hsla(0, 0%, 20%, 0.9);
+  margin-top: 10%;
+}
+
+.tooltip-left:hover:before,
+.tooltip-left:hover:after,
+.tooltip-left:focus:before,
+.tooltip-left:focus:after {
+  -webkit-transform: translateX(-12px);
+  -moz-transform:    translateX(-12px);
+  transform:         translateX(-12px); 
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Move directional arrows down a bit for left/right tooltips */
+.tooltip-left:before,
+.tooltip-right:before {
+  top: 3px;
+}
+
+/* Vertically center tooltip content for left/right tooltips */
+.tooltip-left:after,
+.tooltip-right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}
+
+.favorite-banner {
+    float: right;
+    font-size: 24px;
+}
+
+.favorite-banner i{
+    border-color: black;
+    border-width: 2px solid;
+
+}
+
+.love{
+    color: #EE4238;
+}
+
+
+.tag-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.tag-group > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+}
+
+@media (min-width: 992px){
+  .language {
+    text-align: right;
+  }
+
+  .btn-indo{
+    width: 140px; 
+    height:40px; 
+    margin-right:-4px; 
+  }
+
+  .btn-ing{
+    width: 140px; 
+    height:40px; 
+    margin-left:-4px; 
+  }
+
+  .frame-header{
+    padding-top: 100px; 
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 992px){
+  .btn-indo{
+    width: 100px; 
+    height:35px; 
+    margin-right:-4px; 
+  }
+
+  .btn-ing{
+    width: 100px; 
+    height:35px; 
+    margin-left:-4px; 
+  }
+
+  .frame-header{ 
+    padding-bottom: 25px;
+  }
 }
