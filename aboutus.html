@@ -64,7 +64,6 @@
       </button>
       <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right navbar-custom">
@@ -72,7 +71,9 @@
         <li><a href="#">Tentang Kami</a></li>
         <li><a href="#">Kontak Kami</a></li>
         <li class="divider-vertical"></li>
+        <!--Trigger Modal Login for Mobile -->
         <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
+        <!--Collapse Login for Dekstop and Tablet Start -->
         <li class="dropdown dropdown-login">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
@@ -121,12 +122,16 @@
             </li>
           </ul>
         </li>
+        <!--Collapse Login for Dekstop and Tablet End -->
         <li class="daftar"><a href="#">Daftar</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
 </nav>
 <!-- Navbar End -->
+<!-- Modal Login for Mobile Start -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" role="document">
@@ -172,6 +177,7 @@
     </div>
   </div>
 </div>
+<!-- Modal Login for Mobile End -->
 
 
 <!-- Header Page Start -->

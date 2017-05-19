@@ -48,7 +48,7 @@
 <body>
 
 <!-- Navbar Start-->
-
+<!-- Navbar Start-->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,7 +61,6 @@
       </button>
       <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right navbar-custom">
@@ -69,60 +68,67 @@
         <li><a href="#">Tentang Kami</a></li>
         <li><a href="#">Kontak Kami</a></li>
         <li class="divider-vertical"></li>
+        <!--Trigger Modal Login for Mobile -->
         <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
+        <!--Collapse Login for Dekstop and Tablet Start -->
         <li class="dropdown dropdown-login">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
             <li>
-               <div class="row">
-                  <div class="col-md-12">
-                    <h1>Masuk</h1>
-                     <form>
-                        <div class="form-group">
-                          <label class="register-label" for="email">Email</label>
-                          <div class="input-group-lg">
-                            <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="register-label" for="password">Password</label>
-                          <div class="input-group-lg">
-                            <input type="password" class="form-control" placeholder="********" id="password" name="password">
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                          <div class="form-group">
-                            <div class="input-group remember">
-                              <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                              <br>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 forget text-right">
-                          <a href="">Lupa password?</a>
-                        </div>
-                        <div class="text-center">
-                          <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
-                        </div>
-                      </form>
-                      <div class="hr-register"></div>
-                      <div class="text-center method">
-                        <p>atau masuk dengan menggunakan metode lain</p>
-                        <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>Masuk</h1>
+                  <form>
+                    <div class="form-group">
+                      <label class="register-label" for="email">Email</label>
+                      <div class="input-group-lg">
+                        <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
                       </div>
-                    </form>
+                    </div>
+                    <div class="form-group">
+                      <label class="register-label" for="password">Password</label>
+                      <div class="input-group-lg">
+                        <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <div class="input-group remember">
+                          <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 forget text-right">
+                      <a href="">Lupa password?</a>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
+                    </div>
+                  </form>
+                  <div class="hr-register"></div>
+                  <div class="text-center method">
+                    <p>atau masuk dengan menggunakan metode lain</p>
+                    <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
                   </div>
-                  <div class="bottom text-center">
-                  </div>
-               </div>
+                  </form>
+                </div>
+                <div class="bottom text-center">
+                </div>
+              </div>
             </li>
           </ul>
         </li>
+        <!--Collapse Login for Dekstop and Tablet End -->
         <li class="daftar"><a href="#">Daftar</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
 </nav>
+<!-- Navbar End -->
+<!-- Modal Login for Mobile Start -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" role="document">
@@ -168,7 +174,7 @@
     </div>
   </div>
 </div>
-
+<!-- Modal Login for Mobile End -->
 
 
 <!--Hero Page-->

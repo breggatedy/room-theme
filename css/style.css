@@ -2254,6 +2254,12 @@ h4.rate {
 
 /* REGISTER PAGE */
 
+
+/*=== Section Login ===*/
+
+
+/*Section Indovenus's Logo in Login */
+
 .logo-brand {
   height: 50px;
   padding: 4px 15px;
@@ -2299,6 +2305,37 @@ h4.rate {
   line-height: 17px;
   text-align: center;
 }
+
+
+/* Section Logo in Login */
+
+.section-logo-login {
+  width: 100%;
+  margin: 10px 10px 100px 10px;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 5%;
+}
+
+.logo-login {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-login img {
+  position: relative;
+  height: 20px;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px 0px 10px;
+}
+
+
+/*=== Section Register ===*/
+
+
+/* Register Form */
 
 .form-bg {
   height: 683px;
@@ -2346,6 +2383,9 @@ h4.rate {
   font-size: 14px;
 }
 
+
+/* Button Form */
+
 .btn-register {
   height: 42px;
   width: 350px;
@@ -2373,7 +2413,7 @@ h4.rate {
   height: 42px;
   width: 350px;
   border-radius: 4px;
-  background-color: #507CC0;
+  background-color: #0D47A1;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -2387,9 +2427,12 @@ h4.rate {
 }
 
 .btn-facebook:hover {
-  background: #ec7063;
+  background: #507CC0;
   color: white;
 }
+
+
+/* Line Form */
 
 .hr-register {
   display: flex;
@@ -2418,6 +2461,9 @@ h4.rate {
   margin-right: 10px;
 }
 
+
+/* Footer Form */
+
 .footer-form {
   margin: 20px 0px 20px 0px;
 }
@@ -2430,6 +2476,9 @@ h4.rate {
   line-height: 17px;
   text-align: center;
 }
+
+
+/* Jadi Partner Section */
 
 .partner {
   padding-top: 20px;
@@ -2463,14 +2512,17 @@ h4.rate {
 /*DESKTOP ONLY*/
 
 @media (min-width: 992px) {
+  /*=== Section Login ===*/
+  .section-login {
+    padding: 300px 60px 350px 60px;
+  }
+  /*Section Indovenue's Logo in Login */
   .logo-brand {
     height: 50px;
     padding: 4px 15px;
     margin: 10px 0px 0px 35px;
   }
-  .section-login {
-    padding: 300px 60px 350px 60px;
-  }
+  /* Jadi Partner Section */
   .partner {
     padding-top: 20px;
     padding-right: 40px;
@@ -2502,11 +2554,7 @@ h4.rate {
 /*TABLET ONLY*/
 
 @media (max-width: 992px) and (min-width: 768px) {
-  .logo-brand {
-    height: 40px;
-    padding: 4px 15px;
-    margin: 10px 0px 0px 35px;
-  }
+  /*=== Section Login ===*/
   .login-bg {
     background-size: cover;
   }
@@ -2514,6 +2562,13 @@ h4.rate {
     padding: 150px 150px 150px 150px;
     text-align: center;
   }
+  /*Section Indovenue's Logo in Login */
+  .logo-brand {
+    height: 40px;
+    padding: 4px 15px;
+    margin: 10px 0px 0px 35px;
+  }
+  /* Footer Form */
   .footer-form {
     margin: 20px 0px 60px 0px;
   }
@@ -2523,11 +2578,7 @@ h4.rate {
 /*MOBILE ONLY*/
 
 @media (max-width: 767px) {
-  .logo-brand {
-    height: 30px;
-    padding: 4px 15px;
-    margin: 10px 0px 0px 15px;
-  }
+  /*=== Section Login ===*/
   .login-bg {
     background-size: cover;
   }
@@ -2552,6 +2603,25 @@ h4.rate {
     line-height: 13px;
     text-align: center;
   }
+  /*Section Indovenue's Logo in Login */
+  .logo-brand {
+    height: 30px;
+    padding: 4px 15px;
+    margin: 10px 0px 0px 15px;
+  }
+  /* Logo Login */
+  .section-logo-login {
+    width: 100%;
+    margin: 10px 10px 100px 10px;
+    text-align: center
+  }
+  .logo-login img {
+    position: relative;
+    max-height: 12px;
+    padding: 0px 10px 0px 10px;
+  }
+  /*=== Section Register ===*/
+  /* Register Form */
   .form-bg {
     height: 520px;
     width: 100%;
@@ -2582,6 +2652,7 @@ h4.rate {
     font-size: 9px !important;
     line-height: 13px !important;
   }
+  /* Button Form */
   .btn-register {
     height: 30px;
     width: 225px;
@@ -2604,6 +2675,7 @@ h4.rate {
     border-radius: 8px;
     margin-top: 0px;
   }
+  /* Line Form */
   .hr-register {
     margin: 15px 0px -10px 0px;
   }
@@ -2617,6 +2689,7 @@ h4.rate {
   .hr-register:after {
     margin-right: 1px;
   }
+  /* Footer Form */
   .footer-form {
     margin: 20px 0px 20px 0px;
   }
@@ -2625,6 +2698,7 @@ h4.rate {
     line-height: 10px;
     text-align: center;
   }
+  /* Jadi Partner Section */
   .partner {
     padding-top: 10px;
     padding-right: 0px;
@@ -2643,6 +2717,7 @@ h4.rate {
     text-align: center;
     text-transform: uppercase;
   }
+  /* Login Modal for Mobile */
   #loginModal .modal-title {
     font-size: 24px;
     font-weight: 600;
@@ -2715,7 +2790,7 @@ h4.rate {
 }
 
 
-/* TABLET COLLAPSE DEKSTOP */
+/* LOGIN COLLAPSE IN TABLET */
 
 @media (max-width: 992px) and (min-width: 768px) {
   #login-dp {
@@ -2726,7 +2801,7 @@ h4.rate {
     left: -232px;
     margin-top: 10px;
   }
-  #login-dp .help-block {
+  #login-dp {
     font-size: 10px
   }
   #login-dp .bottom {
@@ -2765,10 +2840,15 @@ h4.rate {
   }
 }
 
+
+/* LOGIN COLLAPSE IN MOBILE */
+
 @media(max-width:767px) {
+  /* Hide dropdown-login from navbar */
   .dropdown-login {
     display: none !important;
   }
+  /* Show modal-login from navbar */
   .modal-login {
     display: block !important;
   }
