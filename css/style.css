@@ -1951,6 +1951,7 @@ h4.rate {
   letter-spacing: 1px;
 }
 
+
 /* LINE MODAL */
 
 .hr-modal {
@@ -1972,16 +1973,19 @@ h4.rate {
   margin: 40px 0px;
 }
 
-.hr-modal::before{
-    margin-left: -5px;
-}
-.hr-modal::after {
-    margin-right: -5px;
+.hr-modal::before {
+  margin-left: -5px;
 }
 
+.hr-modal::after {
+  margin-right: -5px;
+}
+
+
 /* MODAL FORM*/
-.form-space{
-    margin-bottom: 30px;
+
+.form-space {
+  margin-bottom: 30px;
 }
 
 
@@ -2244,5 +2248,528 @@ h4.rate {
     font-size: 11px;
     line-height: 15px;
     padding: 0px 50px;
+  }
+}
+
+
+/* REGISTER PAGE */
+
+.logo-brand {
+  height: 50px;
+  padding: 4px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  z-index: 2;
+  margin: 10px 0px 0px 35px;
+}
+
+.login-bg {
+  background-image: url("../img/sharda.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.section-login h2 {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.section-login p {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.btn-login {
+  height: 42px;
+  width: 114px;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+}
+
+.form-bg {
+  height: 683px;
+  width: 486.7px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10%;
+  margin-left: 20%;
+  padding: 20px;
+}
+
+.header-form {
+  margin: 20px 0px 20px 0px;
+}
+
+.header-form h3 {
+  color: #757575;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.header-form p {
+  color: #A1A1A1;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.register-label {
+  font-family: "Open Sans", sans-serif;
+  color: #6DABF5;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.form-control {
+  display: block;
+  height: 46px;
+  border: 1px solid #E7E7E7;
+  background-color: #FAFAFA;
+  font-size: 14px;
+}
+
+.btn-register {
+  height: 42px;
+  width: 350px;
+  border-radius: 4px;
+  background: #e74c3c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: white;
+  border-color: white;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.btn-register:hover {
+  background: #ec7063;
+  color: white;
+}
+
+.btn-facebook {
+  height: 42px;
+  width: 350px;
+  border-radius: 4px;
+  background-color: #507CC0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: white;
+  border-color: white;
+  padding: 10px 50px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.btn-facebook:hover {
+  background: #ec7063;
+  color: white;
+}
+
+.hr-register {
+  display: flex;
+  flex-basis: 90%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 20px 0px;
+}
+
+.hr-register::before,
+.hr-register::after {
+  content: "";
+  flex-grow: 1;
+  background: #979797;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 5px 0px;
+}
+
+.hr-register:before {
+  margin-left: 10px;
+}
+
+.hr-register:after {
+  margin-right: 10px;
+}
+
+.footer-form {
+  margin: 20px 0px 20px 0px;
+}
+
+.footer-form p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #9B9B9B;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.partner {
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.partner p {
+  color: rgba(38, 39, 40, 0.8);
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  padding: 20;
+}
+
+.btn-become-partner {
+  height: 42px;
+  width: 140px;
+  border: 2px solid #EE4238;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #EE4238;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+}
+
+
+/*DESKTOP ONLY*/
+
+@media (min-width: 992px) {
+  .logo-brand {
+    height: 50px;
+    padding: 4px 15px;
+    margin: 10px 0px 0px 35px;
+  }
+  .section-login {
+    padding: 300px 60px 350px 60px;
+  }
+  .partner {
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+  .partner p {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    padding: 20;
+  }
+  .btn-become-partner {
+    height: 42px;
+    width: 140px;
+    border: 2px solid #EE4238;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+
+/*TABLET ONLY*/
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .logo-brand {
+    height: 40px;
+    padding: 4px 15px;
+    margin: 10px 0px 0px 35px;
+  }
+  .login-bg {
+    background-size: cover;
+  }
+  .section-login {
+    padding: 150px 150px 150px 150px;
+    text-align: center;
+  }
+  .footer-form {
+    margin: 20px 0px 60px 0px;
+  }
+}
+
+
+/*MOBILE ONLY*/
+
+@media (max-width: 767px) {
+  .logo-brand {
+    height: 30px;
+    padding: 4px 15px;
+    margin: 10px 0px 0px 15px;
+  }
+  .login-bg {
+    background-size: cover;
+  }
+  .section-login {
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+  }
+  .section-login h2 {
+    ;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .section-login p {
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .btn-login {
+    height: 33px;
+    width: 92px;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+  }
+  .form-bg {
+    height: 520px;
+    width: 100%;
+    border-radius: 5.12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .header-form {
+    margin: 20px 0px 20px 0px;
+  }
+  .header-form h3 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .header-form p {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 13px;
+  }
+  .register-label {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .form-control {
+    height: 30px !important;
+    font-size: 9px !important;
+    line-height: 13px !important;
+  }
+  .btn-register {
+    height: 30px;
+    width: 225px;
+    border-radius: 3px;
+    background: #e74c3c;
+    font-size: 10px;
+    line-height: 11px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 0px;
+  }
+  .btn-facebook {
+    height: 30px;
+    width: 225px;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 11px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 0px;
+  }
+  .hr-register {
+    margin: 15px 0px -10px 0px;
+  }
+  .hr-register::before,
+  .hr-register::after {
+    margin: 5px 0px;
+  }
+  .hr-register:before {
+    margin-left: 1px;
+  }
+  .hr-register:after {
+    margin-right: 1px;
+  }
+  .footer-form {
+    margin: 20px 0px 20px 0px;
+  }
+  .footer-form p {
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .partner {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    text-align: right !important;
+  }
+  .partner p {
+    display: none;
+  }
+  .btn-become-partner {
+    height: 27px;
+    width: 90px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #loginModal .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  #loginModal .register-label {
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  #loginModal .form-control {
+    height: 37px !important;
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  #loginModal .remember {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  #loginModal .forget {
+    font-size: 12px !important;
+    line-height: 17px !important;
+    margin-top: -32px;
+    margin-bottom: 10px;
+  }
+  #loginModal .hr-register {
+    margin: 10px 0px 30px 0px;
+  }
+  #loginModal .method {
+    font-size: 12px !important;
+    line-height: 17px !important;
+    margin-top: -32px;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* LOGIN COLLAPSE DEKSTOP */
+
+#login-dp {
+  width: 500px;
+  padding: 14px 40px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  left: -331px;
+  margin-top: 10px;
+}
+
+#login-dp .help-block {
+  font-size: 12px
+}
+
+#login-dp .bottom {
+  background-color: rgba(255, 255, 255, .8);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+
+.modal-login {
+  display: none !important;
+}
+
+#loginModal {
+  display: none;
+}
+
+
+/* TABLET COLLAPSE DEKSTOP */
+
+@media (max-width: 992px) and (min-width: 768px) {
+  #login-dp {
+    width: 400px;
+    padding: 14px 40px 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    left: -232px;
+    margin-top: 10px;
+  }
+  #login-dp .help-block {
+    font-size: 10px
+  }
+  #login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+  }
+  #login-dp .form-group {
+    margin-bottom: 10px;
+  }
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+  #login-dp .btn-register {
+    height: 34px;
+    width: 280px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #login-dp .btn-facebook {
+    height: 34px;
+    width: 280px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #login-dp .hr-register {
+    margin: 10px 0px;
+  }
+  .modal-login {
+    display: none !important;
+  }
+  #loginModal {
+    display: none;
+  }
+}
+
+@media(max-width:767px) {
+  .dropdown-login {
+    display: none !important;
+  }
+  .modal-login {
+    display: block !important;
   }
 }
