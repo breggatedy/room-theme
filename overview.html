@@ -84,170 +84,172 @@
     </ul>
     <div class="tab-content">
       <div id="overview" class="tab-pane fade in active">
-        <div class="col-md-4">
-          <div class="profile-pic text-center">
-            <img src="img/avatar_user.jpg" class="img-circle center">
-            <h2>Johnny Kennedy</h2>
+        <div class="col-md-12">
+          <div class="col-md-4">
+            <div class="profile-pic text-center">
+              <img src="img/avatar_user.jpg" class="img-circle center">
+              <h2>Johnny Kennedy</h2>
+            </div>
+            <div class="profile-desc">
+              <div class="profile-text">
+                <div class="col-md-1">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5>jkennedy@email.com</h5></div>
+              </div>
+              <div class="profile-text">
+                <div class="col-md-1">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5>3-(650)540-6083</h5></div>
+              </div>
+              <div class="profile-location">
+                <div class="col-md-1">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5>Jl Boulevard Tmr Raya Bl NB-1/61,Pegangsaan Dua, Kelapa Gading</h5></div>
+              </div>
+              <div class="profile-text">
+                <div class="col-md-1">
+                  <i class="fa fa-globe" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5>Jakarta, Indonesia</h5></div>
+              </div>
+              <div class="profile-btn">
+                <button type="button" class="btn btn-logout" style="margin: 10px 0">Logout</button>
+              </div>
+            </div>
           </div>
-          <div class="profile-desc">
-            <div class="profile-text">
-              <div class="col-md-1">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <div class="col-md-8" style="padding-top: 20px; padding-bottom: 25px">
+            <!-- START Other Places -->
+            <div class="col-md-12">
+              <h4 class="title">Venue Status</h4>
+              <div class="venue-status" onclick="showVenue()">
+                <div class="col-md-2 text-center" style="border-right: 1px solid;">
+                  <h4>APR</h4>
+                  <h2>26</h2>
+                </div>
+                <div class="col-md-8" style="margin-left:10px;">
+                  <h3>Eagle Room di Brooklyn South West Building</h3>
+                  <h4>2 Hari  •  IDR 500.000 /Hari</h4>
+                </div>
+                <div class="col-md-2">
+                  <h1>Paid</h1>
+                </div>
               </div>
-              <div class="col-md-10">
-                <h5>jkennedy@email.com</h5></div>
-            </div>
-            <div class="profile-text">
-              <div class="col-md-1">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-              </div>
-              <div class="col-md-10">
-                <h5>3-(650)540-6083</h5></div>
-            </div>
-            <div class="profile-location">
-              <div class="col-md-1">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </div>
-              <div class="col-md-10">
-                <h5>Jl Boulevard Tmr Raya Bl NB-1/61,Pegangsaan Dua, Kelapa Gading</h5></div>
-            </div>
-            <div class="profile-text">
-              <div class="col-md-1">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-              </div>
-              <div class="col-md-10">
-                <h5>Jakarta, Indonesia</h5></div>
-            </div>
-            <div class="profile-btn">
-              <button type="button" class="btn btn-logout" style="margin: 10px 0">Logout</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8" style="padding-top: 20px; padding-bottom: 25px">
-          <!-- START Other Places -->
-          <div class="col-md-12">
-            <h4 class="title">Venue Status</h4>
-            <div class="venue-status" onclick="showVenue()">
-              <div class="col-md-2 text-center" style="border-right: 1px solid;">
-                <h4>APR</h4>
-                <h2>26</h2>
-              </div>
-              <div class="col-md-8" style="margin-left:10px;">
-                <h3>Eagle Room di Brooklyn South West Building</h3>
-                <h4>2 Hari  •  IDR 500.000 /Hari</h4>
-              </div>
-              <div class="col-md-2">
-                <h1>Paid</h1>
-              </div>
-            </div>
-            <div id="venue-detail">
-              <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
-              <div class="col-md-4">
-                <div class="place-thumb">
-                  <div class="disc-banner-small">35% OFF</div>
-                  <img src="img/place1.png">
-                  <div class="placethumb-detail">
-                    <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                    <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                    <div class="placethumb-tag">
-                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+              <div id="venue-detail">
+                <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
+                <div class="col-md-4">
+                  <div class="place-thumb">
+                    <div class="disc-banner-small">35% OFF</div>
+                    <img src="img/place1.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                      <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
                     </div>
-                    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-8 venue-description">
-                <h5><b>Transaction ID</b></h5>
-                <p>INV/OL62946/HGD/984</p>
-                <h5><b>Note from Venue Owner</b></h5>
-                <p>We will try to accommodate your requests but due to popularity we are full on week ends, holidays and during high season. Thank you for choosing Our Venue.</p>
-                <h5>Details</h5>
-                <div id="textbox">
-                  <p>
-                    <span class="alignleft">Harga Venue (per Hari)</span>
-                    <span class="alignright">500.000 IDR</span>
-                  </p>
-                </div>
-                <div id="textbox">
-                  <p>
-                    <span class="alignleft">Lama Sewa</span>
-                    <span class="alignright">2 Hari</span>
-                  </p>
-                </div>
-                <div id="textbox">
-                  <p>
-                    <span class="alignleft">Tambahan</span>
-                    <span class="alignright">-</span>
-                  </p>
-                </div>
-                <div class="hr-venue"></div>
-                <h5>
+                <div class="col-md-8 venue-description">
+                  <h5><b>Transaction ID</b></h5>
+                  <p>INV/OL62946/HGD/984</p>
+                  <h5><b>Note from Venue Owner</b></h5>
+                  <p>We will try to accommodate your requests but due to popularity we are full on week ends, holidays and during high season. Thank you for choosing Our Venue.</p>
+                  <h5>Details</h5>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Harga Venue (per Hari)</span>
+                      <span class="alignright">500.000 IDR</span>
+                    </p>
+                  </div>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Lama Sewa</span>
+                      <span class="alignright">2 Hari</span>
+                    </p>
+                  </div>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Tambahan</span>
+                      <span class="alignright">-</span>
+                    </p>
+                  </div>
+                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                  <h5>
                   <span class="alignleft">Total</span>
                   <span class="alignright">1.000.000 IDR</span>
                 </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <h4 class="title">My Favorite Venue</h4>
-          </div>
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12 ">
-                <div class="place-thumb">
-                  <div class="close-banner"><i class="fa fa-close" aria-hidden="true"></i></div>
-                  <img src="img/place1.png">
-                  <div class="placethumb-detail">
-                    <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                    <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                    <div class="placethumb-tag">
-                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                    </div>
-                    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="place-thumb">
-                  <img src="img/place2.png">
-                  <div class="placethumb-detail">
-                    <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-                    <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                    <div class="placethumb-tag">
-                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
-                    </div>
-                    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="place-thumb">
-                  <img src="img/place3.png">
-                  <div class="placethumb-detail">
-                    <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
-                    <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
-                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                    <div class="placethumb-tag">
-                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
-                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
-                    </div>
-                    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-                  </div>
                 </div>
               </div>
             </div>
+            <div class="col-md-12">
+              <h4 class="title">My Favorite Venue</h4>
+            </div>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                  <div class="place-thumb">
+                    <div class="close-banner"><i class="fa fa-close" aria-hidden="true"></i></div>
+                    <img src="img/place1.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                      <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="place-thumb">
+                    <img src="img/place2.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                      <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="place-thumb">
+                    <img src="img/place3.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
+                      <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END Other Places -->
           </div>
-          <!-- END Other Places -->
         </div>
       </div>
     </div>
