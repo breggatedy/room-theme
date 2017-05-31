@@ -75,6 +75,21 @@ body {
 
 /* ========================= */
 
+.btn-color.btn-custom {
+  background: #e74c3c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+  border-color: white;
+  border-width: 1px solid;
+}
+
+.btn-color.btn-custom:hover {
+  background: #ec7063;
+  color: white;
+}
+
 .btn-outline {
   background-color: transparent;
   color: inherit;
@@ -1949,6 +1964,7 @@ h4.rate {
   letter-spacing: 1px;
 }
 
+
 /* MODAL FORM*/
 
 .form-space {
@@ -2777,6 +2793,9 @@ h4.rate {
   }
 }
 
+
+/* OVERVIEW PAGE */
+
 .profile-desc {
   margin: -25px;
 }
@@ -3067,4 +3086,538 @@ h4.rate {
   color: black;
   font-size: 1.5em;
   line-height: 26px;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .profile-desc {
+    margin: 0px;
+  }
+  .profile-pic {
+    padding: 20px 0px 30px 0px;
+  }
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -10px;
+  }
+  .profile-pic h2 {
+    color: #EE4238;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .profile-text {
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+  }
+  .profile-text i {
+    height: 20px;
+    width: 20px;
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 15px 0px 0px;
+    vertical-align: middle;
+    text-align: center
+  }
+  .profile-text h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .profile-location {
+    border: 1px solid #ccc;
+    height: 75px;
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+  }
+  .profile-location i {
+    height: 20px;
+    width: 20px;
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 15px 0px 0px;
+    vertical-align: middle;
+    text-align: center
+  }
+  .profile-location h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .profile-btn {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+  .btn-logout {
+    height: 34px;
+    width: 91px;
+    border-radius: 4px;
+    background-color: #C7C7CD;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    border-color: white;
+    text-transform: uppercase;
+  }
+  .venue-status {
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    vertical-align: middle;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+  }
+  .venue-status h4 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+  }
+  .venue-status h2 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 29px;
+    line-height: 34px;
+    margin: 0px;
+  }
+  .venue-status h3 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 19.2px;
+    line-height: 23px;
+    margin: 0px;
+  }
+  .venue-status h1 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+    color: #6DABF5;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .venue-status h1.waiting {
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .close-banner {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 10px 15px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-size: 1.2em;
+    line-height: 26px;
+  }
+  .avatar-text {
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: right;
+    margin: 0px 10px 0px 10px;
+  }
+  #login-profile {
+    width: 215px;
+    overflow: hidden;
+    background-color: #ffffff;
+    left: -4px;
+    margin-top: 10px;
+  }
+  #login-profile li {
+    height: 50px;
+    text-align: center;
+  }
+  #login-profile li a {
+    padding-top: 15px;
+  }
+  #login-profile li:hover {
+    background: rgb(231, 231, 231);
+    color: white;
+  }
+  .dashboard-tab {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    border: 1px solid #E4E3E3;
+    background-color: #ECECEC;
+    padding-left: 50px;
+  }
+  .dashboard-tab li {
+    margin: 10px 0px 0px 10px;
+  }
+  .dashboard-tab li a {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .nav-tabs>li>a {
+    border: none !important;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+    color: #EE4238 !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 19px;
+    background-color: transparent !important;
+    padding-bottom: 25px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #EE4238 !important;
+    border-bottom-style: solid !important;
+  }
+  #venue-detail {
+    width: 100%;
+    height: 480px;
+    padding: 20px;
+    background-color: #FAFAFA;
+    margin-top: -30px;
+  }
+  .venue-description h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .venue-description p {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  hr {
+    margin-top: 5px;
+    margin-bottom: -5px;
+  }
+  .close-venue {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: transparent;
+    opacity: .85;
+    color: black;
+    font-size: 1.2em;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-desc {
+    margin: 10px 0px 10px 0px;
+  }
+  .profile-pic {
+    padding: 20px 0px 30px 0px;
+  }
+  .profile-pic img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: -10px;
+  }
+  .profile-pic h2 {
+    color: #EE4238;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    font-size: 12.8px;
+    line-height: 18px;
+  }
+  .profile-text {
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+  }
+  .profile-text i {
+    height: 20px;
+    width: 20px;
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 15px 0px 0px;
+    vertical-align: middle;
+    text-align: center
+  }
+  .profile-text h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .profile-location {
+    border: 1px solid #ccc;
+    height: 75px;
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+  }
+  .profile-location i {
+    height: 20px;
+    width: 20px;
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 15px 0px 0px;
+    vertical-align: middle;
+    text-align: center
+  }
+  .profile-location h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .profile-btn {
+    margin: 0px 0px -15px 0px;
+    text-align: center;
+  }
+  .btn-logout {
+    height: 27px;
+    width: 73px;
+    border-radius: 4px;
+    background-color: #C7C7CD;
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    border-color: white;
+    text-transform: uppercase;
+  }
+  .venue-status {
+    height: 80px;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    vertical-align: middle;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+  }
+  .venue-status h4 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0px;
+  }
+  .venue-status h2 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 23px;
+    line-height: 28px;
+    margin: 0px;
+  }
+  .venue-status h3 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 15.36px;
+    line-height: 18px;
+    margin: 0px;
+  }
+  .venue-status h1 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 19.2px;
+    line-height: 23px;
+    margin: 0px;
+    color: #6DABF5;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .venue-status h1.waiting {
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 12.8px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .close-banner {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-size: 1em;
+    line-height: 26px;
+  }
+  .dropdown-profile a {
+    margin-top: 0px !important;
+  }
+  .avatar-text {
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 300;
+    margin: 0px 10px 0px 0px;
+  }
+  #login-profile {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    left: -4px;
+    margin-top: 10px;
+  }
+  #login-profile li {
+    height: 50px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  #login-profile li a {
+    padding-top: 0px !important;
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  #login-profile li:hover {
+    background: rgb(231, 231, 231);
+    color: white;
+  }
+  .dashboard-tab {
+    box-sizing: border-box;
+    height: 56px;
+    width: 100%;
+    border: 1px solid #E4E3E3;
+    background-color: #ECECEC;
+    padding-left: 0px;
+    margin-top: -10px;
+  }
+  .dashboard-tab li {
+    margin: 10px 0px 0px 10px;
+  }
+  .dashboard-tab li a {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .nav-tabs>li>a {
+    border: none !important;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+    color: #EE4238 !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 19px;
+    background-color: transparent !important;
+    padding-bottom: 15px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #EE4238 !important;
+    border-bottom-style: solid !important;
+  }
+  .nav>li>a {
+    padding: 10px 5px;
+  }
+  .nav>li>a>img {
+    display: none;
+  }
+  #venue-detail {
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    background-color: #FAFAFA;
+    margin-top: -30px;
+  }
+  .venue-description h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 12.8px;
+    line-height: 16px;
+  }
+  .venue-description p {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 12.8px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  hr {
+    margin-top: 5px;
+    margin-bottom: -5px;
+  }
+  .close-venue {
+    position: relative;
+    top: -20px;
+    left: 90%;
+    padding: 10px 15px;
+    background-color: transparent;
+    opacity: .85;
+    color: black;
+    font-size: 1em;
+    line-height: 26px;
+  }
+  .place-thumb {
+    margin-top: 40px;
+  }
+  .col-xs-12,
+  .cpl-md-12,
+  .col-md-4,
+  .col-md-8 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }

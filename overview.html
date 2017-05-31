@@ -56,7 +56,7 @@
           <li><a href="#">Kontak Kami</a></li>
           <li class="divider-vertical"></li>
           <!--Collapse Login for Dekstop and Tablet Start -->
-          <li class="dropdown dropdown-login">
+          <li class="dropdown dropdown-profile">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:-10px;">
               <img src="img/avatar_user.jpg" class="img-circle center" width="40" height="40">
               <b class="avatar-text"> Johnny Kennedy</b>
@@ -84,83 +84,68 @@
     </ul>
     <div class="tab-content">
       <div id="overview" class="tab-pane fade in active">
-        <div class="col-md-12">
-          <div class="col-md-4">
-            <div class="profile-pic text-center">
-              <img src="img/avatar_user.jpg" class="img-circle center">
-              <h2>Johnny Kennedy</h2>
-            </div>
-            <div class="profile-desc">
-              <div class="profile-text">
-                <div class="col-md-1">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <div class="col-md-12 nopadding">
+          <div class="col-md-4 col-sm-12 col-xs-12 nopadding">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="profile-pic text-center col-md-12 col-sm-3">
+                <img src="img/avatar_user.jpg" class="img-circle center">
+                <h2>Johnny Kennedy</h2>
+                <div class="profile-btn">
+                  <button type="button" class="btn btn-logout" style="margin: 10px 0">Logout</button>
                 </div>
-                <div class="col-md-10">
-                  <h5>jkennedy@email.com</h5></div>
               </div>
-              <div class="profile-text">
-                <div class="col-md-1">
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
+              <div class="profile-desc col-md-12 col-sm-9 col-xs-12">
+                <div class="profile-text">
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                    <h5>jkennedy@email.com</h5></div>
                 </div>
-                <div class="col-md-10">
-                  <h5>3-(650)540-6083</h5></div>
-              </div>
-              <div class="profile-location">
-                <div class="col-md-1">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <div class="profile-text">
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                    <h5>3-(650)540-6083</h5></div>
                 </div>
-                <div class="col-md-10">
-                  <h5>Jl Boulevard Tmr Raya Bl NB-1/61,Pegangsaan Dua, Kelapa Gading</h5></div>
-              </div>
-              <div class="profile-text">
-                <div class="col-md-1">
-                  <i class="fa fa-globe" aria-hidden="true"></i>
+                <div class="profile-location">
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                    <h5>Jl Boulevard Tmr Raya Bl NB-1/61,Pegangsaan Dua, Kelapa Gading</h5></div>
                 </div>
-                <div class="col-md-10">
-                  <h5>Jakarta, Indonesia</h5></div>
-              </div>
-              <div class="profile-btn">
-                <button type="button" class="btn btn-logout" style="margin: 10px 0">Logout</button>
+                <div class="profile-text">
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-sm-10 col-xs-10">
+                    <h5>Jakarta, Indonesia</h5></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8" style="padding-top: 20px; padding-bottom: 25px">
+          <div class="col-md-8 col-sm-12 nopadding" style="padding-top: 20px; padding-bottom: 25px">
             <!-- START Other Places -->
             <div class="col-md-12">
               <h4 class="title">Venue Status</h4>
               <div class="venue-status" onclick="showVenue()">
-                <div class="col-md-2 text-center" style="border-right: 1px solid;">
+                <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
                   <h4>APR</h4>
                   <h2>26</h2>
                 </div>
-                <div class="col-md-8" style="margin-left:10px;">
+                <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
                   <h3>Eagle Room di Brooklyn South West Building</h3>
                   <h4>2 Hari  •  IDR 500.000 /Hari</h4>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
                   <h1>Paid</h1>
                 </div>
               </div>
               <div id="venue-detail">
                 <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
-                <div class="col-md-4">
-                  <div class="place-thumb">
-                    <div class="disc-banner-small">35% OFF</div>
-                    <img src="img/place1.png">
-                    <div class="placethumb-detail">
-                      <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                      <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                      <div class="placethumb-tag">
-                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                      </div>
-                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8 venue-description">
+                <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
                   <h5><b>Transaction ID</b></h5>
                   <p>INV/OL62946/HGD/984</p>
                   <h5><b>Note from Venue Owner</b></h5>
@@ -186,9 +171,26 @@
                   </div>
                   <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
                   <h5>
-                  <span class="alignleft">Total</span>
-                  <span class="alignright">1.000.000 IDR</span>
-                </h5>
+                    <span class="alignleft">Total</span>
+                    <span class="alignright">1.000.000 IDR</span>
+                  </h5>
+                </div>
+                <div class="col-md-5 col-sm-5 col-sm-pull-7">
+                  <div class="place-thumb">
+                    <div class="disc-banner-small">35% OFF</div>
+                    <img src="img/place1.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                      <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,7 +212,7 @@
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
                       </div>
-                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                      <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                     </div>
                   </div>
                 </div>
@@ -226,7 +228,7 @@
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
                       </div>
-                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                      <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                     </div>
                   </div>
                 </div>
@@ -242,7 +244,7 @@
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
                         <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
                       </div>
-                      <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                      <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                     </div>
                   </div>
                 </div>
@@ -257,34 +259,53 @@
   <!--FOOTER START HERE-->
   <footer>
     <div class="container">
-      <div class="col-md-7">
-        <div class="center-block menu" style="padding: 20px 0">
-          <a href="#" class="footer-nav">Home</a>
-          <a href="#" class="footer-nav">Support</a>
-          <a href="#" class="footer-nav">License</a>
-          <a href="#" class="footer-nav">FAQ</a>
-          <a href="#" class="footer-nav">Privacy &amp; Term</a>
+      <div class="col-md-12">
+        <div class="col-md-7">
+          <div class="center-block menu" style="padding: 20px 0">
+            <a href="#" class="footer-nav">Home</a>
+            <a href="#" class="footer-nav">Support</a>
+            <a href="#" class="footer-nav">License</a>
+            <a href="#" class="footer-nav">FAQ</a>
+            <a href="#" class="footer-nav">Privacy &amp; Term</a>
+          </div>
+          <div class="center-block" style="padding: 20px 0">
+            <h1>Temukan Ruang Terbaik Untuk Kegiatanmu</h1>
+            <button type="button" class="btn btn-tag btn-outline-2">DAFTAR SEKARANG</button>
+          </div>
         </div>
-        <div class="center-block" style="padding: 20px 0">
-          <h1>Temukan Ruang Terbaik Untuk Kegiatanmu</h1>
-          <button type="button" class="btn btn-tag btn-outline-2">DAFTAR SEKARANG</button>
+        <div class="col-md-5">
+          <p class="followus" style="padding-top: 20px">IKUTI KAMI DI</p>
+          <div class="row">
+            <a href="#" class="socialicon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+            <a href="#" class="socialicon"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+            <a href="#" class="socialicon"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+            <a href="#" class="socialicon"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+          </div>
+          <p class="navbar-custom followus" style="padding-top: 30px">KAMI ADALAH BAGIAN DARI</p>
+          <div class="row">
+            <a href="#" class="socialicon startuplogo"><img src="img/1000sd-white.png" class="img-responsive"></a>
+          </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <p class="followus" style="padding-top: 20px">IKUTI KAMI DI</p>
-        <div class="row">
-          <a href="#" class="socialicon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-          <a href="#" class="socialicon"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
-          <a href="#" class="socialicon"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
-          <a href="#" class="socialicon"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+    </div>
+    <div class="footer-line">
+    </div>
+    <div class="container">
+      <div class="col-md-12">
+        <div class="col-md-7 col-sm-7 col-xs-12 copyright">
+          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
+          <p class="mobile">&copy; Indovenue</p>
         </div>
-        <p class="navbar-custom followus" style="padding-top: 30px">KAMI ADALAH BAGIAN DARI</p>
-        <div class="row">
-          <a href="#" class="socialicon startuplogo"><img src="img/1000sd-white.png" class="img-responsive"></a>
+        <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="center-block language" style="padding: 20px 0;">
+            <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
+            <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+  <!-- FOOTER END -->
   <script>
   function showVenue() {
     var x = document.getElementById('venue-detail');
