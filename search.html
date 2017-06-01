@@ -385,37 +385,36 @@
       <!-- END Sidebar -->
       <div class="col-lg-8 col-md-8 search-description">
         <!-- START Gallery -->
-        <div class="flexslider" style="margin:0 0 15px 0px;">
-          <ul class="slides">
-            <li>
-              <div class="image" style="background-image:url('img/placeholder.png"></div>
-              <div class="flex-caption">
-                <h3>Adventurer Cheesecake Brownie</h3>
-                <p>IDR 25.000.000 /HARI</p>
-              </div>
-            </li>
-            <li>
-              <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
-              <div class="flex-caption">
-                <h3>Adventurer Cheesecake Brownie</h3>
-                <p>IDR 25.000.000 /HARI</p>
-              </div>
-            </li>
-            <li>
-              <div class="image" style="background-image:url('img/placeholder.png"></div>
-              <div class="flex-caption">
-                <h3>Adventurer Cheesecake Brownie</h3>
-                <p>IDR 25.000.000 /HARI</p>
-              </div>
-            </li>
-            <li>
-              <div class="image" style="background-image:url('img/placeholder.png"></div>
-              <div class="flex-caption">
-                <h3>Adventurer Cheesecake Brownie</h3>
-                <p>IDR 25.000.000 /HARI</p>
-              </div>
-            </li>
-          </ul>
+        <div class="content">
+          <section class="slider">
+            <ul>
+              <li>
+                 <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+                <div class="slider-caption">
+                  <h3>Adventurer Cheesecake Brownie</h3>
+                  <p>IDR 25.000.000 /HARI</p>
+                </div>
+              </li>
+              <li>
+                 <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+                <div class="slider-caption">
+                  <h3>Adventurer Cheesecake Brownie</h3>
+                  <p>IDR 25.000.000 /HARI</p>
+                </div>
+              </li>
+              <li>
+                <div class="image" style="background-image:url('img/placeholder.png"></div>
+                <div class="slider-caption">
+                  <h3>Adventurer Cheesecake Brownie</h3>
+                  <p>IDR 25.000.000 /HARI</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <div class="slider-nav">
+            <span class="slide-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+            <span class="slide-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </div>
         </div>
         <!-- END Gallery -->
         <h4 class="title text-center" style="margin-bottom:15px; font-size:20px;">135 Venue Ditemukan</h4>
@@ -746,6 +745,90 @@
       animation: "slide",
       controlNav: false
     });
+  });
+  </script>
+  <script type="text/javascript">
+  var // initial objects
+    $slider = $('.slider'),
+    $wrapper = $slider.children('ul'),
+    $slides = $wrapper.children('li'),
+
+    // wrapper width
+    wrapperWidth = $wrapper.width() * 1.6,
+
+    // slide attributes
+    slideCount = $slides.length,
+    slideWidth = Math.round((100 / slideCount) * 100) / 100,
+    slideHeight = $slides.height(),
+    slideIndex = 0;
+
+  // set window width & move to first slide
+  $wrapper.css({
+    width: slideCount * 100 + '%',
+    //transform: 'translateX(' + ( - slideWidth + '%' ) + ')'
+  });
+
+  $slides.css({
+    width: slideWidth + '%'
+  });
+
+  //$slides.last().prependTo('.slider ul');
+
+  /*$(window).bind('load resize', function() {
+    
+    var adjustedHeight = $slides.width() * slideHeight / wrapperWidth;
+    
+    $wrapper.css({ height: Math.round(adjustedHeight * 100) / 100 });
+  });*/
+
+  // cache function since we'll use it a bunch
+  function moveSlide(index) {
+
+    $wrapper.css({
+      transform: 'translateX(' + slideIndex * -slideWidth + '%)'
+    });
+  }
+
+  function nextSlide() {
+
+    if (slideIndex >= slideCount - 1) {
+
+      slideIndex = 0;
+      $wrapper.css({
+        transform: 'translateX(0)'
+      });
+    } else {
+
+      slideIndex++;
+      moveSlide(slideIndex);
+    }
+
+    // make it endless scrolling ?
+    //$slides.first().prependTo('.slider ul');
+  }
+
+  function prevSlide() {
+
+    if (slideIndex === 0) {
+
+      slideIndex = slideCount - 1;
+    } else {
+
+      slideIndex--;
+    }
+    moveSlide(slideIndex);
+
+    // make it endless scrolling?
+    //$slides.first().prependTo('.slider ul');
+  }
+
+  $('.slide-next').on('click', function() {
+
+    nextSlide();
+  });
+  $('.slide-prev').on('click', function() {
+
+    prevSlide();
   });
   </script>
   <!-- Optional FlexSlider Additions -->

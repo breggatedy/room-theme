@@ -1026,29 +1026,113 @@ a .social {
 
 /* ========================= */
 
-.flex-caption {
+.content {
+  width: 100%;
+  margin: 0px auto 0;
+  font-family: arial, sans-serif;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider ul {
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  transition: transform .35s;
+  background: rgba(0, 0, 0, .6);
+}
+
+.slider li {
+  position: relative;
+  float: left;
+  display: block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+}
+
+.slider-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 16px 5px 16px;
+  text-align: left;
+  background: rgba(0, 0, 0, .6);
+}
+
+.slider-nav {
+  text-align: center;
+  span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 24px 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.slide-prev {
+  position: absolute;
+  top: 125px;
+  left: 2px;
+}
+
+.slide-next {
+  position: absolute;
+  top: 125px;
+  right: 2px;
+}
+
+.slider-caption {
   padding: 2%;
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-  font-size: 20px !important;
 }
 
-.flex-caption p {
+.slider-caption p {
   color: #ffffff !important;
   font-size: 14px !important;
 }
 
-.flex-caption h3 {
-  line-height: 1.5;
+.slider-caption h3 {
+  font-size: 20px !important;
+  line-height: 16px;
 }
 
 .search-description {
   letter-spacing: 0.5px;
   line-height: 0.5;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .slider-caption p {
+    color: #ffffff !important;
+    font-size: 13px !important;
+  }
+  .slider-caption h3 {
+    font-size: 18px !important;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-caption p {
+    color: #ffffff !important;
+    font-size: 12px !important;
+  }
+  .slider-caption h3 {
+    font-size: 16px !important;
+    line-height: 12px;
+  }
 }
 
 
@@ -3613,11 +3697,11 @@ h4.rate {
   .place-thumb {
     margin-top: 40px;
   }
-  .col-xs-12,
+  /*.col-xs-12,
   .cpl-md-12,
   .col-md-4,
   .col-md-8 {
     padding-left: 0px !important;
     padding-right: 0px !important;
-  }
+  }*/
 }
