@@ -87,7 +87,7 @@
           <!-- START Other Places -->
           <div class="col-md-12">
             <h4 class="title">Active Venue</h4>
-            <div class="venue-status" onclick="showVenue()">
+            <div class="venue-status mobile-nopadding" onclick="showVenue()">
               <div class="col-md-2 col-sm-2 col-xs-3 ellipsis text-center" style="border-right: 1px solid;">
                 <h4>JUN</h4>
                 <h2>17</h2>
@@ -100,7 +100,7 @@
                 <h1 class="waiting">Waiting <br/>Payment</h1>
               </div>
             </div>
-            <div id="venue-detail">
+            <div id="venue-detail mobile-nopadding">
                 <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
                 <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
                   <h5><b>Transaction ID</b></h5>
@@ -153,7 +153,7 @@
           </div>
           <div class="col-md-12">
             <h4 class="title">History</h4>
-            <div class="venue-status">
+            <div class="venue-status mobile-nopadding">
               <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
                 <h4>APR</h4>
                 <h2>26</h2>
@@ -166,7 +166,7 @@
                 <h1>Paid</h1>
               </div>
             </div>
-            <div class="venue-status">
+            <div class="venue-status mobile-nopadding">
               <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
                 <h4>JAN</h4>
                 <h2>01</h2>
@@ -179,7 +179,7 @@
                 <h1>Paid</h1>
               </div>
             </div>
-            <div class="venue-status">
+            <div class="venue-status mobile-nopadding">
               <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
                 <h4>NOV</h4>
                 <h2>13</h2>
@@ -198,56 +198,6 @@
       </div>
     </div>
   </div>
-  <!--FOOTER START HERE-->
-  <footer>
-    <div class="container">
-      <div class="col-md-12">
-        <div class="col-md-7">
-          <div class="center-block menu" style="padding: 20px 0">
-            <a href="#" class="footer-nav">Home</a>
-            <a href="#" class="footer-nav">Support</a>
-            <a href="#" class="footer-nav">License</a>
-            <a href="#" class="footer-nav">FAQ</a>
-            <a href="#" class="footer-nav">Privacy &amp; Term</a>
-          </div>
-          <div class="center-block" style="padding: 20px 0">
-            <h1>Temukan Ruang Terbaik Untuk Kegiatanmu</h1>
-            <button type="button" class="btn btn-tag btn-outline-2">DAFTAR SEKARANG</button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <p class="followus" style="padding-top: 20px">IKUTI KAMI DI</p>
-          <div class="row">
-            <a href="#" class="socialicon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
-          </div>
-          <p class="navbar-custom followus" style="padding-top: 30px">KAMI ADALAH BAGIAN DARI</p>
-          <div class="row">
-            <a href="#" class="socialicon startuplogo"><img src="img/1000sd-white.png" class="img-responsive"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-line">
-    </div>
-    <div class="container">
-      <div class="col-md-12">
-        <div class="col-md-7 col-sm-7 col-xs-12 copyright">
-          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
-          <p class="mobile">&copy; Indovenue</p>
-        </div>
-        <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="center-block language" style="padding: 20px 0;">
-            <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
-            <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- FOOTER END -->
   <script>
   function showVenue() {
     var x = document.getElementById('venue-detail');

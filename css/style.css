@@ -2905,7 +2905,7 @@ h4.rate {
 .profile-text {
   border: 1px solid #ccc;
   height: 60px;
-  width: 100%;
+  width: 125%;
   padding: 4px;
   vertical-align: middle;
 }
@@ -2933,7 +2933,7 @@ h4.rate {
 .profile-location {
   border: 1px solid #ccc;
   height: 115px;
-  width: 100%;
+  width: 125%;
   padding: 4px;
   vertical-align: middle;
 }
@@ -3684,10 +3684,10 @@ h4.rate {
     margin-bottom: -5px;
   }
   .close-venue {
-    position: relative;
-    top: -20px;
-    left: 90%;
-    padding: 10px 15px;
+    position: inherit;
+    margin-left: 90%;
+    margin-bottom: -10%;
+    margin-top: -10%;
     background-color: transparent;
     opacity: .85;
     color: black;
@@ -3697,10 +3697,11 @@ h4.rate {
   .place-thumb {
     margin-top: 40px;
   }
-  /*.col-xs-12,
-  .cpl-md-12,
-  .col-md-4,
-  .col-md-8 {
+  
+  .mobile-nopadding .col-xs-12,
+  .mobile-nopadding .col-md-12,
+  .mobile-nopadding .col-md-4,
+  .mobile-nopadding .col-md-8 {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }*/
