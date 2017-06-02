@@ -1503,6 +1503,10 @@ a .social {
 /* ========================= */
 
 
+
+/* ========================= */
+
+
 /* BUTTON LANGUAGE*/
 
 
@@ -3143,7 +3147,7 @@ h4.rate {
   width: 100%;
   height: 480px;
   padding: 20px;
-  background-color: #FAFAFA;
+  background-color: white;
   margin-top: -30px;
 }
 
@@ -3419,7 +3423,7 @@ h4.rate {
     width: 100%;
     height: 480px;
     padding: 20px;
-    background-color: #FAFAFA;
+    background-color: white;
     margin-top: -30px;
   }
   .venue-description h5 {
@@ -3693,7 +3697,7 @@ h4.rate {
     width: 100%;
     height: 800px;
     padding: 20px;
-    background-color: #FAFAFA;
+    background-color: white;
     margin-top: -30px;
   }
   .venue-description h5 {
@@ -3766,21 +3770,25 @@ h4.rate {
   z-index: 1;
 }
 
-.fa-camera {
+.button-avatar > .fa {
+  display: none;
+  color: white;
   position: absolute;
-  margin-top: -100px;
-  margin-left: -3%;
-  color: gray;
-  font-size: 30px;
-  z-index: 2;
+  z-index: -1;
 }
 
-.fa-camera:hover {
+.button-avatar:hover > .fa {
+  position: absolute;
+  display: inherit;
+  margin-top: -100px;
+  margin-left: -3%;
+  font-size: 30px;
+  z-index: 2;
   color: white;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-  .fa-camera {
+  .button-avatar:hover > .fa {
     margin-top: -30%;
     margin-left: -3%;
     font-size: 20px;
@@ -3788,41 +3796,44 @@ h4.rate {
 }
 
 @media (max-width: 767px) {
-  .fa-camera {
+  .button-avatar:hover > .fa {
     margin-top: -40px;
     margin-left: -2%;
     font-size: 15px;
   }
 }
 
-
-#tag-slider {
-  overflow: hidden;
-  position: relative;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  user-select: none;   
-}
-
-#tag-slider .hover-panel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-#tag-slider ul {
-  list-style: none;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-#tag-slider ul li {
-  display: inline-block;
-  font-size: 30px;
-  padding: 5px 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #f1f1f1;
+@media (max-width: 767px) {
+  /* Login Modal for Edit */
+  #editProfile .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  #editProfile .register-label {
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  #editProfile .form-control {
+    height: 37px !important;
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  #editProfile .remember {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  #editProfile .forget {
+    font-size: 12px !important;
+    line-height: 17px !important;
+    margin-top: -32px;
+    margin-bottom: 10px;
+  }
+  #editProfile .method {
+    font-size: 12px !important;
+    line-height: 17px !important;
+    margin-top: -2px;
+    margin-bottom: 10px;
+  }
 }

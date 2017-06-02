@@ -97,8 +97,57 @@
                 <span class="fa fa-camera camera-avatar" aria-hidden="true"><img src="img/avatar_user.jpg" class="img-circle center"></span> -->
                 <h2>Johnny Kennedy</h2>
                 <div class="profile-btn">
-                  <button type="button" class="btn btn-overview" href="#editModal" data-toggle="modal" style="margin: 10px 0">Edit</button>
+                  <button type="button" class="btn btn-overview" href="#editProfile" data-toggle="modal" style="margin: 10px 0">Edit</button>
                   <button type="button" class="btn btn-overview" style="margin: 10px 0">Logout</button>
+                </div>
+              </div>
+              <!-- Modal for 'Edit' Button Start-->
+              <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" role="document">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h1 class="modal-title title" id="myModalLabel">Edit Profile</h1>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label class="register-label" for="name">Nama</label>
+                          <div class="input-group-lg">
+                            <input type="text" class="form-control" placeholder="Johnny Kennedy" id="name" name="name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="register-label" for="email">Email</label>
+                          <div class="input-group-lg">
+                            <input type="email" class="form-control" placeholder="jkennedy@email.com" id="email" name="email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="register-label" for="handphone">No Handphone</label>
+                          <div class="input-group-lg">
+                            <input type="number" class="form-control" placeholder="3-(650)540-6083" id="number" name="number">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="register-label" for="address">Alamat</label>
+                          <textarea class="form-control" rows="3" id="address" placeholder="Jl Boulevard Tmr Raya Bl NB-1/161, Pegangsaan Dua, Kelapa Gading"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label class="register-label" for="city">Kota</label>
+                          <select class="form-control" id="kota">
+                            <option>Jakarta, Indonesia</option>
+                            <option>Semarang, Indonesia</option>
+                            <option>Surabaya, Indonesia</option>
+                            <option>Yogyakarta, Indonesia</option>
+                          </select>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-register">SIMPAN</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="profile-desc col-md-12 col-sm-9 col-xs-12">
@@ -256,55 +305,6 @@
               </div>
             </div>
             <!-- END Other Places -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal for 'Masuk' Button Start-->
-    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" role="document">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h1 class="modal-title title" id="myModalLabel">Edit Profile</h1>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label class="register-label" for="name">Nama</label>
-                <div class="input-group-lg">
-                  <input type="text" class="form-control" placeholder="Johnny Kennedy" id="name" name="name">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="register-label" for="email">Email</label>
-                <div class="input-group-lg">
-                  <input type="email" class="form-control" placeholder="jkennedy@email.com" id="email" name="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="register-label" for="handphone">No Handphone</label>
-                <div class="input-group-lg">
-                  <input type="number" class="form-control" placeholder="3-(650)540-6083" id="number" name="number">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="register-label" for="address">Alamat</label>
-                <textarea class="form-control" rows="3" id="address" placeholder="Jl Boulevard Tmr Raya Bl NB-1/161, Pegangsaan Dua, Kelapa Gading"></textarea>
-              </div>
-              <div class="form-group">
-                <label class="register-label" for="city">Kota</label>
-                <select class="form-control" id="kota" aria-describedby="basic-addon2">
-                  <option>Jakarta, Indonesia</option>
-                  <option>Semarang, Indonesia</option>
-                  <option>Surabaya, Indonesia</option>
-                  <option>Yogyakarta, Indonesia</option>
-                </select>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-register">SIMPAN</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

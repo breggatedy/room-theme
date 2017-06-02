@@ -292,7 +292,7 @@
   <div class="container frame-header">
     <div class="row">
       <!-- START Sidebar -->
-      <div class="col-md-4 col-lg-4 hidden-sm hidden-xs">
+      <div class="col-md-4 col-lg-4 hidden-sm hidden-xs" style='overflow-y: scroll;'>
         <div class="search-sidebar">
           <div class="col-md-12 col-lg-12">
             <div class="col-md-12 col-lg-12 form-group">
@@ -326,7 +326,6 @@
               <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
                 <input class="form-control" type="text" name="daterange" />
-                <!--<input class="form-control" id="daterange" name="daterange" placeholder="MM/DD/YYY" type="text" aria-describedby="basic-addon1" />-->
               </div>
             </div>
             <div class="col-md-12 col-lg-12 form-group">
@@ -344,9 +343,6 @@
               <span style="padding: 20px 0"><input id="range2" type="text" class="span2" value="" data-slider-min="100" data-slider-max="5000" data-slider-step="100" data-slider-value="[100,3000]"/></span>
             </div>
           </div>
-          <!--<div class="col-md-12">
-        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-      </div>-->
           <div class="text-center">
             <button type="button" class="btn btn-color btn-search btn-custom">CARI VENUE</button>
           </div>
@@ -389,14 +385,14 @@
           <section class="slider">
             <ul>
               <li>
-                 <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+                <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
                 <div class="slider-caption">
                   <h3>Adventurer Cheesecake Brownie</h3>
                   <p>IDR 25.000.000 /HARI</p>
                 </div>
               </li>
               <li>
-                 <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+                <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
                 <div class="slider-caption">
                   <h3>Adventurer Cheesecake Brownie</h3>
                   <p>IDR 25.000.000 /HARI</p>
@@ -414,15 +410,200 @@
           <div class="slider-nav">
             <span class="slide-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
             <span class="slide-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-          </div        </div>
-        <!-- END Gallery -->
-        <h4 class="title text-center" style="margin-bottom:15px; font-size:20px;">135 Venue Ditemukan</h4>
+          </div </div>
+          <!-- END Gallery -->
+          <h4 class="title text-center" style="margin-bottom:15px; font-size:20px;">135 Venue Ditemukan</h4>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                  <img src="img/place2.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <div class="disc-banner-small">50% OFF</div>
+                  <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                  <img src="img/place3.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
+                    <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <img src="img/place2.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <img src="img/place1.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <img src="img/place1.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <div class="disc-banner-small">35% OFF</div>
+                  <img src="img/place3.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
+                    <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                  <img src="img/place2.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="place-thumb" style="margin-bottom:20px;">
+                  <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                  <img src="img/place1.png">
+                  <div class="placethumb-detail">
+                    <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                    <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                    <div class="placethumb-tag">
+                      <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                      <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                    </div>
+                    <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Other Places -->
+          <div class="text-center">
+            <button type="button" class="btn btn-color btn-search btn-custom">MORE VENUE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color:#F7F7F7;">
+      <div class="container" style="padding-top: 50px; padding-bottom: 25px;">
+        <!-- START Other Places -->
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
+            <div class="col-md-4 col-sm-6">
+              <h4 class="title">TEMPAT TERBARU</h4>
+            </div>
+            <div class="col-md-4 col-sm-6 pull-right text-right">
+              <a class="seemore" href="#">LIHAT TEMPAT LAINNYA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 search-description">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="place-thumb">
                 <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <img src="img/place2.png">
+                <img src="img/place1.png">
+                <div class="placethumb-detail">
+                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                  <div class="placethumb-tag">
+                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                  </div>
+                  <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="place-thumb">
+                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div> <img src="img/place2.png">
                 <div class="placethumb-detail">
                   <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
                   <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
@@ -433,87 +614,17 @@
                     <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
                     <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
                   </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="place-thumb">
                 <div class="disc-banner-small">50% OFF</div>
                 <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
                 <img src="img/place3.png">
                 <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
-                  <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <img src="img/place2.png">
-                <div class="placethumb-detail">
                   <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <img src="img/place1.png">
-                <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <img src="img/place1.png">
-                <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <div class="disc-banner-small">35% OFF</div>
-                <img src="img/place3.png">
-                <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
                   <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
                   <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
                   <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
@@ -523,181 +634,66 @@
                     <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
                     <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
                   </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <img src="img/place2.png">
-                <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="place-thumb" style="margin-bottom:20px;">
-                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <img src="img/place1.png">
-                <div class="placethumb-detail">
-                  <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                  <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- END Other Places -->
-        <div class="text-center">
-          <button type="button" class="btn btn-color btn-search btn-custom">MORE VENUE</button>
-        </div>
       </div>
     </div>
-  </div>
-  <div style="background-color:#F7F7F7;">
-    <div class="container" style="padding-top: 50px; padding-bottom: 25px;">
-      <!-- START Other Places -->
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <h4 class="title">TEMPAT TERBARU</h4>
-          </div>
-          <div class="col-md-4 col-sm-6 pull-right text-right">
-            <a class="seemore" href="#">LIHAT TEMPAT LAINNYA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 search-description">
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-              <img src="img/place1.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-              </div>
+    <!--FOOTER START HERE-->
+    <footer>
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-md-7">
+            <div class="center-block menu" style="padding: 20px 0">
+              <a href="#" class="footer-nav">Home</a>
+              <a href="#" class="footer-nav">Support</a>
+              <a href="#" class="footer-nav">License</a>
+              <a href="#" class="footer-nav">FAQ</a>
+              <a href="#" class="footer-nav">Privacy &amp; Term</a>
+            </div>
+            <div class="center-block" style="padding: 20px 0">
+              <h1>Temukan Ruang Terbaik Untuk Kegiatanmu</h1>
+              <button type="button" class="btn btn-tag btn-outline-2">DAFTAR SEKARANG</button>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div> <img src="img/place2.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-                <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
-                </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-              </div>
+          <div class="col-md-5">
+            <p class="followus" style="padding-top: 20px">IKUTI KAMI DI</p>
+            <div class="row">
+              <a href="#" class="socialicon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+              <a href="#" class="socialicon"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+              <a href="#" class="socialicon"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+              <a href="#" class="socialicon"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="disc-banner-small">50% OFF</div>
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-              <img src="img/place3.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
-                <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
-                </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-              </div>
+            <p class="navbar-custom followus" style="padding-top: 30px">KAMI ADALAH BAGIAN DARI</p>
+            <div class="row">
+              <a href="#" class="socialicon startuplogo"><img src="img/1000sd-white.png" class="img-responsive"></a>
             </div>
           </div>
         </div>
       </div>
-      <!-- END Other Places -->
-    </div>
-  </div>
-  <!--FOOTER START HERE-->
-  <footer>
-    <div class="container">
-      <div class="col-md-12">
-        <div class="col-md-7">
-          <div class="center-block menu" style="padding: 20px 0">
-            <a href="#" class="footer-nav">Home</a>
-            <a href="#" class="footer-nav">Support</a>
-            <a href="#" class="footer-nav">License</a>
-            <a href="#" class="footer-nav">FAQ</a>
-            <a href="#" class="footer-nav">Privacy &amp; Term</a>
+      <div class="footer-line">
+      </div>
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-md-7 col-sm-7 col-xs-12 copyright">
+            <p class="desktop">All right reserved </br>&copy; Indovenue</p>
+            <p class="mobile">&copy; Indovenue</p>
           </div>
-          <div class="center-block" style="padding: 20px 0">
-            <h1>Temukan Ruang Terbaik Untuk Kegiatanmu</h1>
-            <button type="button" class="btn btn-tag btn-outline-2">DAFTAR SEKARANG</button>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <p class="followus" style="padding-top: 20px">IKUTI KAMI DI</p>
-          <div class="row">
-            <a href="#" class="socialicon"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
-            <a href="#" class="socialicon"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
-          </div>
-          <p class="navbar-custom followus" style="padding-top: 30px">KAMI ADALAH BAGIAN DARI</p>
-          <div class="row">
-            <a href="#" class="socialicon startuplogo"><img src="img/1000sd-white.png" class="img-responsive"></a>
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <div class="center-block language" style="padding: 20px 0;">
+              <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
+              <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-line">
-    </div>
-    <div class="container">
-      <div class="col-md-12">
-        <div class="col-md-7 col-sm-7 col-xs-12 copyright">
-          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
-          <p class="mobile">&copy; Indovenue</p>
-        </div>
-        <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="center-block language" style="padding: 20px 0;">
-            <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
-            <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Script for Datepicker -->
-  <!--<script>
+    </footer>
+    <!-- Script for Datepicker -->
+    <!--<script>
     $(document).ready(function(){
         var date_input=$('input[name="date"]'); //our date input has the name "date"
         var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
@@ -709,131 +705,131 @@
         })
     })
 </script>-->
-  <!-- Slider Picker -->
-  <script>
-  $("#range1").slider({});
-  $("#range2").slider({});
-  $("#range3").slider({});
-  $("#range4").slider({});
-  </script>
-  <!-- Script for Datepicker -->
-  <script type="text/javascript">
-  $(function() {
-    var start = moment().subtract(29, 'days');
-    var end = moment();
+    <!-- Slider Picker -->
+    <script>
+    $("#range1").slider({});
+    $("#range2").slider({});
+    $("#range3").slider({});
+    $("#range4").slider({});
+    </script>
+    <!-- Script for Datepicker -->
+    <script type="text/javascript">
+    $(function() {
+      var start = moment().subtract(29, 'days');
+      var end = moment();
 
-    function cb(start, end) {
-      $('#reportrange span').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
-    }
-
-    $('input[name="daterange"]').daterangepicker({
-      "opens": "left",
-      timePicker: true,
-      timePickerIncrement: 30,
-      locale: {
-        format: 'MM/DD/YYYY h:mm A'
+      function cb(start, end) {
+        $('#reportrange span').html(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
       }
-    });
-  });
-  </script>
-  <!-- Script for Slider -->
-  <script>
-  // Can also be used with $(document).ready()
-  $(document).ready(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      controlNav: false
-    });
-  });
-  </script>
-  <script type="text/javascript">
-  var // initial objects
-    $slider = $('.slider'),
-    $wrapper = $slider.children('ul'),
-    $slides = $wrapper.children('li'),
 
-    // wrapper width
-    wrapperWidth = $wrapper.width() * 1.6,
-
-    // slide attributes
-    slideCount = $slides.length,
-    slideWidth = Math.round((100 / slideCount) * 100) / 100,
-    slideHeight = $slides.height(),
-    slideIndex = 0;
-
-  // set window width & move to first slide
-  $wrapper.css({
-    width: slideCount * 100 + '%',
-    //transform: 'translateX(' + ( - slideWidth + '%' ) + ')'
-  });
-
-  $slides.css({
-    width: slideWidth + '%'
-  });
-
-  //$slides.last().prependTo('.slider ul');
-
-  /*$(window).bind('load resize', function() {
-    
-    var adjustedHeight = $slides.width() * slideHeight / wrapperWidth;
-    
-    $wrapper.css({ height: Math.round(adjustedHeight * 100) / 100 });
-  });*/
-
-  // cache function since we'll use it a bunch
-  function moveSlide(index) {
-
-    $wrapper.css({
-      transform: 'translateX(' + slideIndex * -slideWidth + '%)'
-    });
-  }
-
-  function nextSlide() {
-
-    if (slideIndex >= slideCount - 1) {
-
-      slideIndex = 0;
-      $wrapper.css({
-        transform: 'translateX(0)'
+      $('input[name="daterange"]').daterangepicker({
+        "opens": "left",
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+          format: 'MM/DD/YYYY h:mm A'
+        }
       });
-    } else {
+    });
+    </script>
+    <!-- Script for Slider -->
+    <script>
+    // Can also be used with $(document).ready()
+    $(document).ready(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false
+      });
+    });
+    </script>
+    <script type="text/javascript">
+    var // initial objects
+      $slider = $('.slider'),
+      $wrapper = $slider.children('ul'),
+      $slides = $wrapper.children('li'),
 
-      slideIndex++;
+      // wrapper width
+      wrapperWidth = $wrapper.width() * 1.6,
+
+      // slide attributes
+      slideCount = $slides.length,
+      slideWidth = Math.round((100 / slideCount) * 100) / 100,
+      slideHeight = $slides.height(),
+      slideIndex = 0;
+
+    // set window width & move to first slide
+    $wrapper.css({
+      width: slideCount * 100 + '%',
+      //transform: 'translateX(' + ( - slideWidth + '%' ) + ')'
+    });
+
+    $slides.css({
+      width: slideWidth + '%'
+    });
+
+    //$slides.last().prependTo('.slider ul');
+
+    /*$(window).bind('load resize', function() {
+      
+      var adjustedHeight = $slides.width() * slideHeight / wrapperWidth;
+      
+      $wrapper.css({ height: Math.round(adjustedHeight * 100) / 100 });
+    });*/
+
+    // cache function since we'll use it a bunch
+    function moveSlide(index) {
+
+      $wrapper.css({
+        transform: 'translateX(' + slideIndex * -slideWidth + '%)'
+      });
+    }
+
+    function nextSlide() {
+
+      if (slideIndex >= slideCount - 1) {
+
+        slideIndex = 0;
+        $wrapper.css({
+          transform: 'translateX(0)'
+        });
+      } else {
+
+        slideIndex++;
+        moveSlide(slideIndex);
+      }
+
+      // make it endless scrolling ?
+      //$slides.first().prependTo('.slider ul');
+    }
+
+    function prevSlide() {
+
+      if (slideIndex === 0) {
+
+        slideIndex = slideCount - 1;
+      } else {
+
+        slideIndex--;
+      }
       moveSlide(slideIndex);
+
+      // make it endless scrolling?
+      //$slides.first().prependTo('.slider ul');
     }
 
-    // make it endless scrolling ?
-    //$slides.first().prependTo('.slider ul');
-  }
+    $('.slide-next').on('click', function() {
 
-  function prevSlide() {
+      nextSlide();
+    });
+    $('.slide-prev').on('click', function() {
 
-    if (slideIndex === 0) {
-
-      slideIndex = slideCount - 1;
-    } else {
-
-      slideIndex--;
-    }
-    moveSlide(slideIndex);
-
-    // make it endless scrolling?
-    //$slides.first().prependTo('.slider ul');
-  }
-
-  $('.slide-next').on('click', function() {
-
-    nextSlide();
-  });
-  $('.slide-prev').on('click', function() {
-
-    prevSlide();
-  });
-  </script>
-  <!-- Optional FlexSlider Additions -->
-  <script src="js/jquery.easing.js"></script>
-  <script src="js/jquery.mousewheel.js"></script>
-  <script defer src="js/demo.js"></script>
+      prevSlide();
+    });
+    </script>
+    <!-- Optional FlexSlider Additions -->
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script defer src="js/demo.js"></script>
 </body>
 
 </html>
