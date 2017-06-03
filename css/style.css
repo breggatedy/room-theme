@@ -995,6 +995,17 @@ a .social {
   padding: 0 15px;
 }
 
+.scroll-sidebar {
+  overflow: auto;
+  max-height: 600px;
+  background-color: white;
+  width: 26.5%;
+  color: #FFF;
+  position: fixed;
+  z-index: 2;
+  top: 80px;
+}
+
 
 /* ========================= */
 
@@ -1501,7 +1512,6 @@ a .social {
 
 
 /* ========================= */
-
 
 
 /* ========================= */
