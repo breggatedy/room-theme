@@ -1,376 +1,341 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Indovenue Front</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="windows-1252">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400" rel="stylesheet">
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- START BOOTSTRAP -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
-    <!-- END BOOTSTRAP -->
-
-
-	<!-- Include Date Range Picker -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-
-	<!-- Flexslider -->
-    <link rel="stylesheet" href="css/flexslider.css">
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-
-
-    <!-- START CUSTOM CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- END CUSTOM CSS -->
-
+<head>
+  <title>Indovenue Front</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- START BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
+  <!-- END BOOTSTRAP -->
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+  <!-- Flexslider -->
+  <link rel="stylesheet" href="css/flexslider.css">
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+  <!-- START CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- END CUSTOM CSS -->
 </head>
 
 <body>
-
-<!-- Navbar Start-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right navbar-custom">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Kontak Kami</a></li>
-        <li class="divider-vertical"></li>
-        <!--Trigger Modal Login for Mobile -->
-        <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
-        <!--Collapse Login for Dekstop and Tablet Start -->
-        <li class="dropdown dropdown-login">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
-          <ul id="login-dp" class="dropdown-menu">
-            <li>
-              <div class="row">
-                <div class="col-md-12">
-                  <h1>Masuk</h1>
-                  <form>
-                    <div class="form-group">
-                      <label class="register-label" for="email">Email</label>
-                      <div class="input-group-lg">
-                        <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="register-label" for="password">Password</label>
-                      <div class="input-group-lg">
-                        <input type="password" class="form-control" placeholder="********" id="password" name="password">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
+  <!-- Navbar Start-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-custom">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li class="divider-vertical"></li>
+          <!--Trigger Modal Login for Mobile -->
+          <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
+          <!--Collapse Login for Dekstop and Tablet Start -->
+          <li class="dropdown dropdown-login">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Masuk</h1>
+                    <form>
                       <div class="form-group">
-                        <div class="input-group remember">
-                          <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                          <br>
+                        <label class="register-label" for="email">Email</label>
+                        <div class="input-group-lg">
+                          <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
                         </div>
                       </div>
+                      <div class="form-group">
+                        <label class="register-label" for="password">Password</label>
+                        <div class="input-group-lg">
+                          <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group remember">
+                            <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 forget text-right">
+                        <a href="">Lupa password?</a>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
+                      </div>
+                    </form>
+                    <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                    <div class="text-center method">
+                      <p>atau masuk dengan menggunakan metode lain</p>
+                      <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
                     </div>
-                    <div class="col-md-6 col-sm-6 forget text-right">
-                      <a href="">Lupa password?</a>
-                    </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
-                    </div>
-                  </form>
-                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-                  <div class="text-center method">
-                    <p>atau masuk dengan menggunakan metode lain</p>
-                    <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
+                    </form>
                   </div>
-                  </form>
+                  <div class="bottom text-center">
+                  </div>
                 </div>
-                <div class="bottom text-center">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <!--Collapse Login for Dekstop and Tablet End -->
-        <li class="daftar"><a href="#">Daftar</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-<!-- Navbar End -->
-<!-- Modal Login for Mobile Start -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" role="document">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title title" id="myModalLabel">Masuk</h1>
+              </li>
+            </ul>
+          </li>
+          <!--Collapse Login for Dekstop and Tablet End -->
+          <li class="daftar"><a href="#">Daftar</a></li>
+        </ul>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label class="register-label" for="email">Email</label>
-            <div class="input-group-lg">
-              <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="register-label" for="password">Password</label>
-            <div class="input-group-lg">
-              <input type="password" class="form-control" placeholder="********" id="password" name="password">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Navbar End -->
+  <!-- Modal Login for Mobile Start -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" role="document">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h1 class="modal-title title" id="myModalLabel">Masuk</h1>
+        </div>
+        <div class="modal-body">
+          <form>
             <div class="form-group">
-              <div class="input-group remember">
-                <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                <br>
+              <label class="register-label" for="email">Email</label>
+              <div class="input-group-lg">
+                <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
               </div>
             </div>
+            <div class="form-group">
+              <label class="register-label" for="password">Password</label>
+              <div class="input-group-lg">
+                <input type="password" class="form-control" placeholder="********" id="password" name="password">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="form-group">
+                <div class="input-group remember">
+                  <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 forget text-right">
+              <a href="">Lupa password?</a>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-register">MASUK</button>
+            </div>
+          </form>
+          <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+          <div class="text-center method">
+            <p>atau masuk dengan menggunakan metode lain</p>
+            <button type="button" class="btn btn-facebook">Login with Facebook</button>
           </div>
-          <div class="col-md-6 col-sm-6 forget text-right">
-            <a href="">Lupa password?</a>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-register">MASUK</button>
-          </div>
-        </form>
-        <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-        <div class="text-center method">
-          <p>atau masuk dengan menggunakan metode lain</p>
-          <button type="button" class="btn btn-facebook">Login with Facebook</button>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Modal Login for Mobile End -->
-
-<!--Hero Page-->
-
-<br>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-		<h1 class="detail">Baxter Venue</h1>
-		</div>
-
-		<!-- START Content Detail -->
-			<div class="col-md-8 detail-description">
-
-				<!-- START Gallery -->
-				<div class="flexslider">
-				  <ul class="slides">
-                    <li data-thumb="img/placeholder.png">
-				      <div class="image" style="background-image:url('img/placeholder.png"></div>
-				    </li>
-				    <li data-thumb="http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg">
-				      <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
-				    </li>
-				    <li data-thumb="img/placeholder.png">
-				      <div class="image" style="background-image:url('img/placeholder.png"></div>
-				    </li>
-				    <li data-thumb="img/placeholder.png">
-				      <div class="image" style="background-image:url('img/placeholder.png"></div>
-				    </li>
-				  </ul>
-				</div>
-				<!-- END Gallery -->
-
-		      	<h4 class="title">DESKRIPSI</h4>
-
-		      	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p> 
-
-		      	<br>
-			    <a href class="seemore">LIHAT LAYOUT RUANGAN</a>  
-				
-				<hr>
-
-		      	<h4 class="title">DETAIL HARGA</h4>
-			      	<div class="row">
-			      		<div class="col-md-4">Ruang Besar</div>
-			      		<div class="col-md-4">IDR <strong>25.000.000</strong> / 2 jam</div>
-			      		<div class="col-md-4 align-right">Maks <strong>400</strong> orang</div>
-			      	</div>
-			      	<br>
-			      	<div class="row">
-			      		<div class="col-md-4">Ruang Terpartisi</div>
-			      		<div class="col-md-4">IDR <strong>10.000.000</strong> / 2 jam</div>
-			      		<div class="col-md-4 align-right">Maks <strong>400</strong> orang</div>
-			      	</div>
-
-				<hr>
-
-				<h4 class="title">FASILITAS</h4>
-				<div class="amenities">
-					<img src="img/amenities/parking.png"> Parkir Luas <br>
-					<img src="img/amenities/red-carpet.png"> Karpet merah, memberikan suasana mewah<br>
-					<img src="img/amenities/stage.png"> Panggung 400m2<br>
-					<img src="img/amenities/air-conditioner.png"> 4 Air Conditioner 1 PK<br>
-					<img src="img/amenities/projector.png"> Projector Huawei<br>
-					<img src="img/amenities/plug.png"> Kapasitas Listrik 5000 watt<br>
-
-					
-					<div class="amenitiesall">
-						<!-- If closed -->
-						<span id="amenitiesclosed">
+  <!-- Modal Login for Mobile End -->
+  <!--Hero Page-->
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="detail">Baxter Venue</h1>
+      </div>
+      <!-- START Content Detail -->
+      <div class="col-md-8 detail-description">
+        <!-- START Gallery -->
+        <div class="flexslider">
+          <ul class="slides">
+            <li data-thumb="img/placeholder.png">
+              <div class="image" style="background-image:url('img/placeholder.png"></div>
+            </li>
+            <li data-thumb="http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg">
+              <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+            </li>
+            <li data-thumb="img/placeholder.png">
+              <div class="image" style="background-image:url('img/placeholder.png"></div>
+            </li>
+            <li data-thumb="img/placeholder.png">
+              <div class="image" style="background-image:url('img/placeholder.png"></div>
+            </li>
+          </ul>
+        </div>
+        <!-- END Gallery -->
+        <h4 class="title">DESKRIPSI</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <br>
+        <a href class="seemore">LIHAT LAYOUT RUANGAN</a>
+        <hr>
+        <h4 class="title">DETAIL HARGA</h4>
+        <div class="row">
+          <div class="col-md-4">Ruang Besar</div>
+          <div class="col-md-4">IDR <strong>25.000.000</strong> / 2 jam</div>
+          <div class="col-md-4 align-right">Maks <strong>400</strong> orang</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">Ruang Terpartisi</div>
+          <div class="col-md-4">IDR <strong>10.000.000</strong> / 2 jam</div>
+          <div class="col-md-4 align-right">Maks <strong>400</strong> orang</div>
+        </div>
+        <hr>
+        <h4 class="title">FASILITAS</h4>
+        <div class="amenities">
+          <img src="img/amenities/parking.png"> Parkir Luas
+          <br>
+          <img src="img/amenities/red-carpet.png"> Karpet merah, memberikan suasana mewah
+          <br>
+          <img src="img/amenities/stage.png"> Panggung 400m2
+          <br>
+          <img src="img/amenities/air-conditioner.png"> 4 Air Conditioner 1 PK
+          <br>
+          <img src="img/amenities/projector.png"> Projector Huawei
+          <br>
+          <img src="img/amenities/plug.png"> Kapasitas Listrik 5000 watt
+          <br>
+          <div class="amenitiesall">
+            <!-- If closed -->
+            <span id="amenitiesclosed">
 						<a class="openamenities" data-toggle="collapse" data-target="#detailamenities"><img class="rotate180" src="img/amenities/arrow-up.png"> Lihat fasilitas lainnya</a>
 						</span>
-						<!-- If closed -->
-					</div>
-
-					<div id="detailamenities" class="collapse">
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li>Nunc iaculis porttitor ex, eu iaculis nibh viverra at.</li>
-							<li>Nullam tristique porttitor tellus, in malesuada orci molestie vitae.</li> 
-							<li>Proin vel vestibulum urna. Maecenas at porta massa.</li>
-						</ul>
-					</div>
-				</div>
-
-				<hr>
-
-		      	<!-- Maps -->
-		      	<h4 class="title">LOKASI</h4>
-		      	<p>Jl. Wonosari KM 5,7 no 26, Gang Mijil Blok VI RT 25 Yogyakarta, 55581</p>
-		      	<div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-		      	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.916928397428!2d107.61694377567139!3d-6.893087266273846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x656cf9493fb636eb!2sGKI+Maulana+Yusuf!5e0!3m2!1sen!2sid!4v1491338707385" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-				<hr>
-
-
-		      	<!-- Comment -->
-		      	<h4 class="title">TESTIMONI</h4>
-		      	<div class="row">
-
-		      		<!-- START Individual Comment -->
-			          <div class="col-md-12" style="padding: 0">			        
-			            <div class="row" style="padding: 20px; margin: 0">
-			            <div class="col-md-8">
-			              <div class="media">
-			                <div class="media-left">
-			                  <img class="media-object img-circle" src="img/woman.jpeg" alt="..." style="max-height: 50px">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading title3">Joice Avenue</h4>
-			                  <p class="deskripsi">Panitia Seminar Nasional Pendidikan</p>
-			                </div>
-			              </div>
-			            </div>
-			            <div class="col-md-4">         
-				              <div class="align-right">
-				                <h4 class="title2">
+            <!-- If closed -->
+          </div>
+          <div id="detailamenities" class="collapse">
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Nunc iaculis porttitor ex, eu iaculis nibh viverra at.</li>
+              <li>Nullam tristique porttitor tellus, in malesuada orci molestie vitae.</li>
+              <li>Proin vel vestibulum urna. Maecenas at porta massa.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <!-- Maps -->
+        <h4 class="title">LOKASI</h4>
+        <p>Jl. Wonosari KM 5,7 no 26, Gang Mijil Blok VI RT 25 Yogyakarta, 55581</p>
+        <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.916928397428!2d107.61694377567139!3d-6.893087266273846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x656cf9493fb636eb!2sGKI+Maulana+Yusuf!5e0!3m2!1sen!2sid!4v1491338707385" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <hr>
+        <!-- Comment -->
+        <h4 class="title">TESTIMONI</h4>
+        <div class="row">
+          <!-- START Individual Comment -->
+          <div class="col-md-12" style="padding: 0">
+            <div class="row" style="padding: 20px; margin: 0">
+              <div class="col-md-8">
+                <div class="media">
+                  <div class="media-left">
+                    <img class="media-object img-circle" src="img/woman.jpeg" alt="..." style="max-height: 50px">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading title3">Joice Avenue</h4>
+                    <p class="deskripsi">Panitia Seminar Nasional Pendidikan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="align-right">
+                  <h4 class="title2">
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star-half-o" aria-hidden="true" style="color: deepskyblue"></i>
 				                </h4>
-				              </div>
-			            </div>
-			            </div>
-			        
-			            <div class="col-md-12" style="padding: 0 20px">
-			              <p class="deskripsi">Fasilitas di venue ini berfungsi baik. Kalau kelebihan peserta, disediakan kursi tambahan tanpa menambah biaya. PIC venuenya juga selalu stand by tiap kali butuh bantuan</p>
-			            </div>
-			          </div>
-		      		<!-- END Individual Comment -->
-
-		      		<div class="col-md-12"><hr></div>
-
-
-
-		      		<!-- START Individual Comment -->
-			          <div class="col-md-12" style="padding: 0">			        
-			            <div class="row" style="padding: 20px; margin: 0">
-			            <div class="col-md-8">
-			              <div class="media">
-			                <div class="media-left">
-			                  <img class="media-object img-circle" src="img/woman.jpeg" alt="..." style="max-height: 50px">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading title3">Joyce Avenue</h4>
-			                  <p class="deskripsi">Panitia Seminar Nasional Pendidikan</p>
-			                </div>
-			              </div>
-			            </div>
-			            <div class="col-md-4">         
-				              <div class="align-right">
-				                <h4 class="title2">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" style="padding: 0 20px">
+              <p class="deskripsi">Fasilitas di venue ini berfungsi baik. Kalau kelebihan peserta, disediakan kursi tambahan tanpa menambah biaya. PIC venuenya juga selalu stand by tiap kali butuh bantuan</p>
+            </div>
+          </div>
+          <!-- END Individual Comment -->
+          <div class="col-md-12">
+            <hr>
+          </div>
+          <!-- START Individual Comment -->
+          <div class="col-md-12" style="padding: 0">
+            <div class="row" style="padding: 20px; margin: 0">
+              <div class="col-md-8">
+                <div class="media">
+                  <div class="media-left">
+                    <img class="media-object img-circle" src="img/woman.jpeg" alt="..." style="max-height: 50px">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading title3">Joyce Avenue</h4>
+                    <p class="deskripsi">Panitia Seminar Nasional Pendidikan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="align-right">
+                  <h4 class="title2">
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star" aria-hidden="true" style="color: deepskyblue"></i>
 				                  <i class="fa fa-star-half-o" aria-hidden="true" style="color: deepskyblue"></i>
 				                </h4>
-				              </div>
-			            </div>
-			            </div>
-			        
-			            <div class="col-md-12">
-			              <p class="deskripsi">Fasilitas di venue ini berfungsi baik. Kalau kelebihan peserta, disediakan kursi tambahan tanpa menambah biaya. PIC venuenya juga selalu stand by tiap kali butuh bantuan</p>
-			            </div>
-			          </div>
-		      		<!-- END Individual Comment -->
-
-		      		<div class="col-md-6"></div>
-		      		<div class="col-md-6"><button type="button" class="btn btn-color btn-search btn-custom btn-block">TULIS ULASANMU</button></div>
-
-		      	</div>
-
-			</div>
-		<!-- START Content Detail -->
-
-		<!-- START Sidebar -->
-			<div class="col-md-4 hidden-sm hidden-xs">
-				<div class="floating-sidebar">
-					<div class="detail-sidebar2">
-				      	<h4 class="title">PESAN SEKARANG</h4>  
-
-				      	<div>
-					      <div class="form-group">
-					        <label class="control-label" for="date">Tanggal Pemesanan</label>
-							<div class="input-group">
-					  			<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
-						        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" aria-describedby="basic-addon1" />
-					        </div>
-					      </div>
-
-
-					      <div class="form-group">
-					        <label class="control-label" for="activity">Untuk Kegiatan</label>
-								  <select class="form-control" id="activity" aria-describedby="basic-addon2" >
-								    <option>Meeting</option>
-								    <option>Gathering</option>
-								    <option>Seminar</option>
-								    <option>Workshop</option>
-								  </select>
-					      </div>
-
-					      <!-- 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p class="deskripsi">Fasilitas di venue ini berfungsi baik. Kalau kelebihan peserta, disediakan kursi tambahan tanpa menambah biaya. PIC venuenya juga selalu stand by tiap kali butuh bantuan</p>
+            </div>
+          </div>
+          <!-- END Individual Comment -->
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-color btn-search btn-custom btn-block">TULIS ULASANMU</button>
+          </div>
+        </div>
+      </div>
+      <!-- START Content Detail -->
+      <!-- START Sidebar -->
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="floating-sidebar">
+          <div class="detail-sidebar2">
+            <h4 class="title">PESAN SEKARANG</h4>
+            <div>
+              <div class="form-group">
+                <label class="control-label" for="date">Tanggal Pemesanan</label>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+                  <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" aria-describedby="basic-addon1" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="activity">Untuk Kegiatan</label>
+                <select class="form-control" id="activity" aria-describedby="basic-addon2">
+                  <option>Meeting</option>
+                  <option>Gathering</option>
+                  <option>Seminar</option>
+                  <option>Workshop</option>
+                </select>
+              </div>
+              <!-- 
 					      <div class="form-group">
 					        <label class="control-label" for="email">Alamat Email</label>
 						        <input class="form-control" name="email" placeholder="Masukkan alamat email" type="text" aria-describedby="basic-addon3" />
@@ -383,117 +348,102 @@
 						        <input class="form-control" name="telp" placeholder="Masukkan nomor telepon" type="text" aria-describedby="basic-addon4" />
 					        </div>
 					      </div> -->
-
-					      <div class="form-group">
-							  <label class="control-label" for="comment">Comment:</label>
-							  <textarea class="form-control" rows="2" id="comment" placeholder="Silahkan tuliskan catatan tambahan anda di sini"></textarea>
-					      </div>
-
-					    </div>
-
-					      <div class="detail-price">
-					    	<button href="#myModal2" data-toggle="modal" type="button" class="btn btn-color btn-booking">Booking</button>
-					      </div>
-
-					    </div>
-
-					 <div class="text-center info">Silakan login terlebih dahulu untuk mem-booking venue. Atau register jika belum punya akun Indovenue.</div>
-				</div>
-			</div>
-		<!-- END Content Detail -->
-
-		<!-- START Other Places -->
-
-		  <div class="col-md-12">
-		  	<div class="row">
-		  		<div class="col-md-12">
-		  			<hr>
-		  		</div>
-			    <div class="col-md-4 col-xs-6">
-			      <h4 class="title">PROMOSI TEMPAT</h4>  
-			    </div>
-			    <div class="col-md-4 col-xs-6 pull-right text-right">
-			      <a class="seemore" href="#">LIHAT TEMPAT LAINNYA</a>  
-			    </div>
-		    </div>
-		  </div>
-	  
-			<div class="col-md-12"> 
-			<div class="row">
-
-			  <div class="col-md-4 col-sm-6 col-xs-12">
-			  	<div class="place-thumb">
-			    <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
-			    <img src="img/place1.png">
-			    <div class="placethumb-detail">
-			    	<p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-			    	<p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-			    	<p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-			    <div class="placethumb-tag">
-			    	<i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-			    </div>
-			    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-			    </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col-md-4 col-sm-6 col-xs-12">
-			    <div class="place-thumb">
-			    <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
-			    <img src="img/place2.png">
-			    <div class="placethumb-detail">
-			    	<p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-			    	<p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-			    	<p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-			    <div class="placethumb-tag">
-			    	<i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
-			    </div>
-			    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-			    </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col-md-4 col-sm-6 col-xs-12">
-			    <div class="place-thumb">
-			    <div class="disc-banner">50% OFF</div>
-			    <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
-			    <img src="img/place3.png">
-			    <div class="placethumb-detail">
-			    	<p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
-			    	<p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
-			    	<p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-			    <div class="placethumb-tag">
-			    	<i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
-			    	<button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
-			    </div>
-			    <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
-			    </div>
-			    </div>
-			  </div>
-
-			</div>
-			</div>
-		<!-- END Other Places -->
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-		  <h4 class="title">TENTANG INDOVENUE</h4>
-		  <br />
-		  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  	</div>
+              <div class="form-group">
+                <label class="control-label" for="comment">Comment:</label>
+                <textarea class="form-control" rows="2" id="comment" placeholder="Silahkan tuliskan catatan tambahan anda di sini"></textarea>
+              </div>
+            </div>
+            <div class="detail-price">
+              <button href="#myModal2" data-toggle="modal" type="button" class="btn btn-color btn-booking">Booking</button>
+            </div>
+          </div>
+          <div class="text-center info">Silakan login terlebih dahulu untuk mem-booking venue. Atau register jika belum punya akun Indovenue.</div>
+        </div>
+      </div>
+      <!-- END Content Detail -->
+      <!-- START Other Places -->
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <h4 class="title">PROMOSI TEMPAT</h4>
+          </div>
+          <div class="col-md-4 col-xs-6 pull-right text-right">
+            <a class="seemore" href="#">LIHAT TEMPAT LAINNYA</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="place-thumb">
+              <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
+              <img src="img/place1.png">
+              <div class="placethumb-detail">
+                <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                <div class="placethumb-tag">
+                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                </div>
+                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="place-thumb">
+              <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
+              <img src="img/place2.png">
+              <div class="placethumb-detail">
+                <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                <div class="placethumb-tag">
+                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                </div>
+                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="place-thumb">
+              <div class="disc-banner">50% OFF</div>
+              <div class="star-banner"><i class="fa fa-star" aria-hidden="true"></i></div>
+              <img src="img/place3.png">
+              <div class="placethumb-detail">
+                <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
+                <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
+                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                <div class="placethumb-tag">
+                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
+                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+                </div>
+                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Other Places -->
+    </div>
   </div>
-</div>
-
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="title">TENTANG INDOVENUE</h4>
+        <br />
+        <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
   <!--FOOTER START HERE-->
   <footer>
     <div class="container">
@@ -544,91 +494,74 @@
     </div>
   </footer>
   <!-- FOOTER END -->
-
-
-<div class="visible-xs visible-sm hidden-md hidden-lg buttonmobiledetail"><a href="#myModal" data-toggle="modal" style="text-decoration: none" class="btn-floating">Booking</a></div>
-
-
+  <div class="visible-xs visible-sm hidden-md hidden-lg buttonmobiledetail"><a href="#myModal" data-toggle="modal" style="text-decoration: none" class="btn-floating">Booking</a></div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content" role="document">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title title" id="myModalLabel">Booking Now</h4>
-	      </div>
-	      <div class="modal-body">
-	      
-	      			      	<div>
-					      <div class="form-group">
-					        <label class="control-label" for="date">Tanggal Pemesanan</label>
-							<div class="input-group">
-					  			<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
-						        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" aria-describedby="basic-addon1" />
-					        </div>
-					      </div>
-
-
-					      <div class="form-group">
-					        <label class="control-label" for="activity">Untuk Kegiatan</label>
-								  <select class="form-control" id="activity" aria-describedby="basic-addon2" >
-								    <option>Meeting</option>
-								    <option>Gathering</option>
-								    <option>Seminar</option>
-								    <option>Workshop</option>
-								  </select>
-					      </div>
-		
-							      <div class="form-group">
-							        <label class="control-label" for="email">Alamat Email</label>
-								        <input class="form-control" name="email" placeholder="Masukkan alamat email" type="text" aria-describedby="basic-addon3" />
-							      </div>
-
-							      <div class="form-group">
-							        <label class="control-label" for="telp">Nomor Telepon</label>
-									<div class="input-group">
-							  			<span class="input-group-addon" id="basic-addon4">+62</span>
-								        <input class="form-control" name="telp" placeholder="Masukkan nomor telepon" type="text" aria-describedby="basic-addon4" />
-							        </div>
-							      </div>
-		 
-
-					      <div class="form-group">
-							  <label for="comment">Comment:</label>
-							  <textarea class="form-control" rows="5" id="comment" placeholder="Silahkan tuliskan catatan tambahan anda di sini"></textarea>
-					      </div>
-
-					    </div>
-
-					      <div class="detail-price">
-					    	<button type="button" class="btn btn-color btn-booking">Booking</button>
-					      </div>
-	      
-	      
-	      </div>
-	      <!--<div class="modal-footer">
+    <div class="modal-dialog">
+      <div class="modal-content" role="document">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title title" id="myModalLabel">Booking Now</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+            <div class="form-group">
+              <label class="control-label" for="date">Tanggal Pemesanan</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" aria-describedby="basic-addon1" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="activity">Untuk Kegiatan</label>
+              <select class="form-control" id="activity" aria-describedby="basic-addon2">
+                <option>Meeting</option>
+                <option>Gathering</option>
+                <option>Seminar</option>
+                <option>Workshop</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="email">Alamat Email</label>
+              <input class="form-control" name="email" placeholder="Masukkan alamat email" type="text" aria-describedby="basic-addon3" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="telp">Nomor Telepon</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon4">+62</span>
+                <input class="form-control" name="telp" placeholder="Masukkan nomor telepon" type="text" aria-describedby="basic-addon4" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment" placeholder="Silahkan tuliskan catatan tambahan anda di sini"></textarea>
+            </div>
+          </div>
+          <div class="detail-price">
+            <button type="button" class="btn btn-color btn-booking">Booking</button>
+          </div>
+        </div>
+        <!--<div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        <button type="button" class="btn btn-primary">Save changes</button>
 	      </div>-->
-	    </div>
-	  </div>
+      </div>
+    </div>
   </div>
-
-
   <!-- Modal -->
   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content" role="document">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title title" id="myModalLabel">Booking Now</h4>
-	      </div>
-	      <div class="modal-body">
-	      
-	      			      	<div>
-
-	      			      	Mohon untuk lengkapi data pribadi anda berikut untuk melanjutkan pemesanan:<br><br>
-				<!-- 	      <div class="form-group">
+    <div class="modal-dialog">
+      <div class="modal-content" role="document">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title title" id="myModalLabel">Booking Now</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+            Mohon untuk lengkapi data pribadi anda berikut untuk melanjutkan pemesanan:
+            <br>
+            <br>
+            <!-- 	      <div class="form-group">
 					        <label class="control-label" for="date">Tanggal Pemesanan</label>
 							<div class="input-group">
 					  			<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
@@ -646,91 +579,75 @@
 								    <option>Workshop</option>
 								  </select>
 					      </div> -->
-		
-							      <div class="form-group">
-							        <label class="control-label" for="email">Alamat Email</label>
-								        <input class="form-control" name="email" placeholder="Masukkan alamat email" type="text" aria-describedby="basic-addon3" />
-							      </div>
-
-							      <div class="form-group">
-							        <label class="control-label" for="telp">Nomor Telepon</label>
-									<div class="input-group">
-							  			<span class="input-group-addon" id="basic-addon4">+62</span>
-								        <input class="form-control" name="telp" placeholder="Masukkan nomor telepon" type="text" aria-describedby="basic-addon4" />
-							        </div>
-							      </div>
-		 
-<!-- 
+            <div class="form-group">
+              <label class="control-label" for="email">Alamat Email</label>
+              <input class="form-control" name="email" placeholder="Masukkan alamat email" type="text" aria-describedby="basic-addon3" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="telp">Nomor Telepon</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon4">+62</span>
+                <input class="form-control" name="telp" placeholder="Masukkan nomor telepon" type="text" aria-describedby="basic-addon4" />
+              </div>
+            </div>
+            <!-- 
 					      <div class="form-group">
 							  <label for="comment">Comment:</label>
 							  <textarea class="form-control" rows="5" id="comment" placeholder="Silahkan tuliskan catatan tambahan anda di sini"></textarea>
 					      </div> -->
-
-					    </div>
-
-					      <div class="detail-price">
-					    	<button type="button" class="btn btn-color btn-booking">Booking</button>
-					      </div>
-	      
-	      
-	      </div>
-	      <!--<div class="modal-footer">
+          </div>
+          <div class="detail-price">
+            <button type="button" class="btn btn-color btn-booking">Booking</button>
+          </div>
+        </div>
+        <!--<div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        <button type="button" class="btn btn-primary">Save changes</button>
 	      </div>-->
-	    </div>
-	  </div>
+      </div>
+    </div>
   </div>
-
-<!-- Script for Datepicker -->
-<script>
-    $(document).ready(function(){
-        var date_input=$('input[name="date"]'); //our date input has the name "date"
-        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-        date_input.datepicker({
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        })
+  <!-- Script for Datepicker -->
+  <script>
+  $(document).ready(function() {
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+    date_input.datepicker({
+      format: 'mm/dd/yyyy',
+      container: container,
+      todayHighlight: true,
+      autoclose: true,
     })
-</script>
-
-
-<!-- Script for Slider -->
-<script>
-// Can also be used with $(document).ready()
-$(document).ready(function(){
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "thumbnails"
+  })
+  </script>
+  <!-- Script for Slider -->
+  <script>
+  // Can also be used with $(document).ready()
+  $(document).ready(function() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      controlNav: "thumbnails"
+    });
   });
-});
-</script>
-
-<!-- Scritp for Floating Sidebar -->
-<script>
-$(document).scroll(function() {
+  </script>
+  <!-- Scritp for Floating Sidebar -->
+  <script>
+  $(document).scroll(function() {
     var scrollVal = $(document).scrollTop();
-    $('.floating-sidebar').css('top',(scrollVal-70)+'px');
-    if (scrollVal < 50) { 
-        $('.floating-sidebar').css('top','0px');
+    $('.floating-sidebar').css('top', (scrollVal - 70) + 'px');
+    if (scrollVal < 50) {
+      $('.floating-sidebar').css('top', '0px');
     }
     if (scrollVal > 1600) {
-        $('.floating-sidebar').css('top','1600px');    
+      $('.floating-sidebar').css('top', '1600px');
     }
-});
-</script>
-<!-- Scritp for Floating Sidebar -->
-
-
+  });
+  </script>
+  <!-- Scritp for Floating Sidebar -->
   <!-- Optional FlexSlider Additions -->
-
   <script src="js/jquery.easing.js"></script>
   <script src="js/jquery.mousewheel.js"></script>
   <script defer src="js/demo.js"></script>
-
-
-
 </body>
+
 </html>

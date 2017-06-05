@@ -1,198 +1,181 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Indovenue Front</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="windows-1252">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400" rel="stylesheet">
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- START BOOTSTRAP -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous">
-    <!-- END BOOTSTRAP -->
-    
-    <!--Bootstrap-slider-->
-    <link rel="stylesheet" href="css/bootstrap-slider.css">
-    <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
-    
-    <!-- Include Date Range Picker -->
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<head>
+  <title>Indovenue Front</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- START BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous">
+  <!-- END BOOTSTRAP -->
+  <!--Bootstrap-slider-->
+  <link rel="stylesheet" href="css/bootstrap-slider.css">
+  <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+  <!-- Include Date Range Picker -->
+  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css">-->
-    
-    <!-- Include Required Prerequisites -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-
-    <!-- Include Date Range Picker -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="css/flexslider.css">
-    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-
-    <!-- START CUSTOM CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <!-- Flexslider -->
+  <link rel="stylesheet" href="css/flexslider.css">
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+  <!-- START CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-<!-- Navbar Start-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right navbar-custom">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Kontak Kami</a></li>
-        <li class="divider-vertical"></li>
-        <!--Trigger Modal Login for Mobile -->
-        <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
-        <!--Collapse Login for Dekstop and Tablet Start -->
-        <li class="dropdown dropdown-login">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
-          <ul id="login-dp" class="dropdown-menu">
-            <li>
-              <div class="row">
-                <div class="col-md-12">
-                  <h1>Masuk</h1>
-                  <form>
-                    <div class="form-group">
-                      <label class="register-label" for="email">Email</label>
-                      <div class="input-group-lg">
-                        <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="register-label" for="password">Password</label>
-                      <div class="input-group-lg">
-                        <input type="password" class="form-control" placeholder="********" id="password" name="password">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
+  <!-- Navbar Start-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-custom">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li class="divider-vertical"></li>
+          <!--Trigger Modal Login for Mobile -->
+          <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
+          <!--Collapse Login for Dekstop and Tablet Start -->
+          <li class="dropdown dropdown-login">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Masuk</h1>
+                    <form>
                       <div class="form-group">
-                        <div class="input-group remember">
-                          <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                          <br>
+                        <label class="register-label" for="email">Email</label>
+                        <div class="input-group-lg">
+                          <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
                         </div>
                       </div>
+                      <div class="form-group">
+                        <label class="register-label" for="password">Password</label>
+                        <div class="input-group-lg">
+                          <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group remember">
+                            <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 forget text-right">
+                        <a href="">Lupa password?</a>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
+                      </div>
+                    </form>
+                    <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                    <div class="text-center method">
+                      <p>atau masuk dengan menggunakan metode lain</p>
+                      <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
                     </div>
-                    <div class="col-md-6 col-sm-6 forget text-right">
-                      <a href="">Lupa password?</a>
-                    </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
-                    </div>
-                  </form>
-                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-                  <div class="text-center method">
-                    <p>atau masuk dengan menggunakan metode lain</p>
-                    <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
+                    </form>
                   </div>
-                  </form>
+                  <div class="bottom text-center">
+                  </div>
                 </div>
-                <div class="bottom text-center">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <!--Collapse Login for Dekstop and Tablet End -->
-        <li class="daftar"><a href="#">Daftar</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-<!-- Navbar End -->
-<!-- Modal Login for Mobile Start -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" role="document">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title title" id="myModalLabel">Masuk</h1>
+              </li>
+            </ul>
+          </li>
+          <!--Collapse Login for Dekstop and Tablet End -->
+          <li class="daftar"><a href="#">Daftar</a></li>
+        </ul>
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label class="register-label" for="email">Email</label>
-            <div class="input-group-lg">
-              <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="register-label" for="password">Password</label>
-            <div class="input-group-lg">
-              <input type="password" class="form-control" placeholder="********" id="password" name="password">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Navbar End -->
+  <!-- Modal Login for Mobile Start -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" role="document">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h1 class="modal-title title" id="myModalLabel">Masuk</h1>
+        </div>
+        <div class="modal-body">
+          <form>
             <div class="form-group">
-              <div class="input-group remember">
-                <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                <br>
+              <label class="register-label" for="email">Email</label>
+              <div class="input-group-lg">
+                <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
               </div>
             </div>
+            <div class="form-group">
+              <label class="register-label" for="password">Password</label>
+              <div class="input-group-lg">
+                <input type="password" class="form-control" placeholder="********" id="password" name="password">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="form-group">
+                <div class="input-group remember">
+                  <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 forget text-right">
+              <a href="">Lupa password?</a>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-register">MASUK</button>
+            </div>
+          </form>
+          <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+          <div class="text-center method">
+            <p>atau masuk dengan menggunakan metode lain</p>
+            <button type="button" class="btn btn-facebook">Login with Facebook</button>
           </div>
-          <div class="col-md-6 col-sm-6 forget text-right">
-            <a href="">Lupa password?</a>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-register">MASUK</button>
-          </div>
-        </form>
-        <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-        <div class="text-center method">
-          <p>atau masuk dengan menggunakan metode lain</p>
-          <button type="button" class="btn btn-facebook">Login with Facebook</button>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Modal Login for Mobile End -->
-
-
-<!-- Header Page Start -->
-<div class="about-bg header-about" style="max-width:100%">
-  <div class="container-fluid" style="padding: 0 30px">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <p class="title-about text-center">Partner with Indovenue</p>
+  <!-- Modal Login for Mobile End -->
+  <!-- Header Page Start -->
+  <div class="about-bg header-about" style="max-width:100%">
+    <div class="container-fluid" style="padding: 0 30px">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p class="title-about text-center">Partner with Indovenue</p>
+      </div>
     </div>
   </div>
-</div>
-<!-- Header Page End-->
-
-
-<div class="container">
-    <div class="col-md-12"> 
+  <!-- Header Page End-->
+  <!-- Section About for Overview Start -->
+  <div class="container">
+    <div class="col-md-12">
       <div class="row">
         <div class="section-about overview">
           <div class="col-md-4 col-sm-4 col-xs-12">
@@ -209,15 +192,15 @@
           </div>
         </div>
       </div>
-    </div>  
-</div>
-
-<!-- Line -->
-<hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-
-<!-- Section About Description Start -->
-<div class="container">
-      <div class="col-md-12"> 
+    </div>
+  </div>
+  <!-- Section About for Overview Start -->
+  <!-- Line Start -->
+  <hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+  <!-- Line End -->
+  <!-- Section About for Description Start -->
+  <div class="container">
+    <div class="col-md-12">
       <div class="row">
         <div class="section-about">
           <div class="col-md-4 col-sm-4 col-xs-12">
@@ -230,41 +213,38 @@
           </div>
         </div>
       </div>
-      </div>  
-</div>
-<!-- Section About Description End-->
-
-<!-- Line -->
-<hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-
-<!-- Section Image Start -->
-<div class="container">
-    <div class="col-md-12"> 
+    </div>
+  </div>
+  <!-- Section About for Description End-->
+  <!-- Line Start -->
+  <hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+  <!-- Line End -->
+  <!-- Section Image Start -->
+  <div class="container">
+    <div class="col-md-12">
       <div class="row">
         <div class="section-about">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <div class="about-image">
-             <img src="img/liliane-limpes.png">
+              <img src="img/liliane-limpes.png">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <div class="about-image">
-             <img src="img/stephen-di-donato.png">
+              <img src="img/stephen-di-donato.png">
             </div>
           </div>
         </div>
       </div>
-    </div>  
-</div>
-<!-- Section Image End -->
-
-<!-- Line -->
-<hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-
-
-<!-- Section About Description Start -->
-<div class="container">
-    <div class="col-md-12"> 
+    </div>
+  </div>
+  <!-- Section Image End -->
+  <!-- Line Start -->
+  <hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+  <!-- Line End -->
+  <!-- Section About for Description 2 Start -->
+  <div class="container">
+    <div class="col-md-12">
       <div class="row">
         <div class="section-about">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -275,21 +255,20 @@
           </div>
         </div>
       </div>
-    </div>  
-</div>
-<!-- Section About Description End -->
-
-<!-- Line -->
-<hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-
-<!--Section Founder Description Start -->
-<div class="container">
-    <div class="col-md-12"> 
+    </div>
+  </div>
+  <!-- Section About for Description End -->
+  <!-- Line Start -->
+  <hr width="95%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+  <!-- Line End -->
+  <!--Section Founder Description Start -->
+  <div class="container">
+    <div class="col-md-12">
       <div class="row">
         <div class="col-md-12 col-sm-12 section-founder">
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="founder-image">
-             <img src="img/cook_hero.png">
+              <img src="img/cook_hero.png">
             </div>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8">
@@ -305,9 +284,9 @@
         <div class="col-md-12 col-sm-12 section-founder">
           <div class="col-lg-4 col-md-4 col-sm-4 col-sm-push-8">
             <div class="founder-image">
-             <img src="img/boris-kraft.png">
+              <img src="img/boris-kraft.png">
             </div>
-          </div>   
+          </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-sm-pull-4 text-right">
             <h3>Robert Vargas</h3>
             <h4 style="color:#6DABF5;">CHIEF FINANCIAL OFFICER</h4>
@@ -321,7 +300,7 @@
         <div class="col-md-12 col-sm-12 section-founder">
           <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="founder-image">
-             <img src="img/ive_hero.png">
+              <img src="img/ive_hero.png">
             </div>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8">
@@ -336,9 +315,8 @@
         </div>
       </div>
     </div>
-</div>
-<!--Section Founder Description End-->
-
+  </div>
+  <!--Section Founder Description End-->
   <!--FOOTER START HERE-->
   <footer>
     <div class="container">
@@ -389,13 +367,10 @@
     </div>
   </footer>
   <!-- FOOTER END -->
-
   <!-- Optional FlexSlider Additions -->
-
   <script src="js/jquery.easing.js"></script>
   <script src="js/jquery.mousewheel.js"></script>
   <script defer src="js/demo.js"></script>
-
-
 </body>
+
 </html>
