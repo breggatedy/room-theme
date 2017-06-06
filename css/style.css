@@ -2933,11 +2933,98 @@ h4.rate {
 }
 
 
-/* OVERVIEW PAGE */
+/* OVERVIEW PAGE and BOOKING PAGE FOR DESKTOP */
+
+
+/* Left border for user profile description */
 
 .border-overview {
   border-left: 1px solid gray;
 }
+
+
+/* collapsable profile for navbar */
+
+#login-profile {
+  width: 215px;
+  overflow: hidden;
+  background-color: #ffffff;
+  left: -4px;
+  margin-top: 10px;
+}
+
+#login-profile li {
+  height: 50px;
+  text-align: center;
+}
+
+#login-profile li a {
+  padding-top: 15px;
+}
+
+#login-profile li:hover {
+  background: rgb(231, 231, 231);
+  color: white;
+}
+
+.avatar-text {
+  color: #EE4238;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: right;
+  margin: 0px 10px 0px 10px;
+}
+
+
+/* tab for overview, booking and inbox */
+
+.dashboard-tab {
+  box-sizing: border-box;
+  height: 82px;
+  width: 100%;
+  border: 1px solid #E4E3E3;
+  background-color: #ECECEC;
+  padding-left: 50px;
+}
+
+.dashboard-tab li {
+  margin: 15px 0px 0px 10px;
+}
+
+.dashboard-tab li a {
+  color: rgba(38, 39, 40, 0.8);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.nav-tabs>li>a {
+  border: none !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+  color: #EE4238 !important;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;
+  background-color: transparent !important;
+  padding-bottom: 35px;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom-width: 3px !important;
+  border-bottom-color: #EE4238 !important;
+  border-bottom-style: solid !important;
+}
+
+
+/* user profile avatar and description */
 
 .profile-desc {
   margin: -25px;
@@ -3015,6 +3102,35 @@ h4.rate {
   line-height: 27px;
 }
 
+
+/* button-avatar and hover */
+
+.button-avatar {
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
+
+.button-avatar > .fa {
+  display: none;
+  color: white;
+  position: absolute;
+  z-index: -1;
+}
+
+.button-avatar:hover > .fa {
+  position: absolute;
+  display: inherit;
+  margin-top: -100px;
+  margin-left: -3%;
+  font-size: 30px;
+  z-index: 2;
+  color: white;
+}
+
+
+/*button overview for edit and logout */
+
 .profile-btn {
   margin: 35px 0px 10px 0px;
   text-align: center;
@@ -3039,6 +3155,9 @@ h4.rate {
   background-color: #C7C7CD;
   color: white;
 }
+
+
+/* venue status */
 
 .venue-status {
   height: 120px;
@@ -3095,92 +3214,8 @@ h4.rate {
   text-transform: uppercase;
 }
 
-.close-banner {
-  position: absolute;
-  top: 0%;
-  right: 0;
-  padding: 10px 15px;
-  background-color: #E74C3C;
-  opacity: .85;
-  color: white;
-  font-size: 1.5em;
-  line-height: 26px;
-}
 
-.avatar-text {
-  color: #EE4238;
-  font-family: Lato;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 24px;
-  text-align: right;
-  margin: 0px 10px 0px 10px;
-}
-
-#login-profile {
-  width: 215px;
-  overflow: hidden;
-  background-color: #ffffff;
-  left: -4px;
-  margin-top: 10px;
-}
-
-#login-profile li {
-  height: 50px;
-  text-align: center;
-}
-
-#login-profile li a {
-  padding-top: 15px;
-}
-
-#login-profile li:hover {
-  background: rgb(231, 231, 231);
-  color: white;
-}
-
-.dashboard-tab {
-  box-sizing: border-box;
-  height: 82px;
-  width: 100%;
-  border: 1px solid #E4E3E3;
-  background-color: #ECECEC;
-  padding-left: 50px;
-}
-
-.dashboard-tab li {
-  margin: 15px 0px 0px 10px;
-}
-
-.dashboard-tab li a {
-  color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 20px;
-}
-
-.nav-tabs>li>a {
-  border: none !important;
-}
-
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
-  color: #EE4238 !important;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 20px;
-  background-color: transparent !important;
-  padding-bottom: 35px;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom-width: 3px !important;
-  border-bottom-color: #EE4238 !important;
-  border-bottom-style: solid !important;
-}
+/* venue description*/
 
 #venue-detail {
   width: 100%;
@@ -3217,6 +3252,12 @@ h4.rate {
   height: 15px;
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .fa-times-thin:before {
   content: '\00d7';
 }
@@ -3234,16 +3275,94 @@ h4.rate {
   line-height: 26px;
 }
 
-.ellipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+
+/* close banner for favorite venue */
+
+.close-banner {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #E74C3C;
+  opacity: .85;
+  color: white;
+  font-size: 1.5em;
+  line-height: 26px;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+  /* Left border for user profile description */
   .border-overview {
     border-left: none;
   }
+  /* collapsable profile for navbar */
+  #login-profile {
+    width: 215px;
+    overflow: hidden;
+    background-color: #ffffff;
+    left: -4px;
+    margin-top: 10px;
+  }
+  #login-profile li {
+    height: 50px;
+    text-align: center;
+  }
+  #login-profile li a {
+    padding-top: 15px;
+  }
+  #login-profile li:hover {
+    background: rgb(231, 231, 231);
+    color: white;
+  }
+  .avatar-text {
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: right;
+    margin: 0px 10px 0px 10px;
+  }
+  /* tab for overview, booking and inbox */
+  .dashboard-tab {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    border: 1px solid #E4E3E3;
+    background-color: #ECECEC;
+    padding-left: 50px;
+  }
+  .dashboard-tab li {
+    margin: 10px 0px 0px 10px;
+  }
+  .dashboard-tab li a {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .nav-tabs>li>a {
+    border: none !important;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+    color: #EE4238 !important;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 19px;
+    background-color: transparent !important;
+    padding-bottom: 25px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #EE4238 !important;
+    border-bottom-style: solid !important;
+  }
+  /* user profile avatar and description */
   .profile-desc {
     margin: 0px;
   }
@@ -3310,6 +3429,13 @@ h4.rate {
     letter-spacing: 1px;
     line-height: 19px;
   }
+  /* button-avatar and hover */
+  .button-avatar:hover > .fa {
+    margin-top: -30%;
+    margin-left: -3%;
+    font-size: 20px;
+  }
+  /*button overview for edit and logout */
   .profile-btn {
     margin: 0px 0px 10px 0px;
     text-align: center;
@@ -3333,6 +3459,7 @@ h4.rate {
     background-color: #C7C7CD;
     color: white;
   }
+  /* venue status */
   .venue-status {
     height: 120px;
     border-radius: 4px;
@@ -3382,6 +3509,40 @@ h4.rate {
     text-align: center;
     text-transform: uppercase;
   }
+  /* venue description */
+  #venue-detail {
+    width: 100%;
+    height: 480px;
+    padding: 20px;
+    background-color: white;
+    margin-top: -30px;
+  }
+  .venue-description h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .venue-description p {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  .close-venue {
+    position: inherit;
+    margin-left: 93%;
+    margin-bottom: -2%;
+    margin-top: -3%;
+    padding: 10px 15px;
+    background-color: transparent;
+    opacity: .85;
+    color: black;
+    font-size: 1.2em;
+    line-height: 26px;
+  }
+  /* close banner for favorite venue */
   .close-banner {
     position: absolute;
     top: 0%;
@@ -3393,40 +3554,61 @@ h4.rate {
     font-size: 1.2em;
     line-height: 26px;
   }
-  .avatar-text {
-    color: #EE4238;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-align: right;
-    margin: 0px 10px 0px 10px;
+}
+
+@media (max-width: 767px) {
+  /* Left border for user profile description */
+  .border-overview {
+    border-left: none;
   }
+  /* collapsable profile for navbar */
   #login-profile {
-    width: 215px;
+    width: 100%;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: transparent;
     left: -4px;
     margin-top: 10px;
   }
   #login-profile li {
     height: 50px;
-    text-align: center;
+    margin-left: 20px;
+    text-align: left;
   }
   #login-profile li a {
-    padding-top: 15px;
+    padding-top: 0px !important;
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
   }
   #login-profile li:hover {
     background: rgb(231, 231, 231);
     color: white;
   }
+  .dropdown-profile a {
+    margin-top: 0px !important;
+  }
+  .avatar-text {
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 300;
+    margin: 0px 10px 0px 0px;
+  }
+  /* tab for overview, booking and inbox */
   .dashboard-tab {
     box-sizing: border-box;
-    height: 66px;
+    height: 56px;
     width: 100%;
     border: 1px solid #E4E3E3;
     background-color: #ECECEC;
-    padding-left: 50px;
+    padding-left: 0px;
+    margin-top: -10px;
   }
   .dashboard-tab li {
     margin: 10px 0px 0px 10px;
@@ -3434,10 +3616,10 @@ h4.rate {
   .dashboard-tab li a {
     color: rgba(38, 39, 40, 0.8);
     font-family: Lato;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 1px;
-    line-height: 19px;
+    line-height: 18px;
   }
   .nav-tabs>li>a {
     border: none !important;
@@ -3445,12 +3627,12 @@ h4.rate {
   .nav-tabs>li.active>a,
   .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
     color: #EE4238 !important;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-    line-height: 19px;
+    line-height: 18px;
     background-color: transparent !important;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
@@ -3458,6 +3640,7 @@ h4.rate {
     border-bottom-color: #EE4238 !important;
     border-bottom-style: solid !important;
   }
+<<<<<<< HEAD
   #venue-detail {
     width: 100%;
     height: 480px;
@@ -3490,13 +3673,15 @@ h4.rate {
     color: black;
     font-size: 1.2em;
     line-height: 26px;
+=======
+  .nav>li>a {
+    padding: 10px 5px;
+>>>>>>> master
   }
-}
-
-@media (max-width: 767px) {
-  .border-overview {
-    border-left: none;
+  .nav>li>a>img {
+    display: none;
   }
+  /*user profile avatar and description*/
   .profile-desc {
     margin: 10px 0px 10px 0px;
   }
@@ -3563,6 +3748,13 @@ h4.rate {
     letter-spacing: 1px;
     line-height: 19px;
   }
+  /* button-avatar and hover */
+  .button-avatar:hover > .fa {
+    margin-top: -40px;
+    margin-left: -2%;
+    font-size: 15px;
+  }
+  /*button overview for edit and logout */
   .profile-btn {
     margin: 0px 0px -15px 0px;
     text-align: center;
@@ -3586,6 +3778,7 @@ h4.rate {
     background-color: #C7C7CD;
     color: white;
   }
+  /* venue status */
   .venue-status {
     height: 80px;
     border-radius: 4px;
@@ -3635,100 +3828,7 @@ h4.rate {
     text-align: center;
     text-transform: uppercase;
   }
-  .close-banner {
-    position: absolute;
-    top: 0%;
-    right: 0;
-    padding: 5px 10px;
-    background-color: #E74C3C;
-    opacity: .85;
-    color: white;
-    font-size: 1em;
-    line-height: 26px;
-  }
-  .dropdown-profile a {
-    margin-top: 0px !important;
-  }
-  .avatar-text {
-    color: #777;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-align: left;
-    font-weight: 300;
-    margin: 0px 10px 0px 0px;
-  }
-  #login-profile {
-    width: 100%;
-    overflow: hidden;
-    background-color: transparent;
-    left: -4px;
-    margin-top: 10px;
-  }
-  #login-profile li {
-    height: 50px;
-    margin-left: 20px;
-    text-align: left;
-  }
-  #login-profile li a {
-    padding-top: 0px !important;
-    color: #777;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: 300;
-  }
-  #login-profile li:hover {
-    background: rgb(231, 231, 231);
-    color: white;
-  }
-  .dashboard-tab {
-    box-sizing: border-box;
-    height: 56px;
-    width: 100%;
-    border: 1px solid #E4E3E3;
-    background-color: #ECECEC;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-  .dashboard-tab li {
-    margin: 10px 0px 0px 10px;
-  }
-  .dashboard-tab li a {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 18px;
-  }
-  .nav-tabs>li>a {
-    border: none !important;
-  }
-  .nav-tabs>li.active>a,
-  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
-    color: #EE4238 !important;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 18px;
-    background-color: transparent !important;
-    padding-bottom: 15px;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom-width: 3px !important;
-    border-bottom-color: #EE4238 !important;
-    border-bottom-style: solid !important;
-  }
-  .nav>li>a {
-    padding: 10px 5px;
-  }
-  .nav>li>a>img {
-    display: none;
-  }
+  /* venue description */
   #venue-detail {
     width: 100%;
     height: 800px;
@@ -3763,6 +3863,19 @@ h4.rate {
   .place-thumb {
     margin-top: 40px;
   }
+  /* close banner for favorite venue */
+  .close-banner {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-size: 1em;
+    line-height: 26px;
+  }
+  /* remove padding for mobile view */
   .mobile-nopadding .col-xs-12,
   .mobile-nopadding .col-md-12,
   .mobile-nopadding .col-md-4,
@@ -3770,73 +3883,12 @@ h4.rate {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .message-header {
-    font-size: 12px;
-    font-size: 0.75rem;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #F8F8F8;
-    border: none !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 18px 16px;
-    -webkit-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    margin: -20px -15px 0px -20px;
-  }
-  .messages-close {
-    font-size: 18px;
-    line-height: 16px;
-    color: black;
-    margin-top: -20px;
-  }
 }
 
-.button-avatar {
-  background-color: transparent;
-  border: none;
-  z-index: 1;
-}
 
-.button-avatar > .fa {
-  display: none;
-  color: white;
-  position: absolute;
-  z-index: -1;
-}
-
-.button-avatar:hover > .fa {
-  position: absolute;
-  display: inherit;
-  margin-top: -100px;
-  margin-left: -3%;
-  font-size: 30px;
-  z-index: 2;
-  color: white;
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-  .button-avatar:hover > .fa {
-    margin-top: -30%;
-    margin-left: -3%;
-    font-size: 20px;
-  }
-}
+/* Login Modal Edit Profile for Mobile */
 
 @media (max-width: 767px) {
-  .button-avatar:hover > .fa {
-    margin-top: -40px;
-    margin-left: -2%;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* Login Modal for Edit */
   #editProfile .modal-title {
     font-size: 24px;
     font-weight: 600;
@@ -3867,5 +3919,35 @@ h4.rate {
     line-height: 17px !important;
     margin-top: -2px;
     margin-bottom: 10px;
+  }
+}
+
+
+/* Message header for inbox in mobile view */
+
+@media (max-width: 767px) {
+  .message-header {
+    font-size: 12px;
+    font-size: 0.75rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    border: none !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 18px 16px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    margin: -20px -15px 0px -20px;
+  }
+  .messages-close {
+    font-size: 18px;
+    line-height: 16px;
+    color: black;
+    margin-top: -20px;
   }
 }
