@@ -12,6 +12,32 @@ body {
 
 /* ========================= */
 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
+  background-image: none !important;
+  background-repeat: no-repeat;
+  !important;
+  box-shadow: none !important;
+  background-color: transparent;
+  color: orangered;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav li>a:focus,
+.navbar-default .navbar-nav li>a:hover {
+  color: orangered !important;
+  font-weight: bold;
+  background-color: none !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: orangered !important;
+  font-weight: bold;
+  background-color: transparent !important;
+}
+
 .navbar {
   #padding: 10px 0;
   margin: 0;
@@ -317,6 +343,7 @@ a.seemore {
   justify-content: center;
   align-items: center;
 }
+
 
 /* ========================= */
 
@@ -861,6 +888,7 @@ footer > .registernow {
   margin-right: 30px;
 }
 
+
 /*.footer-line {
   box-sizing: border-box;
   width: 100%;
@@ -1045,13 +1073,13 @@ a .social {
   font-family: arial, sans-serif;
 }
 
-.slider {
+.slider2 {
   position: relative;
-  width: 100%;
-  #overflow: hidden;
+  width: 100% !important;
+  overflow: hidden;
 }
 
-.slider ul {
+.slider2 ul {
   height: 300px;
   padding: 0;
   margin: 0;
@@ -1059,7 +1087,7 @@ a .social {
   background: rgba(0, 0, 0, .6);
 }
 
-.slider li {
+.slider2 li {
   position: relative;
   float: left;
   display: block;
@@ -1089,7 +1117,7 @@ a .social {
   }
 }
 
-.slide-prev {
+.slider-nav .slide-prev {
   position: absolute;
   top: 125px;
   left: 2px;
@@ -1101,7 +1129,7 @@ a .social {
   border-bottom-left-radius: 7px;
 }
 
-.slide-next {
+.slider-nav .slide-next {
   position: absolute;
   top: 125px;
   right: 2px;
@@ -1348,6 +1376,7 @@ a .social {
   z-index: 1000;
   padding: 4px;
   width: 80px;
+  height: 40px;
   background-color: #000;
   background-color: hsla(0, 0%, 20%, 0.9);
   color: #fff;
@@ -1355,6 +1384,7 @@ a .social {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
+  white-space: initial;
 }
 
 
@@ -1485,8 +1515,20 @@ a .social {
   border-width: 2px solid;
 }
 
-.love {
-  color: #EE4238;
+.btn-love {
+  background: none;
+  color: #E0E0E0;
+}
+
+.btn-love:hover {
+  background: none;
+  color: #D32F2F;
+}
+
+.btn-love:active,
+.btn-love:focus {
+  background: none;
+  color: #D32F2F;
 }
 
 
@@ -1770,7 +1812,7 @@ a .sosmed {
     margin: 10px 0px 0px 0px;
     letter-spacing: 1px;
     color: rgba(38, 39, 40, 0.8);
-}
+  }
   .section-founder h4 {
     color: #6DABF5;
     font-family: 'Open Sans', sans-serif;
@@ -2131,6 +2173,9 @@ h4.rate {
     font-size: 14px;
     line-height: 24px;
   }
+  .desc-frame {
+    margin-bottom: 100px;
+  }
   .partner-image {
     position: relative;
   }
@@ -2286,7 +2331,7 @@ h4.rate {
   }
   /* SECTION PARTNER DESCRIPTION */
   .section-partner {
-    padding:  50px 0;
+    padding: 50px 0;
   }
   .section-partner h2 {
     font-size: 18px;
@@ -2379,11 +2424,15 @@ h4.rate {
   }
 }
 
+
 /* ========================= */
+
 
 /* REGISTER PAGE */
 
+
 /* ========================= */
+
 
 /*=== Section Login ===*/
 
@@ -2721,7 +2770,6 @@ h4.rate {
     max-height: 14px;
     padding: 0px 10px;
   }
-    
   /*=== Section Register ===*/
   /* Register Form */
   .form-bg {
@@ -2743,7 +2791,7 @@ h4.rate {
     font-size: 11px;
     line-height: 10px;
   }
-/*  .form-control {
+  /*  .form-control {
     height: 30px !important;
     font-size: 9px !important;
     line-height: 13px !important;
@@ -2771,7 +2819,6 @@ h4.rate {
     border-radius: 8px;
     margin-top: 0px;
   }
-    
   /* Footer Form */
   .footer-form p {
     font-size: 12px;
@@ -3282,7 +3329,7 @@ h4.rate {
   position: absolute;
   top: 0%;
   right: 0;
-  padding: 10px 15px;
+  padding: 5px 10px;
   background-color: #E74C3C;
   opacity: .85;
   color: white;
@@ -3547,7 +3594,7 @@ h4.rate {
     position: absolute;
     top: 0%;
     right: 0;
-    padding: 10px 15px;
+    padding: 5px 10px;
     background-color: #E74C3C;
     opacity: .85;
     color: white;
@@ -3640,7 +3687,6 @@ h4.rate {
     border-bottom-color: #EE4238 !important;
     border-bottom-style: solid !important;
   }
-<<<<<<< HEAD
   #venue-detail {
     width: 100%;
     height: 480px;
@@ -3651,7 +3697,7 @@ h4.rate {
   .venue-description h5 {
     color: rgba(38, 39, 40, 0.8);
     font-family: Lato;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
   }
   .venue-description p {
@@ -3661,7 +3707,6 @@ h4.rate {
     font-weight: 300;
     line-height: 19px;
   }
-
   .close-venue {
     position: inherit;
     margin-left: 93%;
@@ -3673,10 +3718,9 @@ h4.rate {
     color: black;
     font-size: 1.2em;
     line-height: 26px;
-=======
+  }
   .nav>li>a {
     padding: 10px 5px;
->>>>>>> master
   }
   .nav>li>a>img {
     display: none;
