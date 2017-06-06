@@ -2986,7 +2986,7 @@ h4.rate {
 /* Left border for user profile description */
 
 .border-overview {
-  border-left: 1px solid gray;
+  border-left: .5px solid lightgray;
 }
 
 
@@ -3029,7 +3029,7 @@ h4.rate {
 
 .dashboard-tab {
   box-sizing: border-box;
-  height: 82px;
+  height: 60px;
   width: 100%;
   border: 1px solid #E4E3E3;
   background-color: #ECECEC;
@@ -3037,7 +3037,7 @@ h4.rate {
 }
 
 .dashboard-tab li {
-  margin: 15px 0px 0px 10px;
+  margin: 10px 0px 0px 10px;
 }
 
 .dashboard-tab li a {
@@ -3061,7 +3061,7 @@ h4.rate {
   letter-spacing: 1px;
   line-height: 20px;
   background-color: transparent !important;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -3073,12 +3073,16 @@ h4.rate {
 
 /* user profile avatar and description */
 
+.side-profile {
+  min-width: 350px;
+}
+
 .profile-desc {
-  margin: -25px;
+  #margin: -25px;
 }
 
 .profile-pic {
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0px;
 }
 
 .profile-pic img {
@@ -3090,14 +3094,14 @@ h4.rate {
 .profile-pic h2 {
   color: #EE4238;
   font-family: "Open Sans";
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 33px;
 }
 
 .profile-text {
-  height: 60px;
-  width: 125%;
+  #height: 40px;
+  #width: 125%;
   padding: 4px;
   vertical-align: middle;
 }
@@ -3116,15 +3120,15 @@ h4.rate {
 .profile-text h5 {
   color: rgba(38, 39, 40, 0.8);
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 27px;
 }
 
 .profile-location {
-  height: 115px;
-  width: 125%;
+  #height: 115px;
+  #width: 125%;
   padding: 4px;
   vertical-align: middle;
 }
@@ -3143,10 +3147,10 @@ h4.rate {
 .profile-location h5 {
   color: rgba(38, 39, 40, 0.8);
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
-  line-height: 27px;
+  line-height: 20px;
 }
 
 
@@ -3199,7 +3203,7 @@ h4.rate {
 }
 
 .btn-overview:hover {
-  background-color: #C7C7CD;
+  background-color: deepskyblue;
   color: white;
 }
 
@@ -3207,45 +3211,58 @@ h4.rate {
 /* venue status */
 
 .venue-status {
-  height: 120px;
+  #height: 120px;
   border-radius: 4px;
   background-color: #F7F7F7;
-  padding: 20px;
+  padding: 15px 0;
   vertical-align: middle;
-  margin: 20px 0px;
+  #margin: 20px 0px;
   display: flex;
   align-items: center;
 }
 
 .venue-status h4 {
-  color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 20px;
-  line-height: 24px;
+  color: dimgrey;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
   margin: 0px;
+  font-weight: 400;
+}
+
+.venue-status h5 {
+  color: dimgrey;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0px;
+  font-weight: 300;
 }
 
 .venue-status h2 {
-  color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 36px;
-  line-height: 44px;
+  color: dimgrey;
+  font-family: "Lato";
+  font-size: 30px;
+  #line-height: 44px;
   margin: 0px;
+  font-weight: 400;
 }
 
 .venue-status h3 {
   color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 24px;
-  line-height: 29px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 35px;
   margin: 0px;
+  font-weight: 400;
 }
 
 .venue-status h1 {
   color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 30px;
+  font-family: "Open Sans";
+  font-size: 28px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0px;
   color: #6DABF5;
   text-align: center;
@@ -3254,7 +3271,7 @@ h4.rate {
 
 .venue-status h1.waiting {
   color: #EE4238;
-  font-family: Lato;
+  font-family: "Open Sans";
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -3270,6 +3287,7 @@ h4.rate {
   padding: 20px;
   background-color: white;
   margin-top: -30px;
+  #background-color: aliceblue;
 }
 
 .venue-description h5 {
@@ -3277,12 +3295,13 @@ h4.rate {
   font-family: Lato;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 300
 }
 
 .venue-description p {
   color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 20px;
+  font-family: "Open Sans";
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
@@ -3313,7 +3332,7 @@ h4.rate {
   position: inherit;
   margin-left: 92%;
   margin-bottom: -2%;
-  margin-top: -2%;
+  #margin-top: -2%;
   padding: 10px 15px;
   background-color: transparent;
   opacity: .85;
@@ -3336,6 +3355,8 @@ h4.rate {
   font-size: 1.5em;
   line-height: 26px;
 }
+
+/* Tablet Only */
 
 @media (max-width: 992px) and (min-width: 768px) {
   /* Left border for user profile description */
@@ -3429,7 +3450,7 @@ h4.rate {
     line-height: 22px;
   }
   .profile-text {
-    height: 50px;
+    height: 40px;
     width: 100%;
     padding: 4px;
     vertical-align: middle;
@@ -3438,7 +3459,7 @@ h4.rate {
     height: 20px;
     width: 20px;
     color: #9B9B9B;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 19px;
     margin: 10px 15px 0px 0px;
     vertical-align: middle;
@@ -3453,7 +3474,7 @@ h4.rate {
     line-height: 19px;
   }
   .profile-location {
-    height: 75px;
+    height: 70px;
     width: 100%;
     padding: 4px;
     vertical-align: middle;
@@ -3462,7 +3483,7 @@ h4.rate {
     height: 20px;
     width: 20px;
     color: #9B9B9B;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 19px;
     margin: 10px 15px 0px 0px;
     vertical-align: middle;
@@ -3484,7 +3505,7 @@ h4.rate {
   }
   /*button overview for edit and logout */
   .profile-btn {
-    margin: 0px 0px 10px 0px;
+    margin: 0px 10px;
     text-align: center;
   }
   .btn-overview {
@@ -3508,53 +3529,55 @@ h4.rate {
   }
   /* venue status */
   .venue-status {
-    height: 120px;
-    border-radius: 4px;
-    background-color: #F7F7F7;
-    padding: 20px;
-    vertical-align: middle;
     margin: 20px 0px;
     display: flex;
     align-items: center;
   }
   .venue-status h4 {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
+    #color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
     font-size: 16px;
-    line-height: 19px;
-    margin: 0px;
+    #line-height: 19px;
+    #margin: 0px;
   }
   .venue-status h2 {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 29px;
-    line-height: 34px;
-    margin: 0px;
+    #color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
+    font-size: 26px;
+    #line-height: 34px;
+    #margin: 0px;
   }
   .venue-status h3 {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 19.2px;
-    line-height: 23px;
-    margin: 0px;
+    #color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
+    font-size: 18px;
+    #line-height: 23px;
+    #margin: 0px;
+  }
+  .venue-status h5 {
+    #color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
+    font-size: 16px;
+    #line-height: 23px;
+    #margin: 0px;
   }
   .venue-status h1 {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 0px;
-    color: #6DABF5;
-    text-align: center;
-    text-transform: uppercase;
+    #color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
+    font-size: 22px;
+    #line-height: 29px;
+    #margin: 0px;
+    #color: #6DABF5;
+    #text-align: center;
+    #text-transform: uppercase;
   }
   .venue-status h1.waiting {
-    color: #EE4238;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
+    #color: #EE4238;
+    #font-family: Lato;
+    #font-size: 16px;
+    #line-height: 19px;
+    #text-align: center;
+    #text-transform: uppercase;
   }
   /* venue description */
   #venue-detail {
@@ -3602,6 +3625,8 @@ h4.rate {
     line-height: 26px;
   }
 }
+
+/* Mobile only */
 
 @media (max-width: 767px) {
   /* Left border for user profile description */
@@ -3663,7 +3688,7 @@ h4.rate {
   .dashboard-tab li a {
     color: rgba(38, 39, 40, 0.8);
     font-family: Lato;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 18px;
@@ -3674,7 +3699,7 @@ h4.rate {
   .nav-tabs>li.active>a,
   .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
     color: #EE4238 !important;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 18px;
@@ -3687,6 +3712,7 @@ h4.rate {
     border-bottom-color: #EE4238 !important;
     border-bottom-style: solid !important;
   }
+
   #venue-detail {
     width: 100%;
     height: 480px;
@@ -3697,13 +3723,13 @@ h4.rate {
   .venue-description h5 {
     color: rgba(38, 39, 40, 0.8);
     font-family: Lato;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 19px;
   }
   .venue-description p {
     color: rgba(38, 39, 40, 0.8);
     font-family: Lato;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 19px;
   }
@@ -3741,11 +3767,11 @@ h4.rate {
     color: #EE4238;
     font-family: "Open Sans";
     letter-spacing: 1px;
-    font-size: 12.8px;
-    line-height: 18px;
+    font-size: 16px;
+    #line-height: 18px;
   }
   .profile-text {
-    height: 50px;
+    height: 40px;
     width: 100%;
     padding: 4px;
     vertical-align: middle;
@@ -3754,7 +3780,7 @@ h4.rate {
     height: 20px;
     width: 20px;
     color: #9B9B9B;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 19px;
     margin: 10px 15px 0px 0px;
     vertical-align: middle;
@@ -3769,7 +3795,7 @@ h4.rate {
     line-height: 19px;
   }
   .profile-location {
-    height: 75px;
+    height: 70px;
     width: 100%;
     padding: 4px;
     vertical-align: middle;
@@ -3778,7 +3804,7 @@ h4.rate {
     height: 20px;
     width: 20px;
     color: #9B9B9B;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 19px;
     margin: 10px 15px 0px 0px;
     vertical-align: middle;
@@ -3804,12 +3830,12 @@ h4.rate {
     text-align: center;
   }
   .btn-overview {
-    height: 27px;
-    width: 73px;
+    #height: 27px;
+    #width: 73px;
     border-radius: 4px;
     background-color: #F7F7F7;
     font-family: 'Lato', sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 11px;
     text-align: center;
     font-weight: 300;
@@ -3835,29 +3861,36 @@ h4.rate {
   }
   .venue-status h4 {
     color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 13px;
+    #font-family: Lato;
+    font-size: 14px;
     line-height: 16px;
     margin: 0px;
   }
   .venue-status h2 {
     color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 23px;
+    #font-family: Lato;
+    font-size: 24px;
     line-height: 28px;
     margin: 0px;
   }
   .venue-status h3 {
     color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 15.36px;
+    #font-family: Lato;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0px;
+  }
+  .venue-status h5 {
+    color: rgba(38, 39, 40, 0.8);
+    #font-family: Lato;
+    font-size: 14px;
     line-height: 18px;
     margin: 0px;
   }
   .venue-status h1 {
     color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 19.2px;
+    #font-family: Lato;
+    font-size: 19px;
     line-height: 23px;
     margin: 0px;
     color: #6DABF5;
@@ -3866,33 +3899,14 @@ h4.rate {
   }
   .venue-status h1.waiting {
     color: #EE4238;
-    font-family: Lato;
-    font-size: 12.8px;
+    #font-family: Lato;
+    font-size: 12px;
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
   }
   /* venue description */
-  #venue-detail {
-    width: 100%;
-    height: 800px;
-    padding: 20px;
-    background-color: white;
-    margin-top: -30px;
-  }
-  .venue-description h5 {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 12.8px;
-    line-height: 16px;
-  }
-  .venue-description p {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 12.8px;
-    font-weight: 300;
-    line-height: 16px;
-  }
+
   .close-venue {
     position: inherit;
     margin-left: 85%;
@@ -3916,7 +3930,7 @@ h4.rate {
     background-color: #E74C3C;
     opacity: .85;
     color: white;
-    font-size: 1em;
+    font-size: 2em;
     line-height: 26px;
   }
   /* remove padding for mobile view */
