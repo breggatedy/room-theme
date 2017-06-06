@@ -164,9 +164,6 @@
     -ms-flex: 0 0 200px;
     flex: 0 0 300px;
   }
-  .messages__sidebar .message__avatar {
-    display: none;
-  }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -703,14 +700,6 @@
   margin-top: -15px;
 }
 
-.messages-caret.active,
-.messages-caret:hover {
-  font-size: 24px;
-  line-height: 20px;
-  color: #EE4238;
-  margin-top: -15px;
-}
-
 .messages-subject__date {
   color: #cfd1d3;
   font-size: 90%;
@@ -859,4 +848,36 @@
     line-height: 30px;
     text-align: center;
   }
+}
+
+
+/*message-list hover for desktop and tablet */
+
+.messages-list li:hover,
+.messages-list li:active {
+  background: lightgrey;
+}
+
+.messages-list li:hover .messages-caret,
+.messages-list li:active .messages-caret {
+  font-size: 24px;
+  line-height: 20px;
+  color: #EE4238;
+  margin-top: -15px;
+}
+
+
+/*message-list hover for mobile */
+
+.messages-list a>li:hover,
+.messages-list a>li:active {
+  background: lightgrey;
+}
+
+.messages-list a>li:hover .messages-caret,
+.messages-list a>li:active .messages-caret {
+  font-size: 24px;
+  line-height: 20px;
+  color: #EE4238;
+  margin-top: -15px;
 }

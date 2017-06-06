@@ -2484,6 +2484,14 @@ h4.rate {
   padding: 10px 30px;
 }
 
+.btn-login:hover,
+.btn-login:active,
+.btn-login:focus {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
 
 /* Section Logo in Login */
 
@@ -2650,6 +2658,13 @@ h4.rate {
   font-weight: 600;
   text-align: center;
   padding: 10px 20px;
+}
+
+.btn-become-partner:hover,
+.btn-become-partner:active,
+.btn-become-partner:focus {
+  background-color: #e74c3c;
+  color: white;
 }
 
 
@@ -2889,7 +2904,7 @@ h4.rate {
   overflow: hidden;
   background-color: #ffffff;
   left: -331px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -2926,7 +2941,7 @@ h4.rate {
     overflow: hidden;
     background-color: #ffffff;
     left: -232px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
   #login-dp {
@@ -2997,7 +3012,7 @@ h4.rate {
   overflow: hidden;
   background-color: #ffffff;
   left: -4px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 #login-profile li {
@@ -3344,17 +3359,26 @@ h4.rate {
 
 /* close banner for favorite venue */
 
-.close-banner {
+.btn-close-banner {
   position: absolute;
   top: 0%;
   right: 0;
   padding: 5px 10px;
-  background-color: #E74C3C;
+  background-color: transparent;
   opacity: .85;
-  color: white;
+  color: black;
   font-size: 1.5em;
   line-height: 26px;
+  border-radius: 0px;
 }
+
+.btn-close-banner:hover,
+.btn-close-banner:active,
+.btn-close-banner:focus {
+  background-color: #E74C3C;
+  color: white;
+}
+
 
 /* Tablet Only */
 
@@ -3499,7 +3523,7 @@ h4.rate {
   }
   /* button-avatar and hover */
   .button-avatar:hover > .fa {
-    margin-top: -30%;
+    margin-top: -20%;
     margin-left: -3%;
     font-size: 20px;
   }
@@ -3613,7 +3637,7 @@ h4.rate {
     line-height: 26px;
   }
   /* close banner for favorite venue */
-  .close-banner {
+  .btn-close-banner {
     position: absolute;
     top: 0%;
     right: 0;
@@ -3623,8 +3647,10 @@ h4.rate {
     color: white;
     font-size: 1.2em;
     line-height: 26px;
+    border-radius: 0px;
   }
 }
+
 
 /* Mobile only */
 
@@ -3712,7 +3738,6 @@ h4.rate {
     border-bottom-color: #EE4238 !important;
     border-bottom-style: solid !important;
   }
-
   #venue-detail {
     width: 100%;
     height: 480px;
@@ -3906,7 +3931,6 @@ h4.rate {
     text-transform: uppercase;
   }
   /* venue description */
-
   .close-venue {
     position: inherit;
     margin-left: 85%;
@@ -3922,7 +3946,7 @@ h4.rate {
     margin-top: 40px;
   }
   /* close banner for favorite venue */
-  .close-banner {
+  .btn-close-banner {
     position: absolute;
     top: 0%;
     right: 0;
@@ -3932,6 +3956,7 @@ h4.rate {
     color: white;
     font-size: 2em;
     line-height: 26px;
+    border-radius: 0px;
   }
   /* remove padding for mobile view */
   .mobile-nopadding .col-xs-12,
@@ -3958,7 +3983,6 @@ h4.rate {
     text-transform: uppercase;
   }
   #editProfile .form-control {
-    height: 37px !important;
     font-size: 12px !important;
     line-height: 17px !important;
   }
@@ -4009,3 +4033,4 @@ h4.rate {
     margin-top: -20px;
   }
 }
+
