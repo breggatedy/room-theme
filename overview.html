@@ -35,6 +35,7 @@
 
 <body>
   <!-- Navbar Start-->
+  <!-- Navbar Start-->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,7 +57,6 @@
           <li class="divider-vertical"></li>
           <!--Collapse Login for Dekstop and Tablet Start -->
           <li class="dropdown dropdown-profile">
-            <!-- Navbar view with active user -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:-10px;">
               <img src="img/avatar_user.jpg" class="img-circle center" width="40" height="40">
               <b class="avatar-text"> Johnny Kennedy</b>
@@ -87,19 +87,21 @@
         <div class="mobile-nopadding col-md-12">
           <div class="mobile-nopadding col-md-4 col-sm-12 col-xs-12">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <!-- User Avatar -->
               <div class="profile-pic text-center col-md-12 col-sm-3">
                 <button class="button-avatar">
                   <img src="img/avatar_user.jpg" class="img-circle center">
                   <i class="fa fa-camera" aria-hidden="true" style="display: inline; text-align: center; vertical-align: middle; align-items: center;"></i>
                 </button>
+                <!-- 
+                <div class="close-banner"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                <span class="fa fa-camera camera-avatar" aria-hidden="true"><img src="img/avatar_user.jpg" class="img-circle center"></span> -->
                 <h2>Johnny Kennedy</h2>
                 <div class="profile-btn">
                   <button type="button" class="btn btn-overview" href="#editProfile" data-toggle="modal" style="margin: 10px 0">Edit</button>
                   <button type="button" class="btn btn-overview" style="margin: 10px 0">Logout</button>
                 </div>
               </div>
-              <!-- Modal for 'Edit' Button Start to Edit Profile-->
+              <!-- Modal for 'Edit' Button Start-->
               <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content" role="document">
@@ -148,7 +150,6 @@
                   </div>
                 </div>
               </div>
-              <!-- User Profile Description -->
               <div class="profile-desc col-md-12 col-sm-9 col-xs-12">
                 <div class="profile-text">
                   <div class="col-md-1 col-sm-1 col-xs-1">
@@ -182,10 +183,9 @@
             </div>
           </div>
           <div class="col-md-8 col-sm-12 nopadding border-overview" style="padding-top: 20px; padding-bottom: 25px">
-            <!-- Venue Status Start -->
+            <!-- START Other Places -->
             <div class="col-md-12">
               <h4 class="title">Venue Status</h4>
-              <!-- Venue Status onclick to show details venue -->
               <div class="venue-status mobile-nopadding" onclick="showVenue()">
                 <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
                   <h4>APR</h4>
@@ -199,8 +199,6 @@
                   <h1>Paid</h1>
                 </div>
               </div>
-              <!-- Venue Status End -->
-              <!-- Details Venue Collapsable Start -->
               <div id="venue-detail mobile-nopadding">
                 <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
                 <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
@@ -251,9 +249,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Details Venue Collapsable End -->
             </div>
-            <!-- Favorite Venue Start -->
             <div class="col-md-12">
               <h4 class="title">My Favorite Venue</h4>
             </div>
@@ -308,13 +304,12 @@
                 </div>
               </div>
             </div>
-            <!-- Favorite Venue End -->
+            <!-- END Other Places -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Function Script for showVenue Start -->
   <script>
   function showVenue() {
     var x = document.getElementById('venue-detail mobile-nopadding');
@@ -325,8 +320,6 @@
     }
   }
   </script>
-  <!-- Function Script for showVenue End -->
-  <!-- Function Script for closeVenue Start -->
   <script>
   function closeVenue() {
     var x = document.getElementById('venue-detail mobile-nopadding');
@@ -335,7 +328,6 @@
     }
   }
   </script>
-  <!-- Function Script for closeVenue End -->
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-<!-- View for Mobile Only -->
 <!DOCTYPE html>
 <html>
 
@@ -33,7 +32,6 @@
   <!-- START CUSTOM CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
-  <!-- CSS for message and inbox-->
   <link rel="stylesheet" type="text/css" href="css/inbox.css">
 </head>
 
@@ -88,12 +86,11 @@
     <div class="tab-content">
       <div id="inbox" class="tab-pane fade in active">
         <div class="container" style="padding-top: 20px; padding-bottom: 25px">
+          <!-- START Other Places -->
           <div class="page__wrapper visible-xs hidden-md-up">
             <div id="inbox-wrapper">
               <div class="messages__container jsMessageContainer">
-                <!-- Message example start -->
                 <div class="messages__content jsMessagesContent" id="messageContent">
-                  <!-- Header of Message start -->
                   <div class="message-convers__header">
                     <div class="message-header messages-item">
                       <div class="message__avatar">
@@ -108,7 +105,6 @@
                       </aside>
                     </div>
                   </div>
-                  <!-- Header of Message end -->
                   <div class="comments messages__content__convers jsMsgScroll">
                     <ul id="comments__wrap" class="comments__wrap jsCommentsWrap">
                       <li class="message__item ">
@@ -134,8 +130,6 @@
                       </li>
                     </ul>
                   </div>
-                  <!-- Message example end -->
-                  <!-- Message reply start -->
                   <div class="messages__content__reply comments__bottom jsCommentContainer">
                     <div class="comments__form">
                       <div class="message__form__content comment-form-field">
@@ -146,7 +140,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Message reply end -->
                   <!-- view for no message selected -->
                   <!--  <div class="comments messages__content__convers jsMsgScroll">
                     <div class="no_message">
@@ -157,6 +150,7 @@
               </div>
             </div>
           </div>
+          <!-- END Other Places -->
         </div>
       </div>
     </div>

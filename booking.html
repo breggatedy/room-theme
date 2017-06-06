@@ -34,198 +34,188 @@
 </head>
 
 <body>
-<!-- Navbar Start-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
+  <!-- Navbar Start-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-height: 100%"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-custom">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li class="divider-vertical"></li>
+          <!--Collapse Login for Dekstop and Tablet Start -->
+          <li class="dropdown dropdown-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:-10px;">
+              <img src="img/avatar_user.jpg" class="img-circle center" width="40" height="40">
+              <b class="avatar-text"> Johnny Kennedy</b>
+            </a>
+            <ul id="login-profile" class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">My Booking</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+          <!--Collapse Login for Dekstop and Tablet End -->
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right navbar-custom">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Kontak Kami</a></li>
-        <li class="divider-vertical"></li>
-        <!--Collapse Login for Dekstop and Tablet Start -->
-        <li class="dropdown dropdown-profile">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:-10px;">
-            <img src="img/avatar_user.jpg" class="img-circle center" width="40" height="40">
-            <b class="avatar-text"> Johnny Kennedy</b>
-          </a>
-          <ul id="login-profile" class="dropdown-menu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">My Booking</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-        <!--Collapse Login for Dekstop and Tablet End -->
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-<!-- Navbar End -->
-<div class="container" style="padding:80px 0px 0px 0px; width:100%; margin-bottom:30px;">
-  <ul class="nav nav-tabs dashboard-tab">
-    <li><a data-toggle="tab" href="">Overview</a></li>
-    <li class="active"><a data-toggle="tab" href="#booking">My Booking</a></li>
-    <li><a data-toggle="tab" href="">Inbox</a></li>
-  </ul>
-  <div class="tab-content">
-    <div id="booking" class="tab-pane fade in active">
-      <div class="container" style="padding-top: 20px; padding-bottom: 25px">
-        <!-- Active Venue Status Start -->
-        <div class="col-md-12">
-          <h4 class="title">Active Venue</h4>
-          <!-- Venue Status onclick to show details venue -->
-          <div class="venue-status mobile-nopadding" onclick="showVenue()">
-            <div class="col-md-2 col-sm-2 col-xs-3 ellipsis text-center" style="border-right: 1px solid;">
-              <h4>JUN</h4>
-              <h2>17</h2>
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
-              <h3>Eagle Room di Brooklyn South West Building</h3>
-              <h4>2 Hari  •  IDR 500.000 /Hari</h4>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
-              <h1 class="waiting">Waiting <br/>Payment</h1>
-            </div>
-          </div>
-          <!-- Active Venue Status End -->
-          <!-- Details Venue Collapsable Start -->
-          <div id="venue-detail mobile-nopadding">
-            <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
-            <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
-              <h5><b>Transaction ID</b></h5>
-              <p>INV/OL62946/HGD/984</p>
-              <h5><b>Note from Venue Owner</b></h5>
-              <p>We will try to accommodate your requests but due to popularity we are full on week ends, holidays and during high season. Thank you for choosing Our Venue.</p>
-              <h5>Details</h5>
-              <div id="textbox">
-                <p>
-                  <span class="alignleft">Harga Venue (per Hari)</span>
-                  <span class="alignright">500.000 IDR</span>
-                </p>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Navbar End -->
+  <div class="container" style="padding:80px 0px 0px 0px; width:100%; margin-bottom:30px;">
+    <ul class="nav nav-tabs dashboard-tab">
+      <li><a data-toggle="tab" href="">Overview</a></li>
+      <li class="active"><a data-toggle="tab" href="#booking">My Booking</a></li>
+      <li><a data-toggle="tab" href="">Inbox</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="booking" class="tab-pane fade in active">
+        <div class="container" style="padding-top: 20px; padding-bottom: 25px">
+          <!-- START Other Places -->
+          <div class="col-md-12">
+            <h4 class="title">Active Venue</h4>
+            <div class="venue-status mobile-nopadding" onclick="showVenue()">
+              <div class="col-md-2 col-sm-2 col-xs-3 ellipsis text-center" style="border-right: 1px solid;">
+                <h4>JUN</h4>
+                <h2>17</h2>
               </div>
-              <div id="textbox">
-                <p>
-                  <span class="alignleft">Lama Sewa</span>
-                  <span class="alignright">2 Hari</span>
-                </p>
+              <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
+                <h3>Eagle Room di Brooklyn South West Building</h3>
+                <h4>2 Hari  •  IDR 500.000 /Hari</h4>
               </div>
-              <div id="textbox">
-                <p>
-                  <span class="alignleft">Tambahan</span>
-                  <span class="alignright">-</span>
-                </p>
+              <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
+                <h1 class="waiting">Waiting <br/>Payment</h1>
               </div>
-              <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
-              <h5>
+            </div>
+            <div id="venue-detail mobile-nopadding">
+                <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
+                <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
+                  <h5><b>Transaction ID</b></h5>
+                  <p>INV/OL62946/HGD/984</p>
+                  <h5><b>Note from Venue Owner</b></h5>
+                  <p>We will try to accommodate your requests but due to popularity we are full on week ends, holidays and during high season. Thank you for choosing Our Venue.</p>
+                  <h5>Details</h5>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Harga Venue (per Hari)</span>
+                      <span class="alignright">500.000 IDR</span>
+                    </p>
+                  </div>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Lama Sewa</span>
+                      <span class="alignright">2 Hari</span>
+                    </p>
+                  </div>
+                  <div id="textbox">
+                    <p>
+                      <span class="alignleft">Tambahan</span>
+                      <span class="alignright">-</span>
+                    </p>
+                  </div>
+                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                  <h5>
                     <span class="alignleft">Total</span>
                     <span class="alignright">1.000.000 IDR</span>
                   </h5>
-            </div>
-            <div class="col-md-5 col-sm-5 col-sm-pull-7">
-              <div class="place-thumb">
-                <div class="disc-banner-small">35% OFF</div>
-                <img src="img/place1.png">
-                <div class="placethumb-detail">
-                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                  <div class="placethumb-tag">
-                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
-                  </div>
-                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
+                <div class="col-md-5 col-sm-5 col-sm-pull-7">
+                  <div class="place-thumb">
+                    <div class="disc-banner-small">35% OFF</div>
+                    <img src="img/place1.png">
+                    <div class="placethumb-detail">
+                      <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                      <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                      <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                      <div class="placethumb-tag">
+                        <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                        <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                      </div>
+                      <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h4 class="title">History</h4>
+            <div class="venue-status mobile-nopadding">
+              <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
+                <h4>APR</h4>
+                <h2>26</h2>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
+                <h3>Main Hall di Lincoln Center for the Performing Arts</h3>
+                <h4>1 Hari  •  IDR 25.000.000 /Hari</h4>
+              </div>
+              <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
+                <h1>Paid</h1>
+              </div>
+            </div>
+            <div class="venue-status mobile-nopadding">
+              <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
+                <h4>JAN</h4>
+                <h2>01</h2>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
+                <h3>Wedding BAY di Sunny Side California Beach</h3>
+                <h4>3 Hari  •  IDR 10.000.000 /Hari</h4>
+              </div>
+              <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
+                <h1>Paid</h1>
+              </div>
+            </div>
+            <div class="venue-status mobile-nopadding">
+              <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
+                <h4>NOV</h4>
+                <h2>13</h2>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
+                <h3>Eagle Room di Brooklyn South West Building</h3>
+                <h4>2 Hari  •  IDR 500.000 /Hari</h4>
+              </div>
+              <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
+                <h1>Paid</h1>
               </div>
             </div>
           </div>
-          <!-- Details Venue Collapsable End -->
+          <!-- END Other Places -->
         </div>
-        <!-- History Venue Status Start -->
-        <div class="col-md-12">
-          <h4 class="title">History</h4>
-          <div class="venue-status mobile-nopadding">
-            <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
-              <h4>APR</h4>
-              <h2>26</h2>
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
-              <h3>Main Hall di Lincoln Center for the Performing Arts</h3>
-              <h4>1 Hari  •  IDR 25.000.000 /Hari</h4>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
-              <h1>Paid</h1>
-            </div>
-          </div>
-          <div class="venue-status mobile-nopadding">
-            <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
-              <h4>JAN</h4>
-              <h2>01</h2>
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
-              <h3>Wedding BAY di Sunny Side California Beach</h3>
-              <h4>3 Hari  •  IDR 10.000.000 /Hari</h4>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
-              <h1>Paid</h1>
-            </div>
-          </div>
-          <div class="venue-status mobile-nopadding">
-            <div class="col-md-2 col-sm-2 col-xs-3 text-center ellipsis" style="border-right: 1px solid;">
-              <h4>NOV</h4>
-              <h2>13</h2>
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-7 ellipsis" style="margin-left:10px;">
-              <h3>Eagle Room di Brooklyn South West Building</h3>
-              <h4>2 Hari  •  IDR 500.000 /Hari</h4>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-2 ellipsis">
-              <h1>Paid</h1>
-            </div>
-          </div>
-        </div>
-        <!-- History Venue Status End -->
       </div>
     </div>
   </div>
-</div>
-<!-- Function Script for showVenue Start -->
-<script>
-function showVenue() {
-  var x = document.getElementById('venue-detail mobile-nopadding');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
+  <script>
+  function showVenue() {
+    var x = document.getElementById('venue-detail mobile-nopadding');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
   }
-}
-</script>
-<!-- Function Script for showVenue End -->
-<!-- Function Script for closeVenue Start -->
-<script>
-function closeVenue() {
-  var x = document.getElementById('venue-detail mobile-nopadding');
-  if (x.style.display === 'block') {
-    x.style.display = 'none';
+  </script>
+  <script>
+  function closeVenue() {
+    var x = document.getElementById('venue-detail mobile-nopadding');
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+    }
   }
-}
-</script>
-<!-- Function Script for closeVenue End -->
-
+  </script>
 </body>
 
 </html>
