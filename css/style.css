@@ -13,7 +13,7 @@ body {
 /* ========================= */
 
 .navbar {
-  padding: 10px 0;
+  #padding: 10px 0;
   margin: 0;
 }
 
@@ -35,12 +35,12 @@ body {
 }
 
 .navbar-custom li.daftar a {
-  font-weight: 700;
-  color: red;
+  font-weight: 400;
+  color: orangered;
 }
 
 .navbar-brand {
-  padding: 8px 15px;
+  padding: 10px 15px;
 }
 
 @media (max-width: 767px) {
@@ -186,7 +186,7 @@ p.deskripsi {
 
 p.hero {
   font-family: "Open Sans";
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -242,11 +242,6 @@ h4.link {
 
 small {
   font-weight: 300;
-}
-
-hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 a.seemore {
@@ -317,6 +312,11 @@ a.seemore {
   /* W3C compliant browsers */
 }
 
+.center-hor-ver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ========================= */
 
@@ -415,6 +415,7 @@ a.seemore {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   line-height: 1.42857143;
+  font-weight: 300;
   color: #777777;
   background-image: none;
   border: 1px solid #eeeeee;
@@ -432,6 +433,7 @@ a.seemore {
   width: 100%;
   padding: 6px 18px;
   font-size: 16px;
+  font-weight: 300;
   font-family: "Lato", sans-serif;
   line-height: 1.42857143;
   color: #777777;
@@ -457,7 +459,7 @@ a.seemore {
 }
 
 .detail-sidebar .control-label {
-  color: #777777;
+  color: dimgrey;
   font-size: 16px;
 }
 
@@ -711,10 +713,10 @@ a.seemore {
   border-right: none;
 }
 
-.form-control {
+.front-sidebar .form-control {
   display: block;
   width: 100%;
-  height: 35px;
+  height: 37px;
   padding: 4px 12px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -736,10 +738,10 @@ a.seemore {
 
 .control-label {
   font-family: "Open Sans", sans-serif;
-  color: #777;
-  font-size: 1.1em;
+  color: dimgrey;
+  font-size: 1em;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .front-sidebar .form-group {
@@ -859,13 +861,13 @@ footer > .registernow {
   margin-right: 30px;
 }
 
-.footer-line {
+/*.footer-line {
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid #F7F7F7;
+  border: 0.5px solid white;
   opacity: 0.6;
-  margin: 5px 0px 10px 0px;
-}
+  #margin: 5px 0px 10px 0px;
+}*/
 
 
 /*Footer Mobile*/
@@ -1046,7 +1048,7 @@ a .social {
 .slider {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  #overflow: hidden;
 }
 
 .slider ul {
@@ -1630,7 +1632,6 @@ a .social {
 
 p.title-about {
   font-family: 'Open Sans', sans-serif;
-  margin-top: 100px;
   letter-spacing: 1px;
   color: rgba(38, 39, 40, 0.8);
 }
@@ -1675,7 +1676,7 @@ p.title-about {
 
 .about-image > img {
   width: 100%;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px;
 }
 
 
@@ -1702,6 +1703,7 @@ p.title-about {
   color: rgba(38, 39, 40, 0.8);
   font-weight: 300;
   letter-spacing: 1px;
+  padding: 25px 0;
 }
 
 .founder-image {
@@ -1731,7 +1733,7 @@ a .sosmed {
     height: 50vh;
   }
   p.title-about {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 300;
     line-height: 68px;
   }
@@ -1743,15 +1745,15 @@ a .sosmed {
     text-align: left;
   }
   .section-about h1 {
-    font-size: 72px;
-    line-height: 98px;
+    font-size: 52px;
+    line-height: 80px;
   }
   .section-about h2 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 49px;
   }
   .section-about p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
   }
   /* SECTION IMAGE */
@@ -1763,22 +1765,23 @@ a .sosmed {
     margin-bottom: 50px;
   }
   .section-founder h3 {
-    color: rgba(38, 39, 40, 0.8);
-    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 49px;
-  }
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 1px;
+    color: rgba(38, 39, 40, 0.8);
+}
   .section-founder h4 {
     color: #6DABF5;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 27px;
   }
   .section-founder p {
     color: rgba(38, 39, 40, 0.8);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 24px;
@@ -1798,7 +1801,7 @@ a .sosmed {
 @media (max-width: 992px) and (min-width: 768px) {
   /* HEADER */
   .header-about {
-    height: 60vh;
+    height: 40vh;
   }
   p.title-about {
     font-size: 32px;
@@ -1819,8 +1822,8 @@ a .sosmed {
   }
   .section-about p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 00;
     margin: 0px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -1834,16 +1837,27 @@ a .sosmed {
     margin-bottom: 50px;
   }
   .section-founder h3 {
-    font-size: 24px;
-    line-height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 1px;
+    color: rgba(38, 39, 40, 0.8);
   }
   .section-founder h4 {
-    font-size: 18px;
-    line-height: 24px;
+    color: #6DABF5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 27px;
   }
   .section-founder p {
-    font-size: 14px;
-    line-height: 19px;
+    color: rgba(38, 39, 40, 0.8);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px 0;
   }
   .founder-image > img {
     width: 100%;
@@ -1865,7 +1879,7 @@ a .sosmed {
 @media (max-width: 767px) {
   /* HEADER */
   .header-about {
-    height: 70vh;
+    height: 50vh;
   }
   p.title-about {
     font-size: 25px;
@@ -1880,6 +1894,9 @@ a .sosmed {
   }
   .overview {
     text-align: center;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
   }
   .section-about h1 {
     font-size: 36px;
@@ -1961,10 +1978,12 @@ a .sosmed {
 
 /* SECTION PARTNER DESCRIPTION */
 
-.section-partner h1 {
-  color: rgba(38, 39, 40, 0.8);
+.section-partner h2 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
+  margin: 10px 0px 0px 0px;
+  letter-spacing: 1px;
+  color: rgba(38, 39, 40, 0.8);
   text-transform: uppercase;
 }
 
@@ -2010,13 +2029,15 @@ a .sosmed {
 /* SECTION HEAR */
 
 .section-hear {
-  padding: 150px 100px 250px 100px;
+  padding: 40px;
 }
 
-.section-hear h1 {
-  color: rgba(38, 39, 40, 0.8);
+.section-hear h2 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
+  margin: 10px 0px 0px 0px;
+  letter-spacing: 1px;
+  color: rgba(38, 39, 40, 0.8);
   text-transform: uppercase;
 }
 
@@ -2043,9 +2064,18 @@ h4.rate {
 }
 
 .section-testimoni p {
-  font-weight: 600;
-  color: #4A4A4A;
-  padding: 10px 10px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  padding: 10px 30px;
+  font-style: italic;
+  letter-spacing: 0.133333px;
+  word-spacing: 0.8px;
+}
+
+.section-testimoni h5 {
+  padding: 10px 30px;
+  color: #6DABF5;
 }
 
 
@@ -2091,15 +2121,14 @@ h4.rate {
   }
   /* SECTION PARTNER DESCRIPTION  */
   .section-partner {
-    margin-top: 50px;
-    margin-bottom: 420px;
+    padding: 100px 0;
   }
-  .section-partner h1 {
-    font-size: 36px;
+  .section-partner h2 {
+    font-size: 28px;
     line-height: 49px;
   }
   .section-partner p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
   }
   .partner-image {
@@ -2120,12 +2149,12 @@ h4.rate {
     font-size: 16px;
   }
   /* SECTION HEAR  */
-  .section-hear h1 {
-    font-size: 36px;
+  .section-hear h2 {
+    font-size: 28px;
     line-height: 49px;
   }
   .section-hear p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
   }
   h4.rate {
@@ -2133,12 +2162,12 @@ h4.rate {
   }
   /* SECTION TESTIMONI PARTNER*/
   .section-testimoni p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   /* SECTION LOGO PARTNER  */
   .section-logo {
-    padding: 120px 0px;
+    padding: 100px 0px;
   }
   .logo-partner {
     position: relative;
@@ -2159,7 +2188,7 @@ h4.rate {
     line-height: 49px;
   }
   .getmore p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     padding: 0px 200px;
   }
@@ -2170,19 +2199,19 @@ h4.rate {
 
 @media (max-width: 992px) and (min-width: 768px) {
   /* HEADER  */
-  .header-about {
+  /*.header-about {
     height: 60vh;
-  }
+  }*/
   /* SECTION PARTNER DESCRIPTION */
   .section-partner {
-    height: 60vh;
+    padding: 50px 0px;
   }
-  .section-partner h1 {
-    font-size: 22px;
+  .section-partner h2 {
+    font-size: 24px;
     line-height: 34px;
   }
   .section-partner p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 17px;
   }
   .partner-image {
@@ -2200,15 +2229,15 @@ h4.rate {
   }
   .btn-partner {
     padding: 8px 40px;
-    font-size: 12px;
+    font-size: 16px;
   }
   /* SECTION HEAR  */
-  .section-hear h1 {
-    font-size: 28px;
+  .section-hear h2 {
+    font-size: 24px;
     line-height: 39px;
   }
   .section-hear p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
   }
   /* SECTION TESTIMONI PARTNER  */
@@ -2216,12 +2245,12 @@ h4.rate {
     font-size: 13px;
   }
   .section-testimoni p {
-    font-size: 9px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 20px;
   }
   /* SECTION LOGO PARTNER  */
   .section-logo {
-    padding: 50px 0px 300px 0px;
+    padding: 50px 0px;
   }
   .logo-partner {
     text-align: center;
@@ -2236,13 +2265,13 @@ h4.rate {
   .getmore {
     padding: 50px 0px;
   }
-  .getmore h1 {
+  .getmore h2 {
     font-size: 24px;
-    line-height: 33px;
+    line-height: 39px;
   }
   .getmore p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 19px;
     padding: 0px 80px;
   }
 }
@@ -2253,27 +2282,27 @@ h4.rate {
 @media (max-width: 767px) {
   /* HEADER */
   .header-about {
-    height: 70vh;
+    height: 50vh;
   }
   /* SECTION PARTNER DESCRIPTION */
   .section-partner {
-    height: 50vh;
+    padding:  50px 0;
   }
-  .section-partner h1 {
-    font-size: 17px;
+  .section-partner h2 {
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
   }
   .section-partner p {
-    font-size: 11px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
     text-align: center;
   }
   .partner-frame {
-    height: 75vh;
+    #height: 75vh;
   }
-  .desc-frame h1 {
-    margin-top: 230px;
+  .desc-frame h2 {
+    margin-top: 250px;
   }
   .partner-image {
     position: relative;
@@ -2284,18 +2313,18 @@ h4.rate {
   }
   .partner-image > img.back-image {
     width: 200px;
-    left: 18%;
+    left: 25%;
     box-shadow: 0px 0px 40px #BDBDB3;
   }
   .partner-image > img.front-image {
     width: 100px;
-    left: 10%;
+    left: 18%;
     top: 120px;
     box-shadow: 0px 0px 40px #BDBDB3;
   }
   .btn-partner {
     padding: 8px 20px;
-    font-size: 10px;
+    font-size: 14px;
   }
   .center-btn-only {
     text-align: center
@@ -2304,7 +2333,7 @@ h4.rate {
   .section-hear {
     padding: 60px 10px 20px 10px;
   }
-  .section-hear h1 {
+  .section-hear h2 {
     font-size: 23px;
     line-height: 32px;
     text-align: center;
@@ -2318,12 +2347,12 @@ h4.rate {
     font-size: 11px;
   }
   .section-testimoni p {
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 18px;
   }
   /* SECTION LOGO PARTNER  */
   .section-logo {
-    padding: 50px 0px 200px 0px;
+    padding: 50px 0px 50px 0px;
   }
   .logo-partner {
     text-align: center;
@@ -2350,9 +2379,11 @@ h4.rate {
   }
 }
 
+/* ========================= */
 
 /* REGISTER PAGE */
 
+/* ========================= */
 
 /*=== Section Login ===*/
 
@@ -2360,7 +2391,7 @@ h4.rate {
 /*Section Indovenus's Logo in Login */
 
 .logo-brand {
-  height: 50px;
+  max-height: 40px;
   padding: 4px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -2392,8 +2423,6 @@ h4.rate {
 }
 
 .btn-login {
-  height: 42px;
-  width: 114px;
   border: 2px solid;
   border-color: black;
   border-radius: 4px;
@@ -2403,6 +2432,7 @@ h4.rate {
   font-weight: 600;
   line-height: 17px;
   text-align: center;
+  padding: 10px 30px;
 }
 
 
@@ -2410,10 +2440,8 @@ h4.rate {
 
 .section-logo-login {
   width: 100%;
-  margin: 10px 10px 100px 10px;
   text-align: center;
-  padding-right: 10%;
-  padding-left: 5%;
+  position: absolute;
 }
 
 .logo-login {
@@ -2437,33 +2465,34 @@ h4.rate {
 /* Register Form */
 
 .form-bg {
-  height: 683px;
-  width: 486.7px;
+  #height: 683px;
+  #width: 486.7px;
+  width: 450px;
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-  margin-top: 10%;
-  margin-left: 20%;
+  #margin-top: 10%;
+  #margin-left: 20%;
   padding: 20px;
 }
 
 .header-form {
-  margin: 20px 0px 20px 0px;
+  padding: 10px 0px;
 }
 
 .header-form h3 {
-  color: #757575;
+  color: darkslategrey;
   font-family: "Open Sans";
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
 }
 
 .header-form p {
-  color: #A1A1A1;
+  color: dimgray;
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 19px;
 }
 
@@ -2474,20 +2503,23 @@ h4.rate {
   line-height: 17px;
 }
 
-.form-control {
+.register-section .form-control {
+  font-family: "Open Sans", sans-serif;
   display: block;
-  height: 46px;
+  height: 37px;
   border: 1px solid #E7E7E7;
   background-color: #FAFAFA;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
 }
 
 
 /* Button Form */
 
 .btn-register {
-  height: 42px;
-  width: 350px;
+  #height: 42px;
+  width: 70%;
   border-radius: 4px;
   background: #e74c3c;
   font-family: 'Lato', sans-serif;
@@ -2496,7 +2528,7 @@ h4.rate {
   line-height: 17px;
   letter-spacing: 1px;
   color: white;
-  border-color: white;
+  #border-color: white;
   padding: 10px 50px;
   text-transform: uppercase;
   border-radius: 8px;
@@ -2509,8 +2541,8 @@ h4.rate {
 }
 
 .btn-facebook {
-  height: 42px;
-  width: 350px;
+  #height: 42px;
+  width: 70%;
   border-radius: 4px;
   background-color: #0D47A1;
   font-family: 'Lato', sans-serif;
@@ -2539,7 +2571,7 @@ h4.rate {
 
 .footer-form p {
   font-family: "Open Sans";
-  font-weight: 600;
+  font-weight: 400;
   color: #9B9B9B;
   font-size: 12px;
   line-height: 17px;
@@ -2557,24 +2589,18 @@ h4.rate {
 .partner p {
   color: rgba(38, 39, 40, 0.8);
   font-family: "Open Sans";
-  font-size: 14px;
-  line-height: 19px;
   text-align: right;
-  padding: 20;
 }
 
 .btn-become-partner {
-  height: 42px;
-  width: 140px;
   border: 2px solid #EE4238;
   border-radius: 4px;
   background-color: transparent;
   color: #EE4238;
-  font-family: Lato;
-  font-size: 14px;
+  font-family: "Lato";
   font-weight: 600;
-  line-height: 17px;
   text-align: center;
+  padding: 10px 20px;
 }
 
 
@@ -2583,7 +2609,9 @@ h4.rate {
 @media (min-width: 992px) {
   /*=== Section Login ===*/
   .section-login {
-    padding: 300px 60px 350px 60px;
+    position: absolute;
+    top: 150px;
+    #padding: 300px 60px 350px 60px;
   }
   /*Section Indovenue's Logo in Login */
   .logo-brand {
@@ -2597,25 +2625,22 @@ h4.rate {
     padding-right: 40px;
   }
   .partner p {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
-    text-align: right;
     padding: 20;
   }
   .btn-become-partner {
-    height: 42px;
-    width: 140px;
-    border: 2px solid #EE4238;
-    border-radius: 4px;
-    background-color: transparent;
-    color: #EE4238;
-    font-family: Lato;
     font-size: 14px;
-    font-weight: 600;
     line-height: 17px;
-    text-align: center;
+  }
+  .login-bg {
+    min-height: 900px;
+    height: 100vh;
+    position: relative;
+    max-width: 450px;
+  }
+  .section-logo-login {
+    bottom: 70px;
   }
 }
 
@@ -2626,9 +2651,12 @@ h4.rate {
   /*=== Section Login ===*/
   .login-bg {
     background-size: cover;
+    min-height: 400px;
   }
   .section-login {
-    padding: 150px 150px 150px 150px;
+    #padding: 150px 150px 150px 150px;
+    #position: absolute;
+    #top: 50px;
     text-align: center;
   }
   /*Section Indovenue's Logo in Login */
@@ -2641,6 +2669,9 @@ h4.rate {
   .footer-form {
     margin: 20px 0px 60px 0px;
   }
+  .section-logo-login {
+    bottom: 50px;
+  }
 }
 
 
@@ -2650,23 +2681,26 @@ h4.rate {
   /*=== Section Login ===*/
   .login-bg {
     background-size: cover;
+    min-height: 400px;
   }
   .section-login {
-    padding: 50px 50px 50px 50px;
+    #padding: 50px 50px 50px 50px;
+    #min-height: 350px;
+    position: absolute;
+    top: 40px;
     text-align: center;
   }
   .section-login h2 {
-    ;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 35px;
   }
   .section-login p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 24px;
   }
   .btn-login {
-    height: 33px;
-    width: 92px;
+    #height: 33px;
+    #width: 92px;
     border-radius: 3px;
     font-size: 11px;
     line-height: 13px;
@@ -2674,60 +2708,53 @@ h4.rate {
   }
   /*Section Indovenue's Logo in Login */
   .logo-brand {
-    height: 30px;
+    height: 35px;
     padding: 4px 15px;
     margin: 10px 0px 0px 15px;
   }
   /* Logo Login */
   .section-logo-login {
-    width: 100%;
-    margin: 10px 10px 100px 10px;
-    text-align: center
+    bottom: 40px;
   }
   .logo-login img {
     position: relative;
-    max-height: 12px;
-    padding: 0px 10px 0px 10px;
+    max-height: 14px;
+    padding: 0px 10px;
   }
+    
   /*=== Section Register ===*/
   /* Register Form */
   .form-bg {
-    height: 520px;
-    width: 100%;
-    border-radius: 5.12px;
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 0;
-    margin-left: 0;
+    #box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   }
   .header-form {
-    margin: 20px 0px 20px 0px;
+    #margin: 20px 0px 20px 0px;
   }
   .header-form h3 {
-    font-size: 19px;
+    font-size: 24px;
     line-height: 19px;
   }
   .header-form p {
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     line-height: 13px;
   }
   .register-label {
-    font-size: 9px;
+    font-size: 11px;
     line-height: 10px;
   }
-  .form-control {
+/*  .form-control {
     height: 30px !important;
     font-size: 9px !important;
     line-height: 13px !important;
-  }
+  }*/
   /* Button Form */
   .btn-register {
-    height: 30px;
-    width: 225px;
+    #height: 30px;
+    width: 70%;
     border-radius: 3px;
     background: #e74c3c;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 11px;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -2735,21 +2762,19 @@ h4.rate {
     margin-top: 0px;
   }
   .btn-facebook {
-    height: 30px;
-    width: 225px;
+    #height: 30px;
+    width: 70%;
     border-radius: 3px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 11px;
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 0px;
   }
+    
   /* Footer Form */
-  .footer-form {
-    margin: 20px 0px 20px 0px;
-  }
   .footer-form p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     text-align: center;
   }
@@ -2764,9 +2789,7 @@ h4.rate {
     display: none;
   }
   .btn-become-partner {
-    height: 27px;
-    width: 90px;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 600;
     line-height: 11px;
     text-align: center;
@@ -2774,34 +2797,38 @@ h4.rate {
   }
   /* Login Modal for Mobile */
   #loginModal .modal-title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 24px;
   }
   #loginModal .register-label {
-    font-size: 10px;
-    line-height: 14px;
-    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: #6DABF5;
+    font-size: 12px;
+    line-height: 17px;
   }
   #loginModal .form-control {
     height: 37px !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 17px !important;
+    font-weight: 300;
   }
   #loginModal .remember {
     font-size: 12px !important;
     line-height: 17px !important;
+    font-weight: 300;
   }
   #loginModal .forget {
     font-size: 12px !important;
     line-height: 17px !important;
     margin-top: -32px;
     margin-bottom: 10px;
+    font-weight: 300;
   }
   #loginModal .method {
     font-size: 12px !important;
+    font-weight: 300;
     line-height: 17px !important;
-    margin-top: -2px;
     margin-bottom: 10px;
   }
 }
@@ -2811,11 +2838,12 @@ h4.rate {
 
 #login-dp {
   width: 500px;
-  padding: 14px 40px 0;
+  padding: 0 40px;
   overflow: hidden;
   background-color: #ffffff;
   left: -331px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #login-dp .help-block {
@@ -2852,9 +2880,10 @@ h4.rate {
     background-color: #ffffff;
     left: -232px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   #login-dp {
-    font-size: 10px
+    font-size: 12px
   }
   #login-dp .bottom {
     background-color: rgba(255, 255, 255, .8);
@@ -2870,13 +2899,13 @@ h4.rate {
     border-top: 0 none;
   }
   #login-dp .btn-register {
-    height: 34px;
+    #height: 40px;
     width: 280px;
     font-size: 12px;
     line-height: 15px;
   }
   #login-dp .btn-facebook {
-    height: 34px;
+    #height: 34px;
     width: 280px;
     font-size: 12px;
     line-height: 15px;
@@ -2904,11 +2933,98 @@ h4.rate {
 }
 
 
-/* OVERVIEW PAGE */
+/* OVERVIEW PAGE and BOOKING PAGE FOR DESKTOP */
+
+
+/* Left border for user profile description */
 
 .border-overview {
   border-left: 1px solid gray;
 }
+
+
+/* collapsable profile for navbar */
+
+#login-profile {
+  width: 215px;
+  overflow: hidden;
+  background-color: #ffffff;
+  left: -4px;
+  margin-top: 10px;
+}
+
+#login-profile li {
+  height: 50px;
+  text-align: center;
+}
+
+#login-profile li a {
+  padding-top: 15px;
+}
+
+#login-profile li:hover {
+  background: rgb(231, 231, 231);
+  color: white;
+}
+
+.avatar-text {
+  color: #EE4238;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: right;
+  margin: 0px 10px 0px 10px;
+}
+
+
+/* tab for overview, booking and inbox */
+
+.dashboard-tab {
+  box-sizing: border-box;
+  height: 82px;
+  width: 100%;
+  border: 1px solid #E4E3E3;
+  background-color: #ECECEC;
+  padding-left: 50px;
+}
+
+.dashboard-tab li {
+  margin: 15px 0px 0px 10px;
+}
+
+.dashboard-tab li a {
+  color: rgba(38, 39, 40, 0.8);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.nav-tabs>li>a {
+  border: none !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+  color: #EE4238 !important;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;
+  background-color: transparent !important;
+  padding-bottom: 35px;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom-width: 3px !important;
+  border-bottom-color: #EE4238 !important;
+  border-bottom-style: solid !important;
+}
+
+
+/* user profile avatar and description */
 
 .profile-desc {
   margin: -25px;
@@ -2986,6 +3102,35 @@ h4.rate {
   line-height: 27px;
 }
 
+
+/* button-avatar and hover */
+
+.button-avatar {
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
+
+.button-avatar > .fa {
+  display: none;
+  color: white;
+  position: absolute;
+  z-index: -1;
+}
+
+.button-avatar:hover > .fa {
+  position: absolute;
+  display: inherit;
+  margin-top: -100px;
+  margin-left: -3%;
+  font-size: 30px;
+  z-index: 2;
+  color: white;
+}
+
+
+/*button overview for edit and logout */
+
 .profile-btn {
   margin: 35px 0px 10px 0px;
   text-align: center;
@@ -3010,6 +3155,9 @@ h4.rate {
   background-color: #C7C7CD;
   color: white;
 }
+
+
+/* venue status */
 
 .venue-status {
   height: 120px;
@@ -3066,92 +3214,8 @@ h4.rate {
   text-transform: uppercase;
 }
 
-.close-banner {
-  position: absolute;
-  top: 0%;
-  right: 0;
-  padding: 10px 15px;
-  background-color: #E74C3C;
-  opacity: .85;
-  color: white;
-  font-size: 1.5em;
-  line-height: 26px;
-}
 
-.avatar-text {
-  color: #EE4238;
-  font-family: Lato;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 24px;
-  text-align: right;
-  margin: 0px 10px 0px 10px;
-}
-
-#login-profile {
-  width: 215px;
-  overflow: hidden;
-  background-color: #ffffff;
-  left: -4px;
-  margin-top: 10px;
-}
-
-#login-profile li {
-  height: 50px;
-  text-align: center;
-}
-
-#login-profile li a {
-  padding-top: 15px;
-}
-
-#login-profile li:hover {
-  background: rgb(231, 231, 231);
-  color: white;
-}
-
-.dashboard-tab {
-  box-sizing: border-box;
-  height: 82px;
-  width: 100%;
-  border: 1px solid #E4E3E3;
-  background-color: #ECECEC;
-  padding-left: 50px;
-}
-
-.dashboard-tab li {
-  margin: 15px 0px 0px 10px;
-}
-
-.dashboard-tab li a {
-  color: rgba(38, 39, 40, 0.8);
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 20px;
-}
-
-.nav-tabs>li>a {
-  border: none !important;
-}
-
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
-  color: #EE4238 !important;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 20px;
-  background-color: transparent !important;
-  padding-bottom: 35px;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom-width: 3px !important;
-  border-bottom-color: #EE4238 !important;
-  border-bottom-style: solid !important;
-}
+/* venue description*/
 
 #venue-detail {
   width: 100%;
@@ -3188,6 +3252,12 @@ h4.rate {
   height: 15px;
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .fa-times-thin:before {
   content: '\00d7';
 }
@@ -3205,16 +3275,94 @@ h4.rate {
   line-height: 26px;
 }
 
-.ellipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+
+/* close banner for favorite venue */
+
+.close-banner {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #E74C3C;
+  opacity: .85;
+  color: white;
+  font-size: 1.5em;
+  line-height: 26px;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+  /* Left border for user profile description */
   .border-overview {
     border-left: none;
   }
+  /* collapsable profile for navbar */
+  #login-profile {
+    width: 215px;
+    overflow: hidden;
+    background-color: #ffffff;
+    left: -4px;
+    margin-top: 10px;
+  }
+  #login-profile li {
+    height: 50px;
+    text-align: center;
+  }
+  #login-profile li a {
+    padding-top: 15px;
+  }
+  #login-profile li:hover {
+    background: rgb(231, 231, 231);
+    color: white;
+  }
+  .avatar-text {
+    color: #EE4238;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: right;
+    margin: 0px 10px 0px 10px;
+  }
+  /* tab for overview, booking and inbox */
+  .dashboard-tab {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    border: 1px solid #E4E3E3;
+    background-color: #ECECEC;
+    padding-left: 50px;
+  }
+  .dashboard-tab li {
+    margin: 10px 0px 0px 10px;
+  }
+  .dashboard-tab li a {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .nav-tabs>li>a {
+    border: none !important;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+    color: #EE4238 !important;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 19px;
+    background-color: transparent !important;
+    padding-bottom: 25px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #EE4238 !important;
+    border-bottom-style: solid !important;
+  }
+  /* user profile avatar and description */
   .profile-desc {
     margin: 0px;
   }
@@ -3281,6 +3429,13 @@ h4.rate {
     letter-spacing: 1px;
     line-height: 19px;
   }
+  /* button-avatar and hover */
+  .button-avatar:hover > .fa {
+    margin-top: -30%;
+    margin-left: -3%;
+    font-size: 20px;
+  }
+  /*button overview for edit and logout */
   .profile-btn {
     margin: 0px 0px 10px 0px;
     text-align: center;
@@ -3304,6 +3459,7 @@ h4.rate {
     background-color: #C7C7CD;
     color: white;
   }
+  /* venue status */
   .venue-status {
     height: 120px;
     border-radius: 4px;
@@ -3353,82 +3509,7 @@ h4.rate {
     text-align: center;
     text-transform: uppercase;
   }
-  .close-banner {
-    position: absolute;
-    top: 0%;
-    right: 0;
-    padding: 10px 15px;
-    background-color: #E74C3C;
-    opacity: .85;
-    color: white;
-    font-size: 1.2em;
-    line-height: 26px;
-  }
-  .avatar-text {
-    color: #EE4238;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-align: right;
-    margin: 0px 10px 0px 10px;
-  }
-  #login-profile {
-    width: 215px;
-    overflow: hidden;
-    background-color: #ffffff;
-    left: -4px;
-    margin-top: 10px;
-  }
-  #login-profile li {
-    height: 50px;
-    text-align: center;
-  }
-  #login-profile li a {
-    padding-top: 15px;
-  }
-  #login-profile li:hover {
-    background: rgb(231, 231, 231);
-    color: white;
-  }
-  .dashboard-tab {
-    box-sizing: border-box;
-    height: 66px;
-    width: 100%;
-    border: 1px solid #E4E3E3;
-    background-color: #ECECEC;
-    padding-left: 50px;
-  }
-  .dashboard-tab li {
-    margin: 10px 0px 0px 10px;
-  }
-  .dashboard-tab li a {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 19px;
-  }
-  .nav-tabs>li>a {
-    border: none !important;
-  }
-  .nav-tabs>li.active>a,
-  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
-    color: #EE4238 !important;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 19px;
-    background-color: transparent !important;
-    padding-bottom: 25px;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom-width: 3px !important;
-    border-bottom-color: #EE4238 !important;
-    border-bottom-style: solid !important;
-  }
+  /* venue description */
   #venue-detail {
     width: 100%;
     height: 480px;
@@ -3449,10 +3530,6 @@ h4.rate {
     font-weight: 300;
     line-height: 19px;
   }
-  hr {
-    margin-top: 5px;
-    margin-bottom: -5px;
-  }
   .close-venue {
     position: inherit;
     margin-left: 93%;
@@ -3465,12 +3542,146 @@ h4.rate {
     font-size: 1.2em;
     line-height: 26px;
   }
+  /* close banner for favorite venue */
+  .close-banner {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 10px 15px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-size: 1.2em;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 767px) {
+  /* Left border for user profile description */
   .border-overview {
     border-left: none;
   }
+  /* collapsable profile for navbar */
+  #login-profile {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    left: -4px;
+    margin-top: 10px;
+  }
+  #login-profile li {
+    height: 50px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  #login-profile li a {
+    padding-top: 0px !important;
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  #login-profile li:hover {
+    background: rgb(231, 231, 231);
+    color: white;
+  }
+  .dropdown-profile a {
+    margin-top: 0px !important;
+  }
+  .avatar-text {
+    color: #777;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 300;
+    margin: 0px 10px 0px 0px;
+  }
+  /* tab for overview, booking and inbox */
+  .dashboard-tab {
+    box-sizing: border-box;
+    height: 56px;
+    width: 100%;
+    border: 1px solid #E4E3E3;
+    background-color: #ECECEC;
+    padding-left: 0px;
+    margin-top: -10px;
+  }
+  .dashboard-tab li {
+    margin: 10px 0px 0px 10px;
+  }
+  .dashboard-tab li a {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+  .nav-tabs>li>a {
+    border: none !important;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
+    color: #EE4238 !important;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 18px;
+    background-color: transparent !important;
+    padding-bottom: 15px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom-width: 3px !important;
+    border-bottom-color: #EE4238 !important;
+    border-bottom-style: solid !important;
+  }
+<<<<<<< HEAD
+  #venue-detail {
+    width: 100%;
+    height: 480px;
+    padding: 20px;
+    background-color: white;
+    margin-top: -30px;
+  }
+  .venue-description h5 {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .venue-description p {
+    color: rgba(38, 39, 40, 0.8);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+
+  .close-venue {
+    position: inherit;
+    margin-left: 93%;
+    margin-bottom: -2%;
+    margin-top: -3%;
+    padding: 10px 15px;
+    background-color: transparent;
+    opacity: .85;
+    color: black;
+    font-size: 1.2em;
+    line-height: 26px;
+=======
+  .nav>li>a {
+    padding: 10px 5px;
+>>>>>>> master
+  }
+  .nav>li>a>img {
+    display: none;
+  }
+  /*user profile avatar and description*/
   .profile-desc {
     margin: 10px 0px 10px 0px;
   }
@@ -3537,6 +3748,13 @@ h4.rate {
     letter-spacing: 1px;
     line-height: 19px;
   }
+  /* button-avatar and hover */
+  .button-avatar:hover > .fa {
+    margin-top: -40px;
+    margin-left: -2%;
+    font-size: 15px;
+  }
+  /*button overview for edit and logout */
   .profile-btn {
     margin: 0px 0px -15px 0px;
     text-align: center;
@@ -3560,6 +3778,7 @@ h4.rate {
     background-color: #C7C7CD;
     color: white;
   }
+  /* venue status */
   .venue-status {
     height: 80px;
     border-radius: 4px;
@@ -3609,100 +3828,7 @@ h4.rate {
     text-align: center;
     text-transform: uppercase;
   }
-  .close-banner {
-    position: absolute;
-    top: 0%;
-    right: 0;
-    padding: 5px 10px;
-    background-color: #E74C3C;
-    opacity: .85;
-    color: white;
-    font-size: 1em;
-    line-height: 26px;
-  }
-  .dropdown-profile a {
-    margin-top: 0px !important;
-  }
-  .avatar-text {
-    color: #777;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-align: left;
-    font-weight: 300;
-    margin: 0px 10px 0px 0px;
-  }
-  #login-profile {
-    width: 100%;
-    overflow: hidden;
-    background-color: transparent;
-    left: -4px;
-    margin-top: 10px;
-  }
-  #login-profile li {
-    height: 50px;
-    margin-left: 20px;
-    text-align: left;
-  }
-  #login-profile li a {
-    padding-top: 0px !important;
-    color: #777;
-    font-family: Lato;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: 300;
-  }
-  #login-profile li:hover {
-    background: rgb(231, 231, 231);
-    color: white;
-  }
-  .dashboard-tab {
-    box-sizing: border-box;
-    height: 56px;
-    width: 100%;
-    border: 1px solid #E4E3E3;
-    background-color: #ECECEC;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-  .dashboard-tab li {
-    margin: 10px 0px 0px 10px;
-  }
-  .dashboard-tab li a {
-    color: rgba(38, 39, 40, 0.8);
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 18px;
-  }
-  .nav-tabs>li>a {
-    border: none !important;
-  }
-  .nav-tabs>li.active>a,
-  .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:focus {
-    color: #EE4238 !important;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 18px;
-    background-color: transparent !important;
-    padding-bottom: 15px;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom-width: 3px !important;
-    border-bottom-color: #EE4238 !important;
-    border-bottom-style: solid !important;
-  }
-  .nav>li>a {
-    padding: 10px 5px;
-  }
-  .nav>li>a>img {
-    display: none;
-  }
+  /* venue description */
   #venue-detail {
     width: 100%;
     height: 800px;
@@ -3723,10 +3849,6 @@ h4.rate {
     font-weight: 300;
     line-height: 16px;
   }
-  hr {
-    margin-top: 5px;
-    margin-bottom: -5px;
-  }
   .close-venue {
     position: inherit;
     margin-left: 85%;
@@ -3741,6 +3863,19 @@ h4.rate {
   .place-thumb {
     margin-top: 40px;
   }
+  /* close banner for favorite venue */
+  .close-banner {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #E74C3C;
+    opacity: .85;
+    color: white;
+    font-size: 1em;
+    line-height: 26px;
+  }
+  /* remove padding for mobile view */
   .mobile-nopadding .col-xs-12,
   .mobile-nopadding .col-md-12,
   .mobile-nopadding .col-md-4,
@@ -3748,73 +3883,12 @@ h4.rate {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .message-header {
-    font-size: 12px;
-    font-size: 0.75rem;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #F8F8F8;
-    border: none !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 18px 16px;
-    -webkit-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    margin: -20px -15px 0px -20px;
-  }
-  .messages-close {
-    font-size: 18px;
-    line-height: 16px;
-    color: black;
-    margin-top: -20px;
-  }
 }
 
-.button-avatar {
-  background-color: transparent;
-  border: none;
-  z-index: 1;
-}
 
-.button-avatar > .fa {
-  display: none;
-  color: white;
-  position: absolute;
-  z-index: -1;
-}
-
-.button-avatar:hover > .fa {
-  position: absolute;
-  display: inherit;
-  margin-top: -100px;
-  margin-left: -3%;
-  font-size: 30px;
-  z-index: 2;
-  color: white;
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-  .button-avatar:hover > .fa {
-    margin-top: -30%;
-    margin-left: -3%;
-    font-size: 20px;
-  }
-}
+/* Login Modal Edit Profile for Mobile */
 
 @media (max-width: 767px) {
-  .button-avatar:hover > .fa {
-    margin-top: -40px;
-    margin-left: -2%;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* Login Modal for Edit */
   #editProfile .modal-title {
     font-size: 24px;
     font-weight: 600;
@@ -3845,5 +3919,35 @@ h4.rate {
     line-height: 17px !important;
     margin-top: -2px;
     margin-bottom: 10px;
+  }
+}
+
+
+/* Message header for inbox in mobile view */
+
+@media (max-width: 767px) {
+  .message-header {
+    font-size: 12px;
+    font-size: 0.75rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    border: none !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 18px 16px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    margin: -20px -15px 0px -20px;
+  }
+  .messages-close {
+    font-size: 18px;
+    line-height: 16px;
+    color: black;
+    margin-top: -20px;
   }
 }

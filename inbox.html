@@ -32,6 +32,7 @@
   <!-- START CUSTOM CSS -->
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
+  <!-- CSS for message and inbox-->
   <link rel="stylesheet" type="text/css" href="css/inbox.css">
 </head>
 
@@ -86,12 +87,12 @@
     <div class="tab-content">
       <div id="inbox" class="tab-pane fade in active">
         <div class="container" style="padding-top: 20px; padding-bottom: 25px">
-          <!-- START Other Places -->
           <div class="page__wrapper hidden-xs">
             <div id="inbox-wrapper">
               <div class="messages__container jsMessageContainer">
                 <div class="messages__sidebar">
                   <ul class="messages-list jsMessagesContainer">
+                    <!-- LIst Inbox Example for Desktop and Tablet start -->
                     <li id="529d2c96-356c-4bba-8f9d-77b72834c18f" class="messages-item jsConversation messages-item--active" data-messageid="529d2c96-356c-4bba-8f9d-77b72834c18f" data-username="f4b50fe4-0273-4dac-9ffa-32ac033971b9">
                       <div class="message__avatar">
                         <img alt="" src="img/mask_sco.jpg" class="messages-item__avatar">
@@ -128,12 +129,11 @@
                         </div>
                       </aside>
                     </li>
+                    <!-- LIst Inbox Example for Desktop and Tablet end -->
                   </ul>
                 </div>
-                <!-- Center Column -->
+                <!-- Message example start -->
                 <div class="messages__content jsMessagesContent">
-                  <div class="message-convers__header">
-                  </div>
                   <div class="comments messages__content__convers jsMsgScroll">
                     <ul id="comments__wrap" class="comments__wrap jsCommentsWrap">
                       <li class="message__item ">
@@ -159,6 +159,8 @@
                       </li>
                     </ul>
                   </div>
+                  <!-- Message example end -->
+                  <!-- Message reply start -->
                   <div class="messages__content__reply comments__bottom jsCommentContainer">
                     <div class="comments__form">
                       <div class="message__form__content comment-form-field">
@@ -169,6 +171,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Message reply end -->
                   <!-- view for no message selected -->
                   <!--  <div class="comments messages__content__convers jsMsgScroll">
                     <div class="no_message">
@@ -184,18 +187,20 @@
               <div class="messages__container jsMessageContainer">
                 <div class="messages__sidebar">
                   <ul class="messages-list jsMessagesContainer">
-                    <li id="529d2c96-356c-4bba-8f9d-77b72834c18f" class="messages-item jsConversation messages-item--active" data-messageid="529d2c96-356c-4bba-8f9d-77b72834c18f" data-username="f4b50fe4-0273-4dac-9ffa-32ac033971b9">
-                      <div class="message__avatar">
-                        <img alt="" src="img/mask_sco.jpg" class="messages-item__avatar">
-                      </div>
-                      <aside class="messages-item__content">
-                        <div class="messages-item__name">S.co venue</div>
-                        <div class="messages-item__subject">
-                          <div class="messages-subject__content">Our dough, a hybrid between a Chi …</div>
-                          <div class="messages-caret"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                    <!-- LIst Inbox Example for Mobile start -->
+                    <a href="message.html">
+                      <li id="529d2c96-356c-4bba-8f9d-77b72834c18f" class="messages-item jsConversation messages-item--active" data-messageid="529d2c96-356c-4bba-8f9d-77b72834c18f" data-username="f4b50fe4-0273-4dac-9ffa-32ac033971b9">
+                        <div class="message__avatar">
+                          <img alt="" src="img/mask_sco.jpg" class="messages-item__avatar">
                         </div>
-                      </aside>
-                    </li>
+                        <aside class="messages-item__content">
+                          <div class="messages-item__name">S.co venue</div>
+                          <div class="messages-item__subject">
+                            <div class="messages-subject__content">Our dough, a hybrid between a Chi …</div>
+                            <div class="messages-caret"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                          </div>
+                        </aside>
+                      </li>
                     </a>
                     <a href="message.html">
                       <li id="529d2c96-356c-4bba-8f9d-77b72834c18f" class="messages-item jsConversation messages-item--active" data-messageid="529d2c96-356c-4bba-8f9d-77b72834c18f" data-username="f4b50fe4-0273-4dac-9ffa-32ac033971b9">
@@ -225,16 +230,17 @@
                         </aside>
                       </li>
                     </a>
+                    <!-- LIst Inbox Example for Mobile end -->
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <!-- END Other Places -->
         </div>
       </div>
     </div>
   </div>
+  <!-- script for message bubble template -->
   <script class="jsMessageBubbleTemplate" type="text/x-handlebars-template">
     <li class="message__item current__user">
       <div class="comment__content">
@@ -245,9 +251,8 @@
       </div>
     </li>
   </script>
+  <!-- script for send message -->
   <script type="text/javascript">
-  // JSHINT specific settings
-  /* global $YPCA, YP */
   "use strict";
 
   var $YPCA = jQuery.noConflict(),
