@@ -68,31 +68,32 @@
       <ul class="nav navbar-nav navbar-right navbar-custom">
         <li><a href="#">Home</a></li>
         <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Kontak Kami</a></li>
+        <li class="active"><a href="#">Jadi Partner</a></li>
         <li class="divider-vertical"></li>
         <!--Trigger Modal Login for Mobile -->
         <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
         <!--Collapse Login for Dekstop and Tablet Start -->
         <li class="dropdown dropdown-login">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masuk <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
             <li>
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12">
                   <h1>Masuk</h1>
                   <form>
                     <div class="form-group">
                       <label class="register-label" for="email">Email</label>
-                      <div class="input-group-lg">
-                        <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
+                      <div>
+                        <input type="email" class="form-control" placeholder="john.doe@email.com" id="email" name="email">
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="register-label" for="password">Password</label>
-                      <div class="input-group-lg">
-                        <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                      <div>
+                        <input type="password" class="form-control" placeholder="password anda" id="password" name="password">
                       </div>
                     </div>
+                    <div class="row">
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
                         <div class="input-group remember">
@@ -104,19 +105,21 @@
                     <div class="col-md-6 col-sm-6 forget text-right">
                       <a href="">Lupa password?</a>
                     </div>
+                    </div>
                     <div class="text-center">
+                      <br>
                       <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
                     </div>
                   </form>
-                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                  <hr width="100%" style="color:#BDBDBD; background-color:lightgrey; height:0.5px">
                   <div class="text-center method">
                     <p>atau masuk dengan menggunakan metode lain</p>
                     <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
                   </div>
-                  </form>
+                  <br>
                 </div>
-                <div class="bottom text-center">
-                </div>
+                <!--<div class="bottom text-center">
+                </div>-->
               </div>
             </li>
           </ul>
@@ -143,15 +146,16 @@
           <div class="form-group">
             <label class="register-label" for="email">Email</label>
             <div class="input-group-lg">
-              <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
+              <input type="email" class="form-control" placeholder="john.doe@email.com" id="email" name="email">
             </div>
           </div>
           <div class="form-group">
             <label class="register-label" for="password">Password</label>
             <div class="input-group-lg">
-              <input type="password" class="form-control" placeholder="********" id="password" name="password">
+              <input type="password" class="form-control" placeholder="password anda" id="password" name="password">
             </div>
           </div>
+          <div>
           <div class="col-md-6 col-sm-6">
             <div class="form-group">
               <div class="input-group remember">
@@ -163,11 +167,12 @@
           <div class="col-md-6 col-sm-6 forget text-right">
             <a href="">Lupa password?</a>
           </div>
+          </div>
           <div class="text-center">
             <button type="submit" class="btn btn-register">MASUK</button>
           </div>
         </form>
-        <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+        <hr width="100%" style="color:#BDBDBD; background-color: #BDBDBD; height:1px">
         <div class="text-center method">
           <p>atau masuk dengan menggunakan metode lain</p>
           <button type="button" class="btn btn-facebook">Login with Facebook</button>
@@ -179,8 +184,8 @@
 <!-- Modal Login for Mobile End -->
 
 <!--Header Page Start-->
-<div class="partner-bg header-about" style="max-width:100%">
-  <div class="container-fluid" style="padding: 0 30px">
+<div class="partner-bg header-about" style="max-width:100%; margin-top: 70px">
+  <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <p class="title-about text-center">Partner with Indovenue</p>
     </div>
@@ -189,18 +194,19 @@
 <!--Header Page End-->
 
 <!--Section Partner Description 1 Start -->
-<div class="container" style="padding-top:60px;">
-    <div class="col-md-12"> 
-      <div class="row">
-        <div class="section-partner partner-frame">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+<div class="container" style="padding: 25px 0px">
+    <div class="row section-partner">  
+       <div class="col-md-12"> 
+        <div class="partner-frame">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
              <div class="partner-image">
               <img class="back-image" src="img/breather.png">
               <img class="front-image" src="img/omair-khan.png">
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 desc-frame">
-            <h1>Business Partners</h1>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 desc-frame">
+            <h2>Business Partner</h2>
+            <br>
             <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor.</p>
             <br>
             <p>Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio.</p>
@@ -208,22 +214,21 @@
         </div>
       </div>
     </div>  
-</div>
 <!--Section Partner Description 1 End -->
 
 <!--Section Partner Description 2 Start -->
-<div class="container">
-    <div class="col-md-12"> 
-      <div class="row">
-        <div class="section-partner partner-frame">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-push-6">
+    <div class="row section-partner">  
+       <div class="col-md-12">
+        <div class="partner-frame">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-push-6 col-xs-12">
              <div class="partner-image">
               <img class="back-image" src="img/breather2.png">
               <img class="front-image" src="img/joel-filipe.png">
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6 text-right desc-frame">
-            <h1>Make good money</h1>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6 col-xs-12 text-right desc-frame">
+            <h2>Make Good Money</h2>
+            <br>
             <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor.</p>
             <br>
             <p>Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio.</p>
@@ -231,22 +236,21 @@
         </div>
       </div>
     </div>  
-</div>
 <!--Section Partner Description 2 End -->
 
 <!--Section Partner Description 3 Start -->
-<div class="container">
-    <div class="col-md-12"> 
-      <div class="row">
-        <div class="section-partner partner-frame">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="row section-partner">  
+       <div class="col-md-12">
+        <div class="partner-frame">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="partner-image">
               <img class="back-image" src="img/raphael.png">
               <img class="front-image" src="img/ellie-pritts.png">
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 center-btn-only desc-frame">
-            <h1>Support and Flexibility</h1>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 center-btn-only desc-frame">
+            <h2>Support and Flexibility</h2>
+            <br>
             <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor.</p>
             <br>
             <p>Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio.</p>
@@ -311,29 +315,31 @@
                     </div>
                   </div>
                 </div>
-                </div>
+             </div>
           </div>
         </div>
       </div>
-    </div>  
+    </div>
 </div>
 <!--Section Partner Description 3 End -->
 
 <!--Section Hear Start -->
-<div class="container" style="padding-bottom:50px;">
-    <div class="col-md-12"> 
-      <div class="row">
-        <div class="section-hear">
+<div class="container-fluid" style="background-color: #FAFAFA; padding:25px 0px;">
+  <div class="container">
+    <div class="row section-hear">
+       <div class="col-md-12"> 
+        <div class="">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-            <h1>Hear from Out Partners</h2>
+            <h2>Hear From Our Partners</h2>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <br>
             <p>We read all feedback carefully, but we are unable to respond to each submission individually. If you provide your email address, you agree that we may contact you to better understand the comments you submitted.</p>
           </div>
         </div>
       </div>
-    </div>  
-</div>
+    </div>
+  </div>  
 <!--Section Hear End -->
 
 <!--Section Testimoni Partner Start -->
@@ -351,7 +357,7 @@
                 <i class="fa fa-star-half-o" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>Definitely worth the investment. Without indovenue, we would have gone bankrupt by now. Indovenue is worth much more than I paid.</p>
-              <p>@april_schmitt27</p>
+              <h5>@april_schmitt27</h5>
             </div>
             <div class="card text-center">
               <h4 class="rate">
@@ -361,7 +367,7 @@
                 <i class="fa fa-star" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>I have purchased this theme twice because I love it so much! THANK YOU for the amazing support!! If I can't find my answer in your extensive documentation, one of you is always there to directly answer my question. You all are AWESOME!!</p>
-              <p>@dishycreative  - Main reason: Customer Support</p>
+              <h5>@dishycreative</h5>
             </div>
             <div class="card text-center">
               <h4 class="rate">
@@ -372,7 +378,7 @@
                 <i class="fa fa-star" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>Their customer support is great - they make sure every question gets answered, even during busy periods - and they are regularly releasing new updates based on customer feedback. This has made what would have otherwise been a complex customisation project become practically trivial because they've thought of just about everything!<br><br>Love it!</p>
-              <p>@guy_fraser - Main reason: Design Quality</p>
+              <h5>@guy_fraser</h5>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -385,7 +391,7 @@
                 <i class="fa fa-star" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>Hi There,<br><br>Indovenue is fabulous for training purposes and provides a visual way of keeping the sales process intact. The greatest part is that the system never takes a break.<br><br>The sales rep may have a bad day or an off day, but the system never does.  This helps keep our sales reps consistent.  And the new tool, Live View, gives the managers floor awareness like never before.<br><br>LOVE it - Thank you so much.</p>
-              <p>@webowner001</p>
+              <h5>@webowner001</h5>
             </div>
             <div class="card text-center">
               <h4 class="rate">
@@ -395,7 +401,7 @@
                 <i class="fa fa-star" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>This is a super flexible and customizable, with a cool modern design and a great support. Thanks, I love it!</p>
-              <p>@lorndal</p>
+              <h5>@lorndal</h5>
             </div>
              <div class="card text-center">
               <h4 class="rate">
@@ -406,7 +412,7 @@
                 <i class="fa fa-star" aria-hidden="true" style="color: darkorange"></i>
               </h4>
               <p>No matter where you go, indovenue is the coolest, most happening thing around! Indovenue is great. Dude, your stuff is the bomb! You've saved our business!</p>
-              <p>@gnokoro - Main reason: Feature Availability</p>
+              <h5>@gnokoro</h5>
             </div>
           </div>
         </div>
@@ -417,9 +423,8 @@
 
 <!--Section Logo Partner Start -->
 <div class="container">
-    <div class="col-md-12"> 
-      <div class="row">
-        <div class="section-logo">
+    <div class="row section-logo">
+       <div class="col-md-12">
           <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
             <div class="logo-partner">
               <img src="img/speckyboy.png">
@@ -456,12 +461,13 @@
 </div>
 
 <!--Section Get More Start -->
-<div style="background-color:#F7F7F7;">
+<div style="background-color:#EFEFEF; padding:25px 0px;">
   <div class="container">
         <div class="col-md-12">
           <div class="row">
             <div class="getmore col-md-12 col-sm-12 text-center">
-              <h1 class="title">Get more people to your venue by partnering with Indovenue</h1> 
+              <h2 class="title">Get more people to your venue by partnering with Indovenue</h2> 
+              <br>
               <p>Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio.</p> 
               <button type="button" class="btn btn-partner">Jadi Partner</button>
             </div>
@@ -473,7 +479,7 @@
 
 
 
- <!--FOOTER START HERE-->
+<!--FOOTER START HERE-->
   <footer>
     <div class="container">
       <div class="col-md-12">
@@ -505,16 +511,15 @@
         </div>
       </div>
     </div>
-    <div class="footer-line">
-    </div>
-    <div class="container">
+    <!--<div class="footer-line"></div>-->
+    <hr style="margin: 0px">
+    <div class="container" style="padding: 20px">
       <div class="col-md-12">
         <div class="col-md-7 col-sm-7 col-xs-12 copyright">
-          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
-          <p class="mobile">&copy; Indovenue</p>
+          <p>All right reserved &copy; Indovenue</p>
         </div>
         <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="center-block language" style="padding: 20px 0;">
+          <div class="center-block language">
             <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
             <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
           </div>

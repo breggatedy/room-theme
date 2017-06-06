@@ -6,8 +6,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!--Font Selection-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400" rel="stylesheet">
-
+    
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     
@@ -48,7 +49,6 @@
 <body>
 
 <!-- Navbar Start-->
-<!-- Navbar Start-->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,33 +64,34 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right navbar-custom">
-        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Kontak Kami</a></li>
+        <li><a href="#">Jadi Partner</a></li>
         <li class="divider-vertical"></li>
         <!--Trigger Modal Login for Mobile -->
         <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
         <!--Collapse Login for Dekstop and Tablet Start -->
         <li class="dropdown dropdown-login">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masuk <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
             <li>
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12">
                   <h1>Masuk</h1>
                   <form>
                     <div class="form-group">
                       <label class="register-label" for="email">Email</label>
-                      <div class="input-group-lg">
-                        <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
+                      <div>
+                        <input type="email" class="form-control" placeholder="john.doe@email.com" id="email" name="email">
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="register-label" for="password">Password</label>
-                      <div class="input-group-lg">
-                        <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                      <div>
+                        <input type="password" class="form-control" placeholder="password anda" id="password" name="password">
                       </div>
                     </div>
+                    <div class="row">
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
                         <div class="input-group remember">
@@ -102,19 +103,21 @@
                     <div class="col-md-6 col-sm-6 forget text-right">
                       <a href="">Lupa password?</a>
                     </div>
+                    </div>
                     <div class="text-center">
+                      <br>
                       <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
                     </div>
                   </form>
-                  <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                  <hr width="100%" style="color:#BDBDBD; background-color:lightgrey; height:0.5px">
                   <div class="text-center method">
                     <p>atau masuk dengan menggunakan metode lain</p>
                     <button type="button" class="btn btn-facebook" style="margin-top:0px;">Login with Facebook</button>
                   </div>
-                  </form>
+                  <br>
                 </div>
-                <div class="bottom text-center">
-                </div>
+                <!--<div class="bottom text-center">
+                </div>-->
               </div>
             </li>
           </ul>
@@ -141,15 +144,16 @@
           <div class="form-group">
             <label class="register-label" for="email">Email</label>
             <div class="input-group-lg">
-              <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
+              <input type="email" class="form-control" placeholder="john.doe@email.com" id="email" name="email">
             </div>
           </div>
           <div class="form-group">
             <label class="register-label" for="password">Password</label>
             <div class="input-group-lg">
-              <input type="password" class="form-control" placeholder="********" id="password" name="password">
+              <input type="password" class="form-control" placeholder="password anda" id="password" name="password">
             </div>
           </div>
+          <div>
           <div class="col-md-6 col-sm-6">
             <div class="form-group">
               <div class="input-group remember">
@@ -161,11 +165,12 @@
           <div class="col-md-6 col-sm-6 forget text-right">
             <a href="">Lupa password?</a>
           </div>
+          </div>
           <div class="text-center">
             <button type="submit" class="btn btn-register">MASUK</button>
           </div>
         </form>
-        <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+        <hr width="100%" style="color:#BDBDBD; background-color: #BDBDBD; height:1px">
         <div class="text-center method">
           <p>atau masuk dengan menggunakan metode lain</p>
           <button type="button" class="btn btn-facebook">Login with Facebook</button>
@@ -182,7 +187,7 @@
 <div class="container-fluid" style="padding: 0 30px">
 
 
-  <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12"><p class="hero">Karena setiap momen berharga membutuhkan <span style="color: #e74c3c">tempat</span> yang spesial</p>
+  <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12"><p class="hero">Karena setiap momen berharga membutuhkan <span style="color: orangered">tempat</span> yang spesial</p>
   </div>
   
   <!--Search Form Button-->
@@ -748,16 +753,15 @@
         </div>
       </div>
     </div>
-    <div class="footer-line">
-    </div>
-    <div class="container">
+    <!--<div class="footer-line"></div>-->
+    <hr style="margin: 0px">
+    <div class="container" style="padding: 20px">
       <div class="col-md-12">
         <div class="col-md-7 col-sm-7 col-xs-12 copyright">
-          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
-          <p class="mobile">&copy; Indovenue</p>
+          <p>All right reserved &copy; Indovenue</p>
         </div>
         <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="center-block language" style="padding: 20px 0;">
+          <div class="center-block language">
             <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
             <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
           </div>
