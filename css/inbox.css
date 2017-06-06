@@ -869,6 +869,11 @@
 
 /*message-list hover for mobile */
 
+.messages-list>a:hover,
+.messages-list>a:active{
+  text-decoration: none;
+}
+
 .messages-list a>li:hover,
 .messages-list a>li:active {
   background: lightgrey;

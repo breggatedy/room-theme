@@ -201,7 +201,7 @@
               </div>
               <!-- Venue Status End -->
               <!-- Details Venue Collapsable Start -->
-              <div id="venue-detail mobile-nopadding">
+              <div id="venue-detail" class="mobile-nopadding" style="background-color:#fafafa;">
                 <div class="close-venue" onclick="closeVenue()"><i class="fa fa-times-thin fa-2x" aria-hidden="true"></i></div>
                 <div class="col-md-7 col-sm-7 col-sm-push-5 venue-description">
                   <h5><b>Transaction ID</b></h5>
@@ -319,7 +319,7 @@
   <!-- Function Script for showVenue Start -->
   <script>
   function showVenue() {
-    var x = document.getElementById('venue-detail mobile-nopadding');
+    var x = document.getElementById('venue-detail');
     if (x.style.display === 'none') {
       x.style.display = 'block';
     } else {
@@ -331,7 +331,7 @@
   <!-- Function Script for closeVenue Start -->
   <script>
   function closeVenue() {
-    var x = document.getElementById('venue-detail mobile-nopadding');
+    var x = document.getElementById('venue-detail');
     if (x.style.display === 'block') {
       x.style.display = 'none';
     }
