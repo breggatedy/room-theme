@@ -24,10 +24,10 @@
   <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css">-->
   <!-- Include Required Prerequisites -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <!-- Include Date Range Picker -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
   <!-- Flexslider -->
   <link rel="stylesheet" href="css/flexslider.css">
   <script type="text/javascript" src="js/jquery.flexslider.js"></script>
@@ -54,55 +54,58 @@
         <ul class="nav navbar-nav navbar-right navbar-custom">
           <li><a href="#">Home</a></li>
           <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Jadi Partner</a></li>
           <li class="divider-vertical"></li>
           <!--Trigger Modal Login for Mobile -->
           <li class="modal-login"><a href="#loginModal" data-toggle="modal">Masuk</a></li>
           <!--Collapse Login for Dekstop and Tablet Start -->
           <li class="dropdown dropdown-login">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Masuk</b> <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masuk <span class="caret"></span></a>
             <ul id="login-dp" class="dropdown-menu">
               <li>
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 col-sm-12">
                     <h1>Masuk</h1>
                     <form>
                       <div class="form-group">
                         <label class="register-label" for="email">Email</label>
-                        <div class="input-group-lg">
-                          <input type="email" class="form-control" placeholder="marcelpatoulachi@gmail.com" id="email" name="email">
+                        <div>
+                          <input type="email" class="form-control" placeholder="john.doe@email.com" id="email" name="email">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="register-label" for="password">Password</label>
-                        <div class="input-group-lg">
-                          <input type="password" class="form-control" placeholder="********" id="password" name="password">
+                        <div>
+                          <input type="password" class="form-control" placeholder="password anda" id="password" name="password">
                         </div>
                       </div>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
-                          <div class="input-group remember">
-                            <input type="checkbox" name="remember" value="remember"> Ingat saya.
-                            <br>
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <div class="form-group">
+                            <div class="input-group remember">
+                              <input type="checkbox" name="remember" value="remember"> Ingat saya.
+                              <br>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6 forget text-right">
-                        <a href="">Lupa password?</a>
+                        <div class="col-md-6 col-sm-6 forget text-right">
+                          <a href="">Lupa password?</a>
+                        </div>
                       </div>
                       <div class="text-center">
+                        <br>
                         <button type="submit" class="btn btn-register" style="margin-top:0px;">MASUK</button>
                       </div>
                     </form>
-                    <hr width="100%" style="color:#BDBDBD;background-color:#BDBDBD;height:1px;">
+                    <hr width="100%" style="color:#BDBDBD; background-color:lightgrey; height:0.5px">
                     <div class="text-center method">
                       <p>atau masuk dengan menggunakan metode lain</p>
                       <button type="button" class="btn btn-facebook" style="margin-top:0px;"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</button>
                     </div>
-                    </form>
+                    <br>
                   </div>
-                  <div class="bottom text-center">
-                  </div>
+                  <!--<div class="bottom text-center">
+                </div>-->
                 </div>
               </li>
             </ul>
@@ -183,7 +186,7 @@
         </div>
       </a>
       <div class="tag-group">
-        <i class="fa fa-chevron-left" aria-hidden="true" style="position: absolute; left: -5px; top: 68%;"></i>
+        <i class="fa fa-caret-left" aria-hidden="true" style="position: absolute; left: -5px; top: 68%;"></i>
         <div class="row text-center">
           <div class="col-md-2 col-sm-2 col-xs-4" style="padding: 5px !important">
             <button type="button" class="btn btn-block btn-tagwhite">indoor</button>
@@ -216,7 +219,7 @@
             <button type="button" class="btn btn-block btn-tagwhite">indoor</button>
           </div>
         </div>
-        <i class="fa fa-chevron-right" aria-hidden="true" style="position: absolute; right: -5px; top: 68%;"></i>
+        <i class="fa fa-caret-right" aria-hidden="true" style="position: absolute; right: -5px; top: 68%;"></i>
       </div>
     </div>
     <!-- Modal -->
@@ -390,14 +393,7 @@
         <section class="slider2">
           <ul>
             <li>
-              <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
-              <div class="slider-caption">
-                <h3>Adventurer Cheesecake Brownie</h3>
-                <p>IDR 25.000.000 /HARI</p>
-              </div>
-            </li>
-            <li>
-              <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
+              <div class="image" style="background-image:url('img/placeholder2.jpg');"></div>
               <div class="slider-caption">
                 <h3>Adventurer Cheesecake Brownie</h3>
                 <p>IDR 25.000.000 /HARI</p>
@@ -405,6 +401,13 @@
             </li>
             <li>
               <div class="image" style="background-image:url('img/placeholder.png');"></div>
+              <div class="slider-caption">
+                <h3>Adventurer Cheesecake Brownie</h3>
+                <p>IDR 25.000.000 /HARI</p>
+              </div>
+            </li>
+            <li>
+              <div class="image" style="background-image:url('http://ruang123.com/adminci/assets/uploads/files/4cf3d-300px-peterseneventscenter_at_pitt.jpg');"></div>
               <div class="slider-caption">
                 <h3>Adventurer Cheesecake Brownie</h3>
                 <p>IDR 25.000.000 /HARI</p>
@@ -418,7 +421,7 @@
         </div>
         <!--    </div> -->
         <!-- END Gallery -->
-        <h4 class="title text-center" style="margin-bottom:15px; font-size:20px;">135 Venue Ditemukan</h4>
+        <h4 class="title text-center" style="margin: 30px 0; font-size:20px;">135 Venue Ditemukan</h4>
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -579,77 +582,78 @@
       <!-- START Other Places -->
       <div class="col-md-12">
         <div class="row">
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 col-sm-6 col-xs-6">
             <h4 class="title">TEMPAT TERBARU</h4>
           </div>
-          <div class="col-md-4 col-sm-6 pull-right text-right">
+          <div class="col-md-4 col-sm-6 col-xs-6 pull-right text-right">
             <a class="seemore" href="#">LIHAT TEMPAT LAINNYA</a>
           </div>
         </div>
       </div>
       <div class="col-md-12 search-description">
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-              <img src="img/place1.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
-                <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+          <div class="col-md-4 col-sm-6 col-xs-">
+              <div class="place-thumb" style="margin-bottom:20px;">
+                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="img/place1.png">
+                <div class="placethumb-detail">
+                  <button type="button" class="btn btn-love favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                  <p class="harga"><small>IDR</small> 10.000.000 <small>/HARI</small></p>
+                  <p class="tempat">Wedding BAY <small>di</small> Sunny Side California Beach</p>
+                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                  <div class="placethumb-tag">
+                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray"></i>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">wedding</button>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">outdoor</button>
+                  </div>
+                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
               </div>
             </div>
-          </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div> <img src="img/place2.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
-                <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+              <div class="place-thumb" style="margin-bottom:20px;">
+                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="img/place2.png">
+                <div class="placethumb-detail">
+                  <button type="button" class="btn btn-love favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                  <p class="harga"><small>IDR</small> 25.000.000 <small>/HARI</small></p>
+                  <p class="tempat">Main Hall <small>di</small> Lincoln Center for the Performing Arts</p>
+                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                  <div class="placethumb-tag">
+                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">concert</button>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">music</button>
+                  </div>
+                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
               </div>
             </div>
-          </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="place-thumb">
-              <div class="disc-banner-small">50% OFF</div>
-              <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
-              <img src="img/place3.png">
-              <div class="placethumb-detail">
-                <div class="favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart love" aria-hidden="true"></i></div>
-                <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
-                <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
-                <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
-                <div class="placethumb-tag">
-                  <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
-                  <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+              <div class="place-thumb" style="margin-bottom:20px;">
+                <div class="disc-banner-small">50% OFF</div>
+                <div class="star-banner-small tooltip-left" data-tooltip="Popular Venue"><i class="fa fa-star" aria-hidden="true"></i></div>
+                <img src="img/place3.png">
+                <div class="placethumb-detail">
+                  <button type="button" class="btn btn-love favorite-banner tooltip-top" data-tooltip="Jadikan Favorit"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                  <p class="harga"><small>IDR</small> 500.000 <small>/HARI</small></p>
+                  <p class="tempat">Eagle Room <small>di</small> Brooklyn South West Building</p>
+                  <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh libero, sed ultrices arcu fermentum eget…</p>
+                  <div class="placethumb-tag">
+                    <i class="fa fa-tag fa-lg fa-flip-horizontal text-gray" aria-hidden="true"></i>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">meeting</button>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">office</button>
+                    <button type="button" class="btn btn-tag btn-outline btn-xs place-tag">indoor</button>
+                  </div>
+                  <button type="button" class="btn btn-color btn-block btn-white" style="margin: 10px 0">LIHAT DETAIL</button>
                 </div>
-                <button type="button" class="btn btn-color btn-block btn-custom" style="margin: 10px 0">LIHAT DETAIL</button>
               </div>
             </div>
-          </div>
         </div>
       </div>
       <!-- END Other Places -->
     </div>
   </div>
-  <!--FOOTER START HERE-->
+    <!--FOOTER START HERE-->
   <footer>
     <div class="container">
       <div class="col-md-12">
@@ -681,16 +685,15 @@
         </div>
       </div>
     </div>
-    <div class="footer-line">
-    </div>
-    <div class="container">
+    <!--<div class="footer-line"></div>-->
+    <hr style="margin: 0px">
+    <div class="container" style="padding: 20px">
       <div class="col-md-12">
         <div class="col-md-7 col-sm-7 col-xs-12 copyright">
-          <p class="desktop">All right reserved </br>&copy; Indovenue</p>
-          <p class="mobile">&copy; Indovenue</p>
+          <p>All right reserved &copy; Indovenue</p>
         </div>
         <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="center-block language" style="padding: 20px 0;">
+          <div class="center-block language">
             <button type="button" class="btn btn-color btn-white btn-indo" style="border-color:white !important;">Indonesia</button>
             <button type="button" class="btn btn-color btn-custom btn-ing">English</button>
           </div>
@@ -698,6 +701,7 @@
       </div>
     </div>
   </footer>
+  <!-- FOOTER END -->
   <!-- Script for Datepicker -->
   <!--<script>
     $(document).ready(function(){
