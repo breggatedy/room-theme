@@ -2749,7 +2749,7 @@ h4.rate {
   /*=== Section Login ===*/
   .login-bg {
     background-size: cover;
-    min-height: 400px;
+    min-height: 450px;
   }
   .section-login {
     #padding: 50px 50px 50px 50px;
