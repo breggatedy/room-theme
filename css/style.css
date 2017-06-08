@@ -822,6 +822,7 @@ a.seemore {
 .place-thumb {
   border: 1px solid lightgrey;
   position: relative;
+  min-height: 415px;
 }
 
 .place-thumb > img {
@@ -1027,6 +1028,24 @@ a .social {
   padding: 0 15px;
 }
 
+.search-sidebar .form-control {
+  display: block;
+  width: 100%;
+  height: 37px;
+  padding: 4px 12px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #333;
+  background: none;
+  border: 1px solid lightgrey;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
 .scroll-sidebar {
   overflow: auto;
   max-height: 600px;
@@ -1113,13 +1132,12 @@ a .social {
 }
 
 .span {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 24px 12px;
-    cursor: pointer;
-    user-select: none;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 24px 12px;
+  cursor: pointer;
+  user-select: none;
 }
-
 
 .slider-nav .slide-prev {
   position: absolute;
@@ -3586,8 +3604,7 @@ h4.rate {
   .venue-status h1 {
     font-size: 22px;
   }
-  .venue-status h1.waiting {
-  }
+  .venue-status h1.waiting {}
   /* venue description */
   #venue-detail {
     width: 100%;
@@ -3763,9 +3780,8 @@ h4.rate {
   }
   /*user profile avatar and description*/
   .side-profile {
-  min-width: 0px;
-}
-
+    min-width: 0px;
+  }
   .profile-desc {
     margin: 10px 0px 10px 0px;
   }
