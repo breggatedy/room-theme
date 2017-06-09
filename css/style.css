@@ -4029,7 +4029,7 @@ h4.rate {
     padding: 18px 16px;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
-    margin: -20px -15px 0px -20px;
+    margin: -20px 0px 0px -20px;
   }
   .messages-close {
     font-size: 18px;
