@@ -3067,7 +3067,7 @@ h4.rate {
 
 .dashboard-tab {
   box-sizing: border-box;
-  height: 60px;
+  height: 9vh;
   width: 100%;
   border: 1px solid #E4E3E3;
   background-color: #ECECEC;
@@ -3440,7 +3440,7 @@ h4.rate {
   /* tab for overview, booking and inbox */
   .dashboard-tab {
     box-sizing: border-box;
-    height: 66px;
+    height: 12vh;
     width: 100%;
     border: 1px solid #E4E3E3;
     background-color: #ECECEC;
