@@ -888,18 +888,28 @@
 }
 
 @media (min-width: 992px){
+
+.messages__container {
+  margin-top: 40px;
+}
   .heightMessage{
     height: 595px;
   }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+.messages__container {
+  margin-top: 40px;
+}
 .heightMessage{
     height: 405px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+.messages__container {
+  margin-top: 20px;
+}
 .heightMessage{
     height: 300px;
   }

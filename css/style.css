@@ -3072,6 +3072,7 @@ h4.rate {
   border: 1px solid #E4E3E3;
   background-color: #ECECEC;
   padding-left: 50px;
+  position: fixed;
 }
 
 .dashboard-tab li {
